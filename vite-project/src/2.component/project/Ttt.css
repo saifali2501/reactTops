@@ -1,0 +1,219 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.btnpink {
+    background-color: #ba2f46;
+    color: white;
+    height: 45px;
+    padding: 0px 15px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s ease all;
+}
+
+.btnpink:hover {
+    background-color: transparent;
+    color: #ba2f46;
+    border: 2px solid #ba2f46;
+}
+
+.btnpink-rev {
+    background-color: transparent;
+    color: #ba2f46;
+    height: 45px;
+    padding: 0px 15px;
+    border: 2px solid #ba2f46;
+    border-radius: 10px;
+    transition: 0.5s ease all;
+}
+
+.btnpink-rev:hover {
+    background-color: #ba2f46;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.btnblack {
+    background-color: transparent;
+    color: black;
+    height: 45px;
+    padding: 0px 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s ease all;
+}
+
+.btnblack:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.Topheader {
+    background-color: #1f1f67;
+}
+
+.Topheader ul li {
+    padding: 5px;
+}
+
+.Topheader ul li {
+    border-right: 1px solid white;
+}
+
+.Topheader ul li a {
+    color: white;
+} */
+h1{
+     /* color: blue; */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+.container {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+ .header{
+/* background-color: #00d080; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+header .header-p {
+    padding: 60px 0px;
+}
+
+header .navigation {
+    display: flex;
+    align-items: center;
+}
+
+header .navigation .logo {
+    flex: 1;
+    padding-top: 10px;
+}
+
+header .navigation .logo h1 {
+    font-size: 40px;
+}
+
+header .navigation .logo span {
+    transform: rotate(315deg);
+    color: #f36c2d;
+    width: 15px;
+    height: 68px;
+}
+
+header .navigation .navbar {
+    flex: 0;
+}
+
+header .navigation .navbar ul {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+    margin-top: 26px;
+}
+
+header .navigation .navbar li {
+    padding: 10px;
+}
+
+header .navigation .navbar a {
+    color: black;
+    font-weight: 600;
+    transition: 0.3s ease all;
+}
+
+header .navigation .navbar span {
+    font-size: 12px;
+}
+
+header .navigation .navbar a.active {
+    color: #f36c2d;
+}
+
+header .navigation .navbar a:hover {
+    color: #f36c2d;
+}
+
+header .navigation .theme {
+    flex: 0;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: black;
+    gap: 10px;
+}
+
+header .navigation .theme button {
+    display: none;
+    height: 50px;
+    width: 30px;
+    background-color: #f36c2d;
+    color: rgb(181, 21, 21);
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.btn{
+    left: 100px;
+}
+.orderbtn {
+    width: fit-content;
+    padding: 15px;
+    background-color: #f36c2d;
+    color: rgb(170, 16, 16);
+    border: 2px solid transparent;
+    border-radius: 40px;
+    font-weight: 700;
+    transition: 0.5s ease all;
+}
+
+.orderbtn:hover {
+    background-color: #05462d;
+}
+
