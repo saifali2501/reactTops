@@ -12,6 +12,12 @@ import PropChange from "./04.props/PropChangingValue";
 import PropChangingValue from "./04.props/PropChangingValue";
 import ChangeValue from "./04.props/ChangeValue";
 import ClassPrp from "./04.props/ClassPrp";
+import LifecycleMethod from "./0.1_precticReact/01_component/5.LifeCycleMethod/LifecycleMethod";
+import Fun from "./4.UseEffect/Fun";
+import UseEfect from "./4.UseEffect/fect";
+import Fect from "./4.UseEffect/fect";
+import Input_fun from "./7.Input/Input_fun";
+
 // import Cc_class from "./04.props/Cc_class";
 // import Final from "./2.component/project/final";
 
@@ -34,7 +40,12 @@ export default function main(){
             {/* <Cc_class/> */}
             {/* <PropChangingValue/> */}
             {/* <ChangeValue  name={"saif"}/> */}
-            <ClassPrp/>
+            {/* <LifecycleMethod/> */}
+            {/* <ClassPrp/> */}
+            {/* <Fun/> */}
+            {/* <Fect/> */}
+            <Input_fun/>
+            
             
 
         </div>

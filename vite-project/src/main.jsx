@@ -8,13 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <App />
-    {/* <h1>hello</h1>
-    <h1>hello</h1> */}
-
-    {/* <FunCom/> */}
-    <Final/>
-
-  </React.StrictMode>,
+  
+    
+    // </React.StrictMode>,
 )
