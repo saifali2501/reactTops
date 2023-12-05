@@ -1,0 +1,38 @@
+1. useState Hook
+
+ans:useState to Create State Variables
+The useState hook allows us to create state variables in a React function component.
+
+State allows us to access and update certain values in our components over time
+When we create a state variable, we must provide it a default value (which can be any data type).
+
+We get that state variable as the first value in an array, which we can destructure and declare with const.Can Be Used Once Or Many Times
+Update State Variables
+useState also gives us a setter function to update the state after it is created.
+
+To update our state variable, we pass the setter function the new value we want our state to be.
+
+When you declare your setter function, in most cases you will prefix it with the word "set"Can Be Used Once Or Many Times
+useState can be used once or multiple times within a single component.
+
+Sometimes you will want to create multiple state variables and other times you may want to use a single variable with an object 
+
+2. useEffect Hook
+useEffect to Perform Side Effects
+useEffect lets us perform side effects in function components.
+
+Side effects are when we need to reach into the outside world. Such as fetching data from an API or working with the DOM.
+Side effects are actions that can change our component state in an unpredictable fashion (that have caused 'side effects').
+
+useEffect accepts a callback function (called the 'effect' function), which will by default run every time the component re-renders.
+
+In the example below, we are interacting with the DOM to change style properties of the document body:
+
+Run Again when a Value Changes
+useEffect lets us conditionally perform effects with the dependencies array.
+
+The dependencies array is the second argument passed to useEffect.
+
+If any one of the values in the array changes, the effect function runs again.
+
+If no values are included in the dependencies array, useEffect will only run on component mount and unmount.
