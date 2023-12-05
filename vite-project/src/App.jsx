@@ -20,6 +20,10 @@ import Input_fun from "./7.Input/Input_fun";
 import MultipaleInput from "./7.Input/MultipaleInput";
 import MyForm from "./7.Input/test";
 import InputeSingle from "./7.Input/InputeSingle";
+import InputRev from "./7.Input/InputRev";
+import Don from "./7.Input/Don";
+import MultiInpute from "./7.Input/MultiInpute";
+import Inpute_Rev_2 from "./7.Input/Inpute_Rev_2";
 
 // import Cc_class from "./04.props/Cc_class";
 // import Final from "./2.component/project/final";
@@ -50,7 +54,11 @@ export default function main(){
             {/* <Input_fun/> */}
             {/* <MultipaleInput/> */}
             {/* <MyForm/> */}
-            <InputeSingle/>
+            {/* <InputeSingle/> */}
+            {/* <InputRev/> */}
+            {/* <Don/> */}
+            {/* <MultiInpute/> */}
+            <Inpute_Rev_2/>
             
             
             

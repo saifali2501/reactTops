@@ -5,6 +5,14 @@ import './App.css'
 
 import UseEfectMatch from './Hooks/UseEfectMatch'
 import UseStatePro from './Hooks/UseStatePro'
+import C_crd from './Props/C_card'
+import ClassProps from './Props/Class_Props'
+import FunProps from './Props/Fun_Props'
+import { Nav } from 'react-bootstrap'
+import NavScrollExample from './navbar/Nav'
+import { UncontrolledCarousel } from 'reactstrap'
+import DarkVariantExample from './Page/Page'
+
 
 
 function App() {
@@ -16,7 +24,13 @@ function App() {
      
       {/* <UseEfectMatch/> */}
       
-<UseStatePro/>
+{/* <UseStatePro/> */}
+{/* <C_crd/> */}
+{/* <ClassProps/> */}
+{/* <FunProps/> */}
+<NavScrollExample/>
+<DarkVariantExample/>
+
     </div>
     </>
   )
