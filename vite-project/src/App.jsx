@@ -24,6 +24,10 @@ import InputRev from "./7.Input/InputRev";
 import Don from "./7.Input/Don";
 import MultiInpute from "./7.Input/MultiInpute";
 import Inpute_Rev_2 from "./7.Input/Inpute_Rev_2";
+import Input_Rev_3 from "./7.Input/Input_Rev_3";
+import LocalStor from "./7.Input/LocalStor";
+import Card from "./7.Input/Card";
+import Crad_2 from "./7.Input/Crad_2";
 
 // import Cc_class from "./04.props/Cc_class";
 // import Final from "./2.component/project/final";
@@ -58,7 +62,11 @@ export default function main(){
             {/* <InputRev/> */}
             {/* <Don/> */}
             {/* <MultiInpute/> */}
-            <Inpute_Rev_2/>
+            {/* <Inpute_Rev_2/> */}
+            {/* <Input_Rev_3/> */}
+            {/* <LocalStor/> */}
+            {/* <Card/> */}
+            <Crad_2/>
             
             
             

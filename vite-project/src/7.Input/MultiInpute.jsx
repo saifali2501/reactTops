@@ -66,7 +66,7 @@ export default function MultiInpute() {
             {addcity.map((e, i) => (
               <tr key={i}>
                 <th scope="row">{i + 1}</th>
-                <td>{e.email}</td>
+                <td>{e?.email}</td>
                 
                 <td>{e.password}</td>
               </tr>

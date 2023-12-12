@@ -1,39 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-import UseEfectMatch from './Hooks/UseEfectMatch'
-import UseStatePro from './Hooks/UseStatePro'
-import C_crd from './Props/C_card'
-import ClassProps from './Props/Class_Props'
-import FunProps from './Props/Fun_Props'
-import { Nav } from 'react-bootstrap'
-import NavScrollExample from './navbar/Nav'
-import { UncontrolledCarousel } from 'reactstrap'
-import DarkVariantExample from './Page/Page'
-
-
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import UseEfectMatch from "./MODULE_10_LIST_HOOK/HOOKS/UseEfectMatch";
+import UseStatePro from "./MODULE_10_LIST_HOOK/HOOKS/UseStatePro";
+import LifecycleMethod from "./MODULE_10_LIST_HOOK/LIFECYCLE/LifeCycleMethod";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-    <div>
-     
-      {/* <UseEfectMatch/> */}
-      
-{/* <UseStatePro/> */}
-{/* <C_crd/> */}
-{/* <ClassProps/> */}
-{/* <FunProps/> */}
-<NavScrollExample/>
-<DarkVariantExample/>
-
-    </div>
+      <div>
+        {/* <UseEfectMatch/> */}
+        {/* <UseStatePro /> */}
+        <LifecycleMethod/>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

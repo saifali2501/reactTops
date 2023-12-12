@@ -15,6 +15,7 @@ export default function Input_fun() {
       } else if (taskNumber === 2) {
         setcompany2(element.target.value);
       }
+      
     }
     const addtask = () =>{
       setmyCompany([...myCompany,{Company,Company2}])

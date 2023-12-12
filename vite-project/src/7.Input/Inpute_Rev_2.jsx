@@ -6,32 +6,55 @@ export default function Inpute_Rev_2() {
     email: "",
     password: "",
   });
-  let [index,setindex] = useState(null)
+  let [index, setindex] = useState(null);
   let [myCar, setMyCar] = useState([]);
 
   const ChangeHandler = (e) => {
+  const matchh =  myCar.some((e)=>{
+    console.log(e);
+      return e.email === car.email
+  
+    })
+   
     if (car.email.length > 0 && car.password.length > 0) {
-      setMyCar([...myCar, car]);
+      if (matchh) {
+        alert("same value")
+      }
+      else{
+        setMyCar([...myCar, car]);
+        setCar({
+          email: "",
+          password: "",
+        });
+      }
+  
+    }     
+    else{
+      alert("fill value")
+     }
+  };
+  const deleteHandler = (index) => {
+    let filterData = myCar.filter((e, i) => index !== i);
+    setMyCar(filterData);
+  };
+
+  const updateData = () => {
+    if (index || index === 0) {
+      myCar.splice(index, 1, car);
+      setCar([...myCar]);
       setCar({
         email: "",
         password: "",
       });
-    }else {
-       // } else if (car.email.length > 8) {}
-      alert("please fill in value");
+      setindex(null);
+    } else {
+      alert("fill");
     }
   };
-  const deleteHandler=(index)=>{
-    let filterData = myCar.filter((e,i)=> index !== i)
-    setMyCar(filterData)
-  }
-
-  const updateHandler=(data,index)=>{
-         setCar(data)
-         setindex(index)
-
-    
-  }
+  const updateHandler = (data, index) => {
+    setCar(data);
+    setindex(index);
+  };
 
   return (
     <div>
@@ -63,7 +86,7 @@ export default function Inpute_Rev_2() {
           Submit
         </Button>
 
-        <Button className="W-100 mx-2 ">
+        <Button onClick={updateData} className="W-100 mx-2 ">
           update
         </Button>
       </Form>
@@ -75,10 +98,7 @@ export default function Inpute_Rev_2() {
             <th>Email</th>
 
             <th>Password</th>
-            <th>Action
-
-            </th>
-          
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -94,14 +114,17 @@ export default function Inpute_Rev_2() {
 
                 {e.password.length < 8 ? (
                   <td style={{ color: "red" }}>{e.password}</td>
-                  
                 ) : (
                   <td>{e.password}</td>
-                  )}
-                  <td><button color="red" onClick={()=>deleteHandler(i)}>Delete</button><button color="red" onClick={()=>updateHandler(e,i)}>update</button></td>
-
-                  
-   
+                )}
+                <td>
+                  <button color="red" onClick={() => deleteHandler(i)}>
+                    Delete
+                  </button>
+                  <button color="red" onClick={() => updateHandler(e, i)}>
+                    update
+                  </button>
+                </td>
               </tr>
             );
           })}
