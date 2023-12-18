@@ -17,6 +17,7 @@ import UseStateSty from "./MODULE-REACT-PROPS-STATE/STATE/UseStateSty";
 
 import NavBar from "./MODULE_11/NavBar";
 import DarkVariantExample from "./MODULE_11/Page";
+import Page3 from "./MODULE_11/Page3";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -41,7 +42,7 @@ function App() {
         
         <NavBar/>
         <DarkVariantExample/>
-        
+        <Page3/>
 
       </div>
     </>

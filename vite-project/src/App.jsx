@@ -28,6 +28,8 @@ import Input_Rev_3 from "./7.Input/Input_Rev_3";
 import LocalStor from "./7.Input/LocalStor";
 import Card from "./7.Input/Card";
 import Crad_2 from "./7.Input/Crad_2";
+import UseContext from "./USECONTEXT/UseContext";
+import UseRedeucerCom from "./03.Hook/UseRedeucerCom";
 
 // import Cc_class from "./04.props/Cc_class";
 // import Final from "./2.component/project/final";
@@ -44,7 +46,7 @@ export default function main(){
             {/* <UseStateClass /> */}
             {/* <UseStateClass/> */}
             {/* <UseclassPro/> */}
-            {/* <FunProps Name={"saifu"} color={"green"}/> */}
+            {/* <FunPro psName={"saifu"} color={"green"}/> */}
             {/* <FunProps/> */}
             {/* <ClassProps data={{name:"saifu",greeting:"good morning"}}/> */}
             {/* <PropPro1/> */}
@@ -66,7 +68,9 @@ export default function main(){
             {/* <Input_Rev_3/> */}
             {/* <LocalStor/> */}
             {/* <Card/> */}
-            <Crad_2/>
+            {/* <Crad_2/> */}
+            {/* <UseContext/> */}
+            <UseRedeucerCom/>
             
             
             

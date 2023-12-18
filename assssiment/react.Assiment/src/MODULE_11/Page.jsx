@@ -1,21 +1,27 @@
 import Carousel from 'react-bootstrap/Carousel';
-import IMg1 from '../assets/one.avif'
-import IMg2 from '../assets/two.avif'
+import IMg1 from '../assets/banner3.jpg'
+import IMg2 from '../assets/banner4.jpg'
 import IMg3 from '../assets/three.avif'
+import { Button } from 'react-bootstrap';
 
 function DarkVariantExample() {
   return (
-    <Carousel data-bs-theme="dark" >
+    <div>
+
+    <Carousel data-bs-theme="dark" className='saif' >
       <Carousel.Item>
         <img
           className="d-block w-100  "
           src={IMg1}
           alt="First slide"
           style={{height:"700px"}}
-        />
-        <Carousel.Caption style={{color:"white"}}>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          />
+        <Carousel.Caption className='text'>
+        <p>The Idea That Make Customers Go Wow</p>
+          <h1>
+            Sharing Your Company With The Wold 
+          </h1>
+          <Button>Read More</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -24,10 +30,13 @@ function DarkVariantExample() {
           src={IMg2}
           alt="Second slide"
           style={{height:"700px"}}
-        />
-        <Carousel.Caption style={{color:"white"}}>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          />
+        <Carousel.Caption className='text'>
+        <p>Providing Brillint ideas For Your Business</p>
+          <h1>
+            Your Ideas Relized For The Real World
+          </h1>
+          <Button>Read More</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -36,15 +45,22 @@ function DarkVariantExample() {
           src={IMg3}
           alt="Third slide"
           style={{height:"700px"}}
-        />
-        <Carousel.Caption style={{color:"white"}}>
-          <h5 >Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          />
+        <Carousel.Caption className=' text '>
+        <p>Providing Brillint ideas For Your Business</p>
+          <h1>
+            Your Ideas Relized For The Real World
+          </h1>
+          <Button>Read More</Button>
+          
         </Carousel.Caption>
+        
       </Carousel.Item>
+     
+
     </Carousel>
+    
+          </div>
   );
 }
 
