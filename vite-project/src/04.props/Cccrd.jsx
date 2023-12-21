@@ -1,51 +1,39 @@
-
-import React from 'react'
-import { Button, Card, CardBody, CardSubtitle, CardText, CardTitle } from 'react-bootstrap'
-
+import React from "react";
+import {
+  Button,
+  Card,
+  CardBody,
+  CardSubtitle,
+  CardText,
+  CardTitle,
+} from "react-bootstrap";
 
 export default function Cccrd(props) {
   return (
-    
     <Card
-  style={{
-    width: '18rem'
-  }}
->
-  <img
-    alt="Sample"
-    src="https://picsum.photos/300/200"
-  />
-  <CardBody>
-    <CardTitle tag="h5">
-      {props?.data?.title || "unablable"}
-    </CardTitle>
-    <CardSubtitle
-      className="mb-2 text-muted"
-      tag="h6"
+      style={{
+        width: "18rem",
+      }}
     >
-      {props?.data?.price} Rs
-    </CardSubtitle>
+      <img alt="Sample" src="https://picsum.photos/300/200" />
+      <CardBody>
+        <CardTitle tag="h5">{props?.data?.title || "unablable"}</CardTitle>
+        <CardSubtitle className="mb-2 text-muted" tag="h6">
+          {props?.data?.price} Rs
+        </CardSubtitle>
 
-    <CardSubtitle
-      className="mb-2 text-muted"
-      tag="h6"
-    >
-     <p> AfterDiscount={props?.price-props?.after} Rs</p>
-     <p>discount={props?.data?.discountPercentage}</p>
-    </CardSubtitle>
-    <CardText>
-    {props?.data?.description}
-    </CardText>
-    <Button  className="danger w-100">
-      Button
-    </Button>
-  </CardBody>
-</Card>
-  )
+        <CardSubtitle className="mb-2 text-muted" tag="h6">
+          <p> AfterDiscount={props?.price - props?.after} Rs</p>
+          <p>discount={props?.data?.discountPercentage}</p>
+        </CardSubtitle>
+        <CardText>{props?.data?.description}</CardText>
+        <Button className="danger w-100">Button</Button>
+      </CardBody>
+    </Card>
+  );
 }
 
 //without object
-
 
 /*
  export default function Cccrd(props) {

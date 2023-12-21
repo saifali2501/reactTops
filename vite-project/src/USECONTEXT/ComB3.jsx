@@ -3,6 +3,7 @@ import { NameContaxt } from "./UseContext";
 
 export default function ComB3({ name3 }) {
   const data = useContext(NameContaxt);
+  
   console.log("  data:", data);
   return (
     <div>

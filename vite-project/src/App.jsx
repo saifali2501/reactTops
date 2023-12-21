@@ -30,6 +30,9 @@ import Card from "./7.Input/Card";
 import Crad_2 from "./7.Input/Crad_2";
 import UseContext from "./USECONTEXT/UseContext";
 import UseRedeucerCom from "./03.Hook/UseRedeucerCom";
+import UseReduserWithPayload from "./03.Hook/UseReduserWithPayload";
+import ReduserPayload from "./03.Hook/ReduserPayload";
+import Router from "./Routerss/Router";
 
 // import Cc_class from "./04.props/Cc_class";
 // import Final from "./2.component/project/final";
@@ -70,7 +73,10 @@ export default function main(){
             {/* <Card/> */}
             {/* <Crad_2/> */}
             {/* <UseContext/> */}
-            <UseRedeucerCom/>
+            {/* <UseRedeucerCom/> */}
+            {/* <UseReduserWithPayload/> */}
+            {/* <ReduserPayload/> */}
+            <Router/>
             
             
             

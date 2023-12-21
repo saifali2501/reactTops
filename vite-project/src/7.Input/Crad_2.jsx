@@ -7,8 +7,8 @@ export default function Crad_2() {
     email: "",
     password: "",
   });
-  let [myName, setMyname] = useState([]); 
-  let [index,setIndex] = useState(null)
+  let [myName, setMyname] = useState([]);
+  let [index, setIndex] = useState(null);
   const changeHandler = (e) => {
     if (name.email.length > 0 && name.password.length > 0) {
       setMyname([...myName, name]);
@@ -23,25 +23,23 @@ export default function Crad_2() {
   const deleteHandler = (index) => {
     setMyname(myName.filter((e, i) => index !== i));
   };
-  const updateData=()=>{
-    if(index || index === 0){
-
-        myName.splice(index,1,name)
-        setName([...myName])
-        setName({
-            email:"",
-            password:""
-        })
-        setIndex(null)
-    }else{
-        alert("please select")
+  const updateData = () => {
+    if (index || index === 0) {
+      myName.splice(index, 1, name);
+      setName([...myName]);
+      setName({
+        email: "",
+        password: "",
+      });
+      setIndex(null);
+    } else {
+      alert("please select");
     }
-    
-  }
-  const updateHandler =(data,index) =>{
-    setName(data)
-    setIndex(index)
-  }
+  };
+  const updateHandler = (data, index) => {
+    setName(data);
+    setIndex(index);
+  };
   return (
     <div>
       <Form>
