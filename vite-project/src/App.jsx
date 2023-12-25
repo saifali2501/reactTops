@@ -33,6 +33,8 @@ import UseRedeucerCom from "./03.Hook/UseRedeucerCom";
 import UseReduserWithPayload from "./03.Hook/UseReduserWithPayload";
 import ReduserPayload from "./03.Hook/ReduserPayload";
 import Router from "./Routerss/Router";
+import MainRoute from "./Routerss/Task/MainRoute";
+import AppPro from "./ProtectedRoute/AppPro";
 
 // import Cc_class from "./04.props/Cc_class";
 // import Final from "./2.component/project/final";
@@ -76,7 +78,9 @@ export default function main(){
             {/* <UseRedeucerCom/> */}
             {/* <UseReduserWithPayload/> */}
             {/* <ReduserPayload/> */}
-            <Router/>
+            {/* <Router/> */}
+            {/* <MainRoute/> */}
+            <AppPro/>
             
             
             
