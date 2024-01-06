@@ -4,7 +4,7 @@ import { Button, Form, FormGroup, Input, Label, Table } from "reactstrap";
 export default function Inpute_Rev_2() {
   let [car, setCar] = useState({
     email: "",
-    password: "",
+    password: ""
   });
   let [index, setindex] = useState(null);
   let [myCar, setMyCar] = useState([]);

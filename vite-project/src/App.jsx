@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import UseStateFun from "./03.Hook/UseStateFun";
 import UseStatePro from "./03.Hook/UseStatePro";
@@ -36,55 +35,61 @@ import Router from "./Routerss/Router";
 import MainRoute from "./Routerss/Task/MainRoute";
 import AppPro from "./ProtectedRoute/AppPro";
 
+import APiTask from "./APi/APiTask";
+import UseSatePr from "./03.Hook/UseSatePr";
+import TodoTask from "./Task/TodoTask";
+import RouterPr from "./Protected-2/RouterPro";
+import RouterPro from "./Protected-2/RouterPro";
+
 // import Cc_class from "./04.props/Cc_class";
 // import Final from "./2.component/project/final";
 
+export default function main() {
+  return (
+    <div>
+      {/* <Final/> */}
+      {/* <UseStateFun/> */}
+      {/* <UseStatePro/> */}
+      {/* <UseStatePro2/> */}
+      {/* <UseStateClass /> */}
+      {/* <UseStateClass/> */}
+      {/* <UseclassPro/> */}
+      {/* <FunPro psName={"saifu"} color={"green"}/> */}
+      {/* <FunProps/> */}
+      {/* <ClassProps data={{name:"saifu",greeting:"good morning"}}/> */}
+      {/* <PropPro1/> */}
+      {/* <Cc_class/> */}
+      {/* <PropChangingValue/> */}
+      {/* <ChangeValue  name={"saif"}/> */}
+      {/* <LifecycleMethod/> */}
+      {/* <ClassPrp/> */}
+      {/* <Fun/> */}
+      {/* <Fect/> */}
+      {/* <Input_fun/> */}
+      {/* <MultipaleInput/> */}
+      {/* <MyForm/> */}
+      {/* <InputeSingle/> */}
+      {/* <InputRev/> */}
+      {/* <Don/> */}
+      {/* <MultiInpute/> */}
+      {/* <Inpute_Rev_2/> */}
+      {/* <Input_Rev_3/> */}
+      {/* <LocalStor/> */}
+      {/* <Card/> */}
+      {/* <Crad_2/> */}
+      {/* <UseContext/> */}
+      {/* <UseRedeucerCom/> */}
+      {/* <UseReduserWithPayload/> */}
+      {/* <ReduserPayload/> */}
+      {/* <Router/> */}
+      {/* <MainRoute/> */}
+      {/* <AppPro/> */}
 
+      {/* <APiTask/> */}
+      {/* <UseSatePr />             */}
 
-export default function main(){
-    return(
-        <div>
-            {/* <Final/> */}
-            {/* <UseStateFun/> */}
-            {/* <UseStatePro/> */}
-            {/* <UseStatePro2/> */}
-            {/* <UseStateClass /> */}
-            {/* <UseStateClass/> */}
-            {/* <UseclassPro/> */}
-            {/* <FunPro psName={"saifu"} color={"green"}/> */}
-            {/* <FunProps/> */}
-            {/* <ClassProps data={{name:"saifu",greeting:"good morning"}}/> */}
-            {/* <PropPro1/> */}
-            {/* <Cc_class/> */}
-            {/* <PropChangingValue/> */}
-            {/* <ChangeValue  name={"saif"}/> */}
-            {/* <LifecycleMethod/> */}
-            {/* <ClassPrp/> */}
-            {/* <Fun/> */}
-            {/* <Fect/> */}
-            {/* <Input_fun/> */}
-            {/* <MultipaleInput/> */}
-            {/* <MyForm/> */}
-            {/* <InputeSingle/> */}
-            {/* <InputRev/> */}
-            {/* <Don/> */}
-            {/* <MultiInpute/> */}
-            {/* <Inpute_Rev_2/> */}
-            {/* <Input_Rev_3/> */}
-            {/* <LocalStor/> */}
-            {/* <Card/> */}
-            {/* <Crad_2/> */}
-            {/* <UseContext/> */}
-            {/* <UseRedeucerCom/> */}
-            {/* <UseReduserWithPayload/> */}
-            {/* <ReduserPayload/> */}
-            {/* <Router/> */}
-            {/* <MainRoute/> */}
-            <AppPro/>
-            
-            
-            
-
-        </div>
-    )
+      <TodoTask/>
+      {/* <RouterPro/> */}
+    </div>
+  );
 }

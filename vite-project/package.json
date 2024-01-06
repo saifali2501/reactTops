@@ -16,6 +16,7 @@
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.0",
+    "react-select": "^5.8.0",
     "reactstrap": "^9.2.0"
   },
   "devDependencies": {

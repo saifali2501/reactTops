@@ -5,6 +5,8 @@ import Error404 from "../ui/pages/Error404";
 
 
 import HeaderRS from "../ui/component/HeaderRS";
+import User from "../ui/pages/User";
+
 
 
 
@@ -24,6 +26,7 @@ export default function ProtectedRouter() {
         >
           <Routes>
             <Route path="/" element={<Home />} />
+        <Route path="/user" element={<User/>}/>
            
           </Routes>
         </div>
