@@ -1,11 +1,13 @@
-import { Plus } from "lucide-react";
+import { CheckCircle, Circle, Plus, Trash } from "lucide-react";
 import React, { useState } from "react";
 import { Button, Input, Table } from "reactstrap";
-
+// import { MDBIcon } from "mdb-react-ui-kit";
 export default function Todo() {
   let [task, setTask] = useState("");
 
   let [mytask, setMytask] = useState([]);
+
+  let [dontask, setDontask] = useState([]);
 
   const addTask = (e) => {
     setTask(e.target.value);
@@ -20,9 +22,12 @@ export default function Todo() {
     }
   };
 
-  const handleCheckboxChange = (index) => {
-    let filterData = mytask.filter((e, i) => index !== i);
-    setMytask(filterData);
+  const DonTaskHandeler = (index) => {
+    console.log("=================",mytask[index]);
+    // mytask[index]  
+    setDontask([...dontask,mytask[index]])
+
+    let newData = mytask.filter((e))
   };
 
   const EditHandler = (data, index) => {
@@ -63,57 +68,101 @@ export default function Todo() {
         className="rounded-0"
       >
         <input
-        className="rounded-0"
+          className="rounded-0"
           style={{
             width: "80%",
             height: "90%",
             backgroundColor: "transparent",
             border: "none",
-            
+
             outline: "none",
             padding: "8px",
             fontSize: "20px",
             lineHeight: "100%",
-            border:"2px solid transparent",
-            
-             
+            border: "2px solid transparent",
           }}
           placeholder="Enter the name"
           onChange={(e) => addTask(e)}
           value={task}
         />
         {/* <Button className="rounded-0" >Click</Button> */}
-        <Plus style={{marginLeft:"32px" ,marginTop:"0",height:"50px", backgroundColor:"blue"}} onClick={Handler} size={48} strokeWidth={3} />
+        <Plus
+          style={{
+            marginLeft: "32px",
+            marginTop: "0",
+            height: "50px",
+            backgroundColor: "blue",
+          }}
+          onClick={Handler}
+          size={48}
+          strokeWidth={3}
+        />
       </div>
       {/* </div> */}
-      <div className="p-4">
-        <Table className="w-50 m-auto border p-5">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Name</th>
-              <th>action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {mytask.map((e, i) => (
-              <tr key={i}>
-                <th scope="row">{i + 1}</th>
-                <td>{e}</td>
-                <td>
-                  <Input
-                    checked={task}
-                    type="checkbox"
-                    onClick={() => handleCheckboxChange(i)}
-                  />{" "}
-                </td>
-                <td>
-                  <Button onClick={() => EditHandler(e, i)}>Edit</Button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </Table>
+      <div className="d-flex gap-3">
+        <div
+          style={{ backgroundColor: "darkcyan", width: "55%" }}
+          className="m-auto mt-5 rounded-3 p-2 text-white p-3 "
+        >
+          <h5 className="text-center">To do list</h5>
+
+          {mytask.map((e, i) => {
+            return (
+              <div
+                style={{
+                  justifyContent: "space-between",
+                  display: "flex",
+                  borderBottom: "2px solid white",
+                  marginBottom: "20px",
+                  height: "35px",
+                }}
+                key={i}
+              >
+                <p>
+                  {i + 1}. {e}
+                </p>
+
+                <p role="button" onClick={() => EditHandler(i)}>
+                  <CheckCircle
+                    role="button"
+                    onClick={() => DonTaskHandeler(i)}
+                  />
+                </p>
+              </div>
+            );
+          })}
+        </div>
+        <div
+          style={{ backgroundColor: "darkcyan", width: "55%" }}
+          className="m-auto mt-5 rounded-3 p-2 text-white p-3 "
+        >
+          <h5 className="text-center">Don task</h5>
+
+          {dontask.map((e, i) => {
+            return (
+              <div
+                style={{
+                  justifyContent: "space-between",
+                  display: "flex",
+                  borderBottom: "2px solid white",
+                  marginBottom: "20px",
+                  height: "35px",
+                }}
+                key={i}
+              >
+                <p>
+                  {i + 1}. {e}
+                </p>
+
+                {/* <p role="button" onClick={() => EditHandler(i)}>
+                <i class="fas fa-circle-plus"></i>
+                <i class="bi bi-0-square"></i>
+                
+              </p> */}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   );
