@@ -7,7 +7,11 @@ export default function Todo() {
 
   let [mytask, setMytask] = useState([]);
 
-  let [dontask, setDontask] = useState([]);
+  let [dontask, setDontask] = useState(null);
+
+  let [color,setMycolor] = useState("black")
+
+  let [selectIndex,setselectIndex] = useState([1,2,3])
 
   const addTask = (e) => {
     setTask(e.target.value);
@@ -17,46 +21,54 @@ export default function Todo() {
     if (task.length > 0) {
       setMytask([...mytask, task]);
       setTask("");
+      setMycolor("black")
     } else {
       alert("please fill data");
     }
   };
-
+console.log(dontask);
   const DonTaskHandeler = (index) => {
-    console.log("=================",mytask[index]);
-    // mytask[index]  
-    setDontask([...dontask,mytask[index]])
+    console.log("=================", mytask[index]);
 
-    let newData = mytask.filter((e))
+    let done = confirm("your data go donetask");
+    if (done) {
+      // mytask[index]
+      setDontask([...dontask, mytask[index]]);
+
+      let newData = mytask.filter((e, i) => i !== index);
+      setMytask(newData);
+    } else {
+      alert("your data not go done task");
+    }
   };
 
-  const EditHandler = (data, index) => {
-    setTask(data);
+  const transferHandeler = (index) => {
+    let panding = confirm("your data go panding task");
+    if (panding) {
+      // mytask[index]
+      setMytask([...mytask, dontask[index]]);
+
+      let newData = mytask.filter((e, i) => i !== index);
+      setDontask(newData);
+    } else {
+      alert("your data go panding task");
+    }
   };
+
+  const DeleteHandler = (index) => {
+    setDontask(dontask.filter((e, i) => i !== index));
+  };
+
+  const TrancferData = () => {
+    setDontask(mytask)
+    setMytask([])
+    setMycolor("green")
+    // setMycolor("black")
+  };
+  
   return (
     <>
-      <div
-        style={{
-          width: "400px",
-          height: "50px",
-          backgroundColor: "green",
-          margin: "auto",
-          marginTop: "10px",
-        }}
-        className="rounded-4"
-      >
-        <input
-          type="text"
-          style={{
-            width: "80%",
-            height: "100%",
-            backgroundColor: "transparent",
-          }}
-        />
-        <Button>add</Button>
-      </div>
-
-      {/* <div className="  mt-5 " style={{ margin: "40%" }}> */}
+    
       <div
         style={{
           width: "400px",
@@ -85,7 +97,6 @@ export default function Todo() {
           onChange={(e) => addTask(e)}
           value={task}
         />
-        {/* <Button className="rounded-0" >Click</Button> */}
         <Plus
           style={{
             marginLeft: "32px",
@@ -98,10 +109,10 @@ export default function Todo() {
           strokeWidth={3}
         />
       </div>
-      {/* </div> */}
+      
       <div className="d-flex gap-3">
         <div
-          style={{ backgroundColor: "darkcyan", width: "55%" }}
+          style={{ backgroundColor: color, width: "55%" }}
           className="m-auto mt-5 rounded-3 p-2 text-white p-3 "
         >
           <h5 className="text-center">To do list</h5>
@@ -122,23 +133,26 @@ export default function Todo() {
                   {i + 1}. {e}
                 </p>
 
-                <p role="button" onClick={() => EditHandler(i)}>
+                <p role="button" className="d-flex align-items-center gap-3">
                   <CheckCircle
                     role="button"
                     onClick={() => DonTaskHandeler(i)}
                   />
+                  <input className="h-75 w-100" type="checkbox" checked={selectIndex.includes(i)}/>
                 </p>
               </div>
             );
           })}
+          <Button onClick={TrancferData}>click</Button>
         </div>
+
         <div
-          style={{ backgroundColor: "darkcyan", width: "55%" }}
+          style={{ backgroundColor: "black", width: "55%" }}
           className="m-auto mt-5 rounded-3 p-2 text-white p-3 "
         >
-          <h5 className="text-center">Don task</h5>
+          <h5 className="text-center">Done task</h5>
 
-          {dontask.map((e, i) => {
+          {dontask?.map((e, i) => {
             return (
               <div
                 style={{
@@ -154,11 +168,15 @@ export default function Todo() {
                   {i + 1}. {e}
                 </p>
 
-                {/* <p role="button" onClick={() => EditHandler(i)}>
-                <i class="fas fa-circle-plus"></i>
-                <i class="bi bi-0-square"></i>
-                
-              </p> */}
+                <p role="button" className="d-flex gap-4">
+                  <CheckCircle
+                    role="button"
+                    className="bg-danger"
+                    
+                    onClick={() => transferHandeler()}
+                  />
+                  <Trash role="button" onClick={() => DeleteHandler(i)} />
+                </p>
               </div>
             );
           })}
