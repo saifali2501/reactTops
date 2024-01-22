@@ -5,7 +5,7 @@ import { Button, Input } from "reactstrap";
 export default function Todo() {
   const [task, setTask] = useState("");
   const [mytask, setMytask] = useState([]);
-  const [dontask, setDontask] = useState([]);
+  const [doneTask, setDoneTask] = useState([]);
   const [selectmytask, setselectmytask] = useState([]);
   const [selectdontask, setselectdontsk] = useState([]);
 
@@ -26,9 +26,9 @@ export default function Todo() {
   const moveTaskToDone = (index) => {
     let done = confirm("Move this task to Done?");
     if (done) {
-      setDontask([...dontask, mytask[index]]);
+      setDoneTask([...doneTask, mytask[index]]);
       let newData = mytask.filter((i) => i !== index);
-      localStorage.setItem("dontask",JSON.stringify([...dontask, mytask[index]]))
+      localStorage.setItem("doneTask",JSON.stringify([...doneTask, mytask[index]]))
 
       setMytask(newData);
     } else {
@@ -39,16 +39,16 @@ export default function Todo() {
   const moveTaskToPending = (index) => {
     let pending = window.confirm("Move this task to Pending?");
     if (pending) {
-      setMytask([...mytask, dontask[index]]);
-      let newData = dontask.filter((_, i) => i !== index);
-      setDontask(newData);
+      setMytask([...mytask, doneTask[index]]);
+      let newData = doneTask.filter((_, i) => i !== index);
+      setDoneTask(newData);
     } else {
       alert("Task not moved to Pending");
     }
   };
 
   const deleteTask = (index) => {
-    setDontask(dontask.filter((_, i) => i !== index));
+    setDoneTask(doneTask.filter((_, i) => i !== index));
   };
 
   const transferSelectedTasks = () => {
@@ -72,7 +72,7 @@ export default function Todo() {
         });
 
         setMytask(notDone);
-        setDontask([...dontask, ...done]);
+        setDoneTask([...doneTask, ...done]);
         setselectmytask([]);
       } else {
         alert("Tasks transfer canceled.");
@@ -84,7 +84,7 @@ export default function Todo() {
   //search input
   useEffect(() => {
     setMytask(JSON.parse(localStorage.getItem("mytask") || "[]"));
-    setDontask(JSON.parse(localStorage.getItem("donetask") || "[]"));
+    setDoneTask(JSON.parse(localStorage.getItem("donetask") || "[]"));
   },[]);
   const handleSelect = (index) => {
     let isSelected = selectmytask.includes(index);
@@ -113,8 +113,8 @@ export default function Todo() {
     }
   };
   const handleCheckboxDone = () => {
-    if (selectdontask.length !== dontask.length) {
-      setselectdontsk(dontask.map((e, index) => index));
+    if (selectdontask.length !== doneTask.length) {
+      setselectdontsk(doneTask.map((e, index) => index));
     } else {
       setselectdontsk([]);
     }
@@ -132,7 +132,7 @@ export default function Todo() {
           let notDone = [];
           let done = [];
           
-          dontask.map((e, i) => {
+          doneTask.map((e, i) => {
             if (selectdontask?.includes(i)) {
               done.push(e);
             } else {
@@ -140,7 +140,7 @@ export default function Todo() {
             }
           });
           
-          setDontask(notDone);
+          setDoneTask(notDone);
           setMytask([...mytask, ...done]);
           setselectdontsk([]);
         } else {
@@ -261,12 +261,12 @@ export default function Todo() {
           style={{ backgroundColor: "black", width: "55%" }}
           className="m-auto mt-5 rounded-3 p-2 text-white p-3 "
         >
-          {dontask.length > 0 && (
+          {doneTask.length > 0 && (
             <input type="checkbox" onChange={handleCheckboxDone} />
           )}
           <h5 className="text-center">Done task</h5>
 
-          {dontask?.map((e, i) => (
+          {doneTask?.map((e, i) => (
             <div
               style={{
                 justifyContent: "space-between",

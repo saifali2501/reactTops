@@ -89,7 +89,7 @@
 import React, { useState } from "react";
 import { Button, Input, Table } from "reactstrap";
 
-export default function TodoTask() {
+export default function TodoList() {
   let [task, setTask] = useState("");
 
   let [mytask, setMytask] = useState([]);

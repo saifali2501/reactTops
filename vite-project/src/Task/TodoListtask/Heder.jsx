@@ -8,29 +8,35 @@ import {
   Button,
 } from "reactstrap";
 import TodoTask from "./TodoTask";
+import Loging from "./Loging";
 
-function Header(args) {
-  const [loginModal, setLoginModal] = useState(false);
+function Header() {
+  // const [loginModal, setLoginModal] = useState(false);
 
-  const loginToggle = () => setLoginModal(!loginModal);
+  // const loginToggle = () => setLoginModal(!loginModal);
 
   return (
     <div>
-      <TodoTask modal={loginModal} toggle={loginToggle}/>
-      <Navbar style={{ width: "100%" }} {...args}>
+      <div>
+
+      <Loging/>
+      {/* <TodoTask modal={loginModal} toggle={loginToggle}/> */}
+      <Navbar style={{ width: "100%" }}>
         <Nav className="w-100 justify-content-between d-flex align-items-center">
           <NavItem>
             <NavbarBrand href="/">reactstrap</NavbarBrand>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/panding">Panding</NavLink>
-            <NavLink to="/done">Done</NavLink>
+            {/* <NavLink to="/">Home</NavLink> */}
+            {/* <NavLink to="/panding">Panding</NavLink>
+            <NavLink to="/done">Done</NavLink> */}
+            <NavLink to="/todo">TodoList</NavLink>
 
           </NavItem>
-          <Button onClick={loginToggle} className="me-5" color="danger">
+          {/* <Button onClick={loginToggle}  className="me-5" color="danger">
             Login
-          </Button>
+          </Button> */}
         </Nav>
       </Navbar>
+          </div>
     </div>
   );
 }
