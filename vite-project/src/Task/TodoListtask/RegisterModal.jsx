@@ -1,18 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { Form } from "reactstrap";
+import Select from "react-select";
 import {
   Button,
-  Modal,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
-  Form,
   FormGroup,
-  Label,
   Input,
+  Label,
+  Modal,
+  ModalBody,
+  ModalHeader,
 } from "reactstrap";
-import Select from "react-select";
 import { NavLink } from "react-router-dom";
-// import { toast } from 'react-toastify';  // Assuming you're using toast notifications
 
 const userTypeOptions = [
   { value: "user", label: "User" },
@@ -22,8 +20,7 @@ const userTypeOptions = [
 
 const genderOptions = ["Male", "Female", "Kid"];
 const hobbyOptions = ["Sports", "Reading", "Singing", "Traveling"];
-
-function Register(args) {
+export default function RegisterModal({ modal, toggle }) {
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -34,15 +31,13 @@ function Register(args) {
 
   const [local, setLocal] = useState([]);
 
-  
-
-  const getData = (e) => {
+  const addtask = (e) => {
     e?.preventDefault();
 
     const isEmailDuplicate = local?.some((e) => e.email === user.email);
     const isAdminType = local?.some((e) => e.userType === "admin");
 
-    if (isEmailDuplicate || user.email === "" && isAdminType) {
+    if (isEmailDuplicate || (user.email === "" && isAdminType)) {
       alert("Data match or invalid");
     } else if (
       user.email === "" ||
@@ -55,9 +50,9 @@ function Register(args) {
     } else {
       alert("Data submitted successfully");
       toggle();
-      setLocal([...local,user])
-      
-      localStorage.setItem("addd",JSON.stringify([...local,user]))
+      setLocal([...local, user]);
+
+      localStorage.setItem("addd", JSON.stringify([...local, user]));
       setUser({
         email: "",
         password: "",
@@ -78,31 +73,21 @@ function Register(args) {
     }
   };
 
-  const toggle = () => {
-    setModal(!modal);
-    if (!modal) {
-      setUser({
-        email: "",
-        password: "",
-        gender: "",
-        hobby: [],
-        userType: "",
-      });
-    }
-  };
+  const handleToggle = () => {
+    toggle(); // Close the modal
 
-  const [modal, setModal] = useState(false);
+    // Reset the user state to initial values
+    // setUser(initializeData);
+  };
 
   return (
     <div>
-      <NavLink to={"/user"}>Local</NavLink>
-      <Button color="danger" onClick={toggle}>
-        Click Me
-      </Button>
-      <Modal isOpen={modal} {...args}>
-        <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+      {/* <NavLink to={"/user"}>Local</NavLink> */}
+
+      <Modal isOpen={modal}>
+        <ModalHeader toggle={handleToggle}>Registration title</ModalHeader>
         <ModalBody>
-          <Form>
+          <Form onSubmit={addtask} autoComplete="off">
             <FormGroup>
               <Label for="exampleEmail">Email</Label>
               <Input
@@ -110,7 +95,7 @@ function Register(args) {
                 id="exampleEmail"
                 name="email"
                 placeholder="Enter email"
-                type="email"
+                // type="email"
                 onChange={(e) => setUser({ ...user, email: e.target.value })}
               />
             </FormGroup>
@@ -156,20 +141,23 @@ function Register(args) {
             <FormGroup className="mt-3">
               <Label>UserType</Label>
               <Select
-                onChange={(selectedOption) => setUser({ ...user, userType: selectedOption.value })}
+                onChange={(selectedOption) =>
+                  setUser({ ...user, userType: selectedOption.value })
+                }
                 options={userTypeOptions}
-                value={userTypeOptions.find((option) => option.value === user.userType) || userTypeOptions[0]}
+                value={
+                  userTypeOptions.find(
+                    (option) => option.value === user.userType
+                  ) || userTypeOptions[0]
+                }
               />
             </FormGroup>
             <div>
-              <Button onClick={getData}>Submit</Button>
+              <Button>Submit</Button>
             </div>
           </Form>
         </ModalBody>
-        <ModalFooter></ModalFooter>
       </Modal>
     </div>
   );
 }
-
-export default Register;

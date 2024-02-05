@@ -6,37 +6,56 @@ import {
   Nav,
   NavItem,
   Button,
+  NavbarToggler,
+  Collapse,
 } from "reactstrap";
-import TodoTask from "./TodoTask";
 import Loging from "./Loging";
+import RegisterModal from "./RegisterModal";
 
 function Header() {
-  // const [loginModal, setLoginModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [loginModal, setLoginModal] = useState(false);
+  const [registerModal, setRegisteModal] = useState(false);
 
-  // const loginToggle = () => setLoginModal(!loginModal);
+  const toggle = () => setIsOpen(!isOpen);
+
+  const toggleLoginModal = () => setLoginModal(!loginModal);
+
+  const toggleRegisterModal = () => setRegisteModal(!registerModal)
 
   return (
     <div>
-      <div>
-
-      <Loging/>
-      {/* <TodoTask modal={loginModal} toggle={loginToggle}/> */}
-      <Navbar style={{ width: "100%" }}>
-        <Nav className="w-100 justify-content-between d-flex align-items-center">
-          <NavItem>
-            <NavbarBrand href="/">reactstrap</NavbarBrand>
-            {/* <NavLink to="/">Home</NavLink> */}
-            {/* <NavLink to="/panding">Panding</NavLink>
-            <NavLink to="/done">Done</NavLink> */}
-            <NavLink to="/todo">TodoList</NavLink>
-
-          </NavItem>
-          {/* <Button onClick={loginToggle}  className="me-5" color="danger">
-            Login
-          </Button> */}
-        </Nav>
+      <Loging modal={loginModal} toggle={toggleLoginModal} />
+      <RegisterModal modal={registerModal} toggle={toggleRegisterModal} />
+      <Navbar expand="md" style={{ width: "100vw" }}>
+        <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav
+            className=" w-100 justify-content-between d-flex gap-5 align-items-center"
+            navbar
+          >
+            <NavItem className="me-4 d-flex gap-3">
+              <NavLink to="/">Home</NavLink>
+              <NavLink to="/todo">TodoList</NavLink>
+              <NavLink to="/user">UserData</NavLink>
+              <NavLink to="/loging">LoginData</NavLink>
+            </NavItem>
+            <div>
+              <Button
+                onClick={toggleRegisterModal}
+                className="me-5"
+                color="danger"
+                >
+                Register
+              </Button>
+              <Button color="danger" onClick={toggleLoginModal} className="me-5">
+                Login
+              </Button>
+            </div>
+                </Nav>
+        </Collapse>
       </Navbar>
-          </div>
     </div>
   );
 }

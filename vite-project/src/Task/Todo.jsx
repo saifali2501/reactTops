@@ -8,10 +8,24 @@ export default function Todo() {
   const [doneTask, setDoneTask] = useState([]);
   const [selectmytask, setselectmytask] = useState([]);
   const [selectdontask, setselectdontsk] = useState([]);
+  const [search,setSearch] = useState("");
 
   const addTask = (e) => {
     setTask(e.target.value);
   };
+  
+  useEffect(() => {
+    let data = JSON.parse(localStorage.getItem("mytask") || "[]");
+    console.log("-----------  data----------->", data);
+    let filterData = data.filter((e) =>
+      e.toLowerCase().includes(search.toLowerCase())
+    );
+    setMytask(filterData);
+    setDoneTask(JSON.parse(localStorage.getItem("donetask") || "[]"));
+  }, [search]);
+
+  useEffect(() => {}, [search]);
+
 
   const handleAddTask = () => {
     if (task.length > 0) {
@@ -225,6 +239,8 @@ export default function Todo() {
                 lineHeight: "100%",
                 border: "2px solid blue",
               }}
+              value={search}
+              onChange={(e)=>  setSearch(e?.target?.value)}
             />
           </div>
           {mytask.map((e, i) => (

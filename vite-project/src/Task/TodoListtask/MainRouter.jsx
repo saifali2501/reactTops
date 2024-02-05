@@ -6,14 +6,17 @@ import Heder from "./Heder";
 import Panding from "./Panding";
 import Done from "./Done";
 import TodoTask from "./TodoTask";
+import Home from "./Home";
+import RegisterModal from "./RegisterModal";
+import LogingData from "./LogingData";
+import UserData from "./UserData";
 
 export default function MainRouter() {
   return (
     <>
       <BrowserRouter>
-        {/* <Header /> */}
-        {/* <Heder expand="lg" /> */}
-        <Heder />
+     
+        <Heder expand="lg"/>
         <div
           style={{
             width: "100vw",
@@ -23,9 +26,10 @@ export default function MainRouter() {
           className="d-flex justify-content-center align-items-center "
         >
           <Routes>
-            {/* <Route path="/" element={<Home />} /> */}
-            {/* <Route path="/panding" element={<Panding />} /> */}
-            {/* <Route path="/done" element={<Done />} /> */}
+            <Route path="/" element={<Home />} />
+         <Route path="/user" element={<UserData/>}/>
+         <Route path="/loging" element={<LogingData/>}/>
+
             <Route path="/todo" element={<TodoTask />} />
 
           </Routes>

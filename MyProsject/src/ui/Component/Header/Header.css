@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  /* gap: 10px; */
+  color: black;
+  background-color:whitesmoke;
+}
+.header .logo {
+  flex: 0.5;
+}
+.header .navbar {
+  flex: 3;
+}
+.header .navbar ul {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  color: black;
+  font-size: 21px;
+  font-family: Metropolis !important;
+}
+.header .bttn{
+  flex: 1;
+  margin-top: 18px;
+}
+.bttn {
+  position: relative;
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for the search input */
+.inpt {
+  padding: 10px;
+  width: 300px;
+  border: unset !important;
+  border-radius: 40px;
+  padding-left: 50px; /* Space for the icon */
+}
+
+/* Style for the search icon */
+.icon {
+  position: absolute;
+  top: 51%;
+  right: 354px;
+  transform: translateY(-45%);
+  cursor: pointer;
+}
+
+.inpt:focus {
+  outline: none;
+}
+input::placeholder{
+  font-weight: bold;
+  color: black;
+}
+.active{
+  font-weight: bold;
+}

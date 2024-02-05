@@ -43,6 +43,9 @@ import RouterPro from "./Protected-2/RouterPro";
 import Todo from "./Task/Todo";
 import MainRouter from "./Task/TodoListtask/MainRouter";
 import TodoList from "./Task/TodoList";
+import SipmleApi from "./APi/SipmleApi";
+import Product from "./APi/Product";
+import CreatProduct from "./APi/CreatProduct";
 
 // import Cc_class from "./04.props/Cc_class";
 // import Final from "./2.component/project/final";
@@ -94,7 +97,10 @@ export default function main() {
       {/* <TodoList/> */}
       {/* <RouterPro/> */}
       {/* <Todo/> */}
-      <MainRouter/>
+      {/* <MainRouter/> */}
+      {/* <SipmleApi/> */}
+      <Product/>
+      {/* <CreatProduct/> */}
     </div>
   );
 }

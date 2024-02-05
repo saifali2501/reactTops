@@ -5,9 +5,9 @@ li a {
   }
   
   .active {
-    color: red;
+    /* color: red; */
     font-weight: bold;
   }
   ul {
-    list-style: none;
+    /* list-style: none; */
   }
