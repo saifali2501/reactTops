@@ -1,6 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Select from "react-select";
+import img1 from "./image/bike.jpeg"
+import img2 from "./image/car.jpeg"
+import img3 from "./image/iphone.jpeg"
+import img4 from "./image/laptop.jpeg"
 import {
   Button,
   Form,
@@ -43,13 +47,22 @@ let obj2 = {
 };
 
 let data = [
-  { value: "green", label: "Green" },
-  { value: "white", label: "White" },
-  { value: "blue", label: "Blue" },
-  { value: "black", label: "Black" },
-  { value: "orange", label: "Orange" },
+  { value: "car", label: "Car", img: img1 },
+  { value: "bike", label: "Bike", img: img2 },
+  { value: "phone", label: "Phone", img:  img3},
+  { value: "laptop", label: "Laptop", img: img4 },
 ];
 
+// const customStyles = {
+//   option: (provided, state) => ({
+//     ...provided,
+//     backgroundColor: state.data.color,
+//   }),
+//   singleValue: (provided, state) => ({
+//     ...provided,
+//     color: state.data.color,
+//   }),
+// };
 let category = [
   { value: "casual", label: "Casual" },
   { value: "highlength", label: "Highlength" },
@@ -57,12 +70,13 @@ let category = [
 export default function Product() {
   let [product, setProduct] = useState(intialProduct);
   let [allProduct, setAllProduct] = useState([]);
-  let [select, setSelect] = useState([]);
+  // let [select, setSelect] = useState([]);
   const [refetch, setRefetch] = useState(true);
+  const [updateMode, setUpdateMode] = useState(false);
 
   const [modal, setModal] = useState(false);
 
-  const toggle = () => setModal(!modal);
+  // const toggle = () => setModal(!modal);
 
   const refetchData = () => setRefetch(!refetch);
   useEffect(() => {
@@ -102,38 +116,36 @@ export default function Product() {
     // console.log("------------->", product);
   };
 
-  const selectHanler = (e, type) => {
-    if (type === "color") {
-      let color = e.map((e) => e.value);
-      console.log("-------", color);
-      setProduct({ ...product, color: color });
-    } else if (type === "category") {
-      console.log("-----type", type);
-      let category = e.map((e) => e.value);
-      console.log("-------", category);
-      setProduct({ ...product, category: category });
-    }
+  const selectHandler = (e) => {
+    let color = e.map(
+      (e) => e.value.charAt(0).toUpperCase() + e.value.slice(1)
+    );
+    setProduct({ ...product, color: color });
   };
   const checkHandler = (e) => {
     if (product.size.includes(e)) {
       let filterData = product?.size.filter((ele) => ele !== e);
-      console.log("------->",filterData);
+      console.log("------->", filterData);
       setProduct({ ...product, size: filterData });
     } else {
       setProduct({ ...product, size: [...product?.size, e] });
     }
   };
 
-  
- 
-  const deletHandler = (_id) => {
-    console.log("🚀 ~ deleteItem ~ id:",_id);
+  const toggle = () => {
+    setModal(!modal);
+    setUpdateMode(false);
+    setProduct(intialProduct);
+  };
+
+  const deletHandler = (id) => {
+    console.log("🚀 ~ deleteItem ~ id:", id);
     axios({
       method: "delete",
-      url: "http://localhost:9999/product/delete/_id",
+      url: `http://localhost:9999/product/delete/${id}`,
     })
       .then((res) => {
-        alert("successfully deleted...!",res);
+        alert("successfully deleted...!", res);
         refetchData();
       })
       .catch((error) => {
@@ -156,17 +168,67 @@ export default function Product() {
   //     });
   // };
 
+  const update = (data) => {
+    console.log("-=-=-=-=>", data);
+    toggle();
+    setProduct(data);
+    setUpdateMode(true);
+  };
 
-  const update = (i) =>{
-    console.log("-=-=-=-=>",i);
-  }
+  const updateData = () => {
+    axios({
+      method: "put",
+      url: `http://localhost:9999/product/update/${product?._id}`,
+      data: product,
+    })
+      .then((res) => {
+        alert("Data updated..!");
+        setProduct(intialProduct);
+        toggle();
+        refetchData();
+      })
+      .catch((err) => {
+        toast.error(err);
+      });
+  };
+
+  const CustomColorOption = ({ innerProps, label, data }) => (
+    <div
+      {...innerProps}
+      style={{
+        padding: "0px 10px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        borderBottom: "1px solid #dee2e6",
+        background: "#dee9",
+        cursor: "pointer",
+      }}
+    >
+      {label}
+      <div
+        style={{
+          backgroundColor: data.value,
+          width: "20px",
+          height: "20px",
+          marginRight: "8px",
+          borderRadius: "50%",
+        }}
+      ></div>
+      <div>
+    <img src={data?.img} alt="" style={{ width: "40px",
+          height: "40px",}} />
+      </div>
+    </div>
+  );
+
   return (
     <>
       <div>
         <Button color="danger" onClick={toggle}>
           Click Me
         </Button>
-        <Modal isOpen={modal} toggle={toggle}>
+        <Modal isOpen={modal}>
           <ModalHeader toggle={toggle}>Modal title</ModalHeader>
           <ModalBody>
             <Form onSubmit={(e) => submitHandler(e)}>
@@ -174,9 +236,9 @@ export default function Product() {
                 <Label for="exampleEmail">Title</Label>
                 <Input
                   id="exampleEmail"
-                  name="email"
                   placeholder="with a placeholder"
                   type="text"
+                  value={product?.title}
                   onChange={(e) =>
                     setProduct({ ...product, title: e?.target.value })
                   }
@@ -208,45 +270,50 @@ export default function Product() {
                 />
               </FormGroup>
               <FormGroup tag="fieldset">
-              <Label>Gender</Label>
-              <div className="d-flex w-100 gap-3">
-                <FormGroup>
-                  <Input
-                    type="radio"
-                    className="me-2"
-                    checked={product.gender === "male"}
-                    onChange={() => setProduct({ ...product, gender: "male" })}
-                  />
-                  <Label>Male</Label>
-                </FormGroup>
-                <FormGroup disabled>
-                  <Input
-                    type="radio"
-                    className="me-2"
-                    checked={product?.gender === "female"}
-                    onChange={() =>
-                      setProduct({ ...product, gender: "female" })
-                    }
-                  />
-                  <Label>Female</Label>
-                </FormGroup>
-                <FormGroup>
-                  <Input
-                    type="radio"
-                    className="me-2"
-                    checked={product?.gender === "kids"}
-                    onChange={() => setProduct({ ...product, gender: "kids" })}
-                  />
-                  <Label>Kids</Label>
-                </FormGroup>
-              </div>
-            </FormGroup>
+                <Label>Gender</Label>
+                <div className="d-flex w-100 gap-3">
+                  <FormGroup>
+                    <Input
+                      type="radio"
+                      className="me-2"
+                      checked={product.gender === "male"}
+                      onChange={() =>
+                        setProduct({ ...product, gender: "male" })
+                      }
+                    />
+                    <Label>Male</Label>
+                  </FormGroup>
+                  <FormGroup disabled>
+                    <Input
+                      type="radio"
+                      className="me-2"
+                      checked={product?.gender === "female"}
+                      onChange={() =>
+                        setProduct({ ...product, gender: "female" })
+                      }
+                    />
+                    <Label>Female</Label>
+                  </FormGroup>
+                  <FormGroup>
+                    <Input
+                      type="radio"
+                      className="me-2"
+                      checked={product?.gender === "kids"}
+                      onChange={() =>
+                        setProduct({ ...product, gender: "kids" })
+                      }
+                    />
+                    <Label>Kids</Label>
+                  </FormGroup>
+                </div>
+              </FormGroup>
 
               <FormGroup>
                 <Label for="exampleEmail">Price</Label>
                 <Input
                   id="exampleEmail"
                   name="Price"
+                  value={product?.price}
                   placeholder="Enter Price"
                   type="text"
                   onChange={(e) =>
@@ -261,6 +328,7 @@ export default function Product() {
                   name=" discountPercentage "
                   placeholder="Enter  discountPercentage"
                   type="text"
+                  value={product?.discountPercentage}
                   onChange={(e) =>
                     setProduct({
                       ...product,
@@ -275,6 +343,7 @@ export default function Product() {
                 <Input
                   name=" availableStock "
                   placeholder="Enter  availableStock"
+                  value={product?.availableStock}
                   type="text"
                   onChange={(e) =>
                     setProduct({ ...product, availableStock: e?.target?.value })
@@ -288,6 +357,7 @@ export default function Product() {
                   name=" thumbnail "
                   placeholder="Enter thumbnail"
                   type="text"
+                  value={product?.thumbnail}
                   onChange={(e) =>
                     setProduct({ ...product, thumbnail: e?.target?.value })
                   }
@@ -297,34 +367,59 @@ export default function Product() {
               <Select
                 isMulti
                 options={data}
-                onChange={(e) => selectHanler(e, "color")}
+                value={product.color?.map((color) => {
+                  return { value: color, label: color };
+                })}
+                onChange={(e) => selectHandler(e)}
+                components={{ Option: CustomColorOption }}
               />
 
               <Label for="examplePassword">category</Label>
               <Select
                 isMulti
                 options={category}
-                onChange={(e) => selectHanler(e, "category")}
+                value={product.category?.map((ele) => {
+                  return { value: ele, label: ele };
+                })}
+                onChange={(e) =>
+                  setProduct({
+                    ...product,
+                    category: e.map((ele) => ele.value),
+                  })
+                }
               />
-                  <Label for="checkBox40">Size</Label>
-            <FormGroup className="d-flex gap-2">
-              {["41", "42", "43", "44", "45"]?.map?.((e) => {
-                return (
-                  <div>
-                    <Input
-                      id="checkBox40"
-                      type="checkbox"
-                      checked={product?.size?.includes?.(e)}
-                      onChange={() => checkHandler(e)}
-                      className="me-2"
-                    />
-                    <Label for="checkBox40">{e}</Label>
-                  </div>
-                );
-              })}
-            </FormGroup>
-            
-              <Button>Submit</Button>
+              <Label for="checkBox40">Size</Label>
+              <FormGroup className="d-flex gap-2">
+                {["41", "42", "43", "44", "45"]?.map?.((e) => {
+                  const isChecked = product?.size?.includes(e);
+
+                  return (
+                    <div>
+                      <Input
+                        id="checkBox40"
+                        type="checkbox"
+                        checked={isChecked}
+                        onChange={() => checkHandler(e)}
+                        className="me-2"
+                      />
+                      <Label for="checkBox40">{e}</Label>
+                    </div>
+                  );
+                })}
+              </FormGroup>
+              {updateMode ? (
+                <Button
+                  color="danger"
+                  className="w-100"
+                  onClick={() => updateData()}
+                >
+                  Update
+                </Button>
+              ) : (
+                <Button color="danger" className="w-100">
+                  Submit
+                </Button>
+              )}
             </Form>
           </ModalBody>
           <ModalFooter>
@@ -344,8 +439,8 @@ export default function Product() {
           <thead>
             <tr>
               <th>SR.</th>
+              <th>Title</th>
               <th>Image</th>
-              <th>Name</th>
               <th>price</th>
               <th>discount</th>
               <th>final price</th>
@@ -392,29 +487,32 @@ export default function Product() {
                     <div>{e.color?.map((e) => e).join(" - ")}</div>
                   </td>
                   <td>
-                    <div className="d-flex g-3">
-                      {e?.size.map((e, i) => {
-                        return (
+                    <div
+                      style={{
+                        display: "flex",
+                        // gridTemplateColumns: "repeat(2, 1fr)",
+                        gap: "5px",
+                      }}
+                    >
+                      {["42", "43", "44", "45"]?.map((size, i) => (
+                        <div key={i}>
                           <div
-                            style={{
-                              display: "flex",
-                              gap: "10px",
-                              justifyContent: "center",
-                              alignItems: "center",
-                            }}
+                            className={`${
+                              e?.size.includes(size)
+                                ? "text-dark fw-bold"
+                                : "text-muted"
+                            }`}
+                            style={{ border: "1px solid black" }}
                           >
-                            {" "}
-                            <div key={i} style={{ border: "1px solid black" }}>
-                              {e}
-                            </div>
+                            {size}
                           </div>
-                        );
-                      })}
+                        </div>
+                      ))}
                     </div>
                   </td>
                   <td>
-                    <Button onClick={()=>deletHandler(e._id)}>Delet</Button>
-                    <Button onClick={()=>update(e)}>Update</Button>
+                    <Button onClick={() => deletHandler(e?._id)}>Delet</Button>
+                    <Button onClick={() => update(e)}>Edit...</Button>
                   </td>
                 </tr>
               );
