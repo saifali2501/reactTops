@@ -46,6 +46,8 @@ import TodoList from "./Task/TodoList";
 import SipmleApi from "./APi/SipmleApi";
 import Product from "./APi/Product";
 import CreatProduct from "./APi/CreatProduct";
+import AppRedux from "./14.Redux/ui/count/AppRedux";
+
 
 // import Cc_class from "./04.props/Cc_class";
 // import Final from "./2.component/project/final";
@@ -99,8 +101,9 @@ export default function main() {
       {/* <Todo/> */}
       {/* <MainRouter/> */}
       {/* <SipmleApi/> */}
-      <Product/>
+      {/* <Product/> */}
       {/* <CreatProduct/> */}
+      <AppRedux/>
     </div>
   );
 }
