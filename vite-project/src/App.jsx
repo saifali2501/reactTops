@@ -47,6 +47,9 @@ import SipmleApi from "./APi/SipmleApi";
 import Product from "./APi/Product";
 import CreatProduct from "./APi/CreatProduct";
 import AppRedux from "./14.Redux/ui/count/AppRedux";
+import RegiTypeSelect from "./classTask/RegiTypeSelect";
+import Final from "./2.component/project/Final";
+
 
 
 // import Cc_class from "./04.props/Cc_class";
@@ -104,6 +107,8 @@ export default function main() {
       {/* <Product/> */}
       {/* <CreatProduct/> */}
       <AppRedux/>
+      {/* <RegiTypeSelect/> */}
+      
     </div>
   );
 }
