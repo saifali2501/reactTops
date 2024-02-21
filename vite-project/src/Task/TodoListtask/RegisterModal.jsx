@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Form } from "reactstrap";
 import Select from "react-select";
 import {
@@ -17,9 +17,11 @@ const userTypeOptions = [
   { value: "admin", label: "Admin" },
   { value: "employee", label: "Employee" },
 ];
+console.log("🚀 ~ userTypeOptions:", userTypeOptions)
 
 const genderOptions = ["Male", "Female", "Kid"];
 const hobbyOptions = ["Sports", "Reading", "Singing", "Traveling"];
+
 export default function RegisterModal({ modal, toggle }) {
   const [user, setUser] = useState({
     email: "",
@@ -31,7 +33,16 @@ export default function RegisterModal({ modal, toggle }) {
 
   const [local, setLocal] = useState([]);
 
-  const addtask = (e) => {
+  useEffect(() => {
+    const JsonData = localStorage.getItem("addd");
+    console.log(" JsonData:", JsonData)
+    
+    const normalData = JSON.parse(JsonData);
+    console.log("---->..>>", normalData);
+    setLocal(normalData || []);
+  }, []);
+
+  const addTask = (e) => {
     e?.preventDefault();
 
     const isEmailDuplicate = local?.some((e) => e.email === user.email);
@@ -75,19 +86,14 @@ export default function RegisterModal({ modal, toggle }) {
 
   const handleToggle = () => {
     toggle(); // Close the modal
-
-    // Reset the user state to initial values
-    // setUser(initializeData);
   };
 
   return (
     <div>
-      {/* <NavLink to={"/user"}>Local</NavLink> */}
-
       <Modal isOpen={modal}>
         <ModalHeader toggle={handleToggle}>Registration title</ModalHeader>
         <ModalBody>
-          <Form onSubmit={addtask} autoComplete="off">
+          <Form onSubmit={addTask} autoComplete="off">
             <FormGroup>
               <Label for="exampleEmail">Email</Label>
               <Input
@@ -95,7 +101,6 @@ export default function RegisterModal({ modal, toggle }) {
                 id="exampleEmail"
                 name="email"
                 placeholder="Enter email"
-                // type="email"
                 onChange={(e) => setUser({ ...user, email: e.target.value })}
               />
             </FormGroup>
@@ -148,12 +153,12 @@ export default function RegisterModal({ modal, toggle }) {
                 value={
                   userTypeOptions.find(
                     (option) => option.value === user.userType
-                  ) || userTypeOptions[0]
+                  ) || null
                 }
               />
             </FormGroup>
             <div>
-              <Button>Submit</Button>
+              <Button type="submit">Submit</Button>
             </div>
           </Form>
         </ModalBody>

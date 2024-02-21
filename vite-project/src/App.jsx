@@ -49,6 +49,7 @@ import CreatProduct from "./APi/CreatProduct";
 import AppRedux from "./14.Redux/ui/count/AppRedux";
 import RegiTypeSelect from "./classTask/RegiTypeSelect";
 import Final from "./2.component/project/Final";
+import AppRedux2 from "./14.Redux/redux2/AppRedux2";
 
 
 
@@ -102,11 +103,12 @@ export default function main() {
       {/* <TodoList/> */}
       {/* <RouterPro/> */}
       {/* <Todo/> */}
-      {/* <MainRouter/> */}
+      <MainRouter/>
       {/* <SipmleApi/> */}
       {/* <Product/> */}
       {/* <CreatProduct/> */}
-      <AppRedux/>
+      {/* <AppRedux/> */}
+      {/* <AppRedux2/> */}
       {/* <RegiTypeSelect/> */}
       
     </div>

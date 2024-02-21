@@ -8,7 +8,8 @@ const PointRedux = createSlice({
         state.point+= 0.5
 
     }
-  }
+  },
+  
 });
 
 export default PointRedux.reducer

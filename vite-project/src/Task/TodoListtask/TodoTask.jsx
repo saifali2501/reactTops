@@ -49,46 +49,48 @@ export default function TodoTask({ modal, toggle }) {
   };
   return (
     <>
-    
-
-  
       {/* <NavLink to={"/panding"}>Local</NavLink> */}
-      <div className="w-50  m-auto mt-2 p-2">
+      <div className=" text-center main-todo">
         <Label className="m-auto p-2 light">
           <h1>TodoList</h1>
         </Label>
-        <div>
-          <div className="d-flex align-items-center">
-            <Input
-              value={task}
-              style={{
-                borderRadius: "50px",
-                // backgroundColor: "lightblue",
-                width: "300px",
-                height: "40px",
-                justifyContent: "center",
-                textAlign: "center",
-                borderTopRightRadius: "0px",
-                borderBottomRightRadius: "0px",
-              }}
-              placeholder="Enter Your Todo"
-              onKeyUp={hendelKey}
-              onChange={(e) => addTask(e)}
-            />
-
-            <Button
-              color="danger"
-              onClick={(e) => handleAddTask(e)}
-              style={{
-                borderTopLeftRadius: "0px",
-                borderBottomLeftRadius: "0px",
-              }}
-            >
-              <Plus />
-            </Button>
-          </div>
-        </div>
       </div>
+      <div className=" d-flex " style={{ justifyContent: "center" }}>
+        <input
+          value={task}
+          style={{
+            borderRadius: "50px",
+
+            width: "300px",
+            height: "40px",
+            justifyContent: "center",
+            textAlign: "center",
+            borderTopRightRadius: "0px",
+            borderBottomRightRadius: "0px",
+            outline: "none",
+
+            padding: "8px",
+            fontSize: "20px",
+            lineHeight: "100%",
+            border: "2px solid transparent",
+          }}
+          placeholder="Enter Your Todo"
+          onKeyUp={hendelKey}
+          onChange={(e) => addTask(e)}
+        />
+
+        <Plus
+          className="bg-danger color-white"
+          onClick={(e) => handleAddTask(e)}
+          style={{
+            // borderColor:"green"
+            // margin:"auto"
+            height: "39px",
+            width: "40px",
+          }}
+        />
+      </div>
+
       <div className="d-flex w-100 gap-4 p-5">
         <Pending
           mytask={mytask}
@@ -103,7 +105,6 @@ export default function TodoTask({ modal, toggle }) {
           setMytask={setMytask}
         />
       </div>
-      
     </>
   );
 }

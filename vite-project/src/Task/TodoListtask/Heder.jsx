@@ -35,7 +35,7 @@ function Header() {
             className=" w-100 justify-content-between d-flex gap-5 align-items-center"
             navbar
           >
-            <NavItem className="me-4 d-flex gap-3">
+            <NavItem className="me-4 tahid d-flex gap-3">
               <NavLink to="/">Home</NavLink>
               <NavLink to="/todo">TodoList</NavLink>
               <NavLink to="/user">UserData</NavLink>

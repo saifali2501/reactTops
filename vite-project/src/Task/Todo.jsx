@@ -177,7 +177,7 @@ export default function Todo() {
         style={{
           width: "400px",
           height: "50px",
-          backgroundColor: "blue",
+          backgroundColor: "",
           margin: "auto",
           marginTop: "5px",
         }}

@@ -57,14 +57,21 @@ export default function Done({ mytask, setMytask, doneTask, setDoneTask }) {
     }
   };
 
+  const deleteTask = (index) => {
+    setDoneTask(doneTask.filter((_, i) => i !== index));
+  };
   return (
     <div
-      style={{ backgroundColor: "black", width: "55%" }}
-      className="m-auto mt-4 rounded-3 p-2 text-white p-3 "
+      style={{ width: "55%" }}
+      className="main-done m-auto mt-4 rounded-3 p-2 text-white p-3 "
     >
+        <div className="d-flex align-items-center gap-2">
+
+<label htmlFor=""className="text-black" >Select </label> 
       {doneTask?.length > 0 && (
         <input type="checkbox" onChange={handleCheckboxDone} />
       )}
+      </div>
       <h5 className="text-center">Done task</h5>
 
       {doneTask?.map((e, i) => (
@@ -82,20 +89,23 @@ export default function Done({ mytask, setMytask, doneTask, setDoneTask }) {
             {i + 1}. {e}
           </p>
 
-          <p role="button" className="d-flex gap-4">
+          {/* <p role="button" className="d-flex gap-4"> */}
+          <div className="d-flex gap-2">
+
             <CheckCircle
               role="button"
-              className="bg-danger"
+              className=" h-50 w-100"
               onClick={() => moveTaskToPending(i)}
-            />{" "}
+              />{" "}
             <input
               onChange={() => handleSelectDone(i)}
-              className="h-75 w-100"
+              className="h-50 w-100"
               type="checkbox"
               checked={selectdontask.includes(i)}
-            />
-            <Trash role="button" onClick={() => deleteTask(i)} />
-          </p>
+              />
+            <Trash className="h-50 w-100" role="button" onClick={() => deleteTask(i)} />
+              </div>
+          {/* </p> */}
         </div>
       ))}
       <Button onClick={transferSelecteddone}>Move to panding</Button>

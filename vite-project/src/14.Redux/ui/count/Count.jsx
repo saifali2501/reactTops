@@ -5,6 +5,7 @@ import AmountDisplay from './AmountDisplay'
 import Amountupdate from './Amountupdate'
 import PointDisplay from './PointDisplay'
 import PountUpdate from './PountUpdate'
+import Amount from '../../redux2/Amount'
 
 export default function Count() {
   return (
@@ -15,6 +16,7 @@ export default function Count() {
       <Amountupdate/>
       <PointDisplay/>
       <PountUpdate/>
+      {/* <Amount/> */}
     </div>
   )
 }

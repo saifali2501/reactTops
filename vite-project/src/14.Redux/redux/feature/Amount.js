@@ -11,7 +11,14 @@ const amountRedux = createSlice({
         amountTen:(state,action)=>{
             state.amount += 10
         }
+        
+    },
+    extraReducers:(builder)=>{
+        builder.addCase("point/pointInc",(state,action)=>{
+            state.amount += 10;
+        })
     }
+    
 });
 
 export default amountRedux.reducer

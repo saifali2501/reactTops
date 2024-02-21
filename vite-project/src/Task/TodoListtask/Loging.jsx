@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Select from "react-select";
 import { Button, Form, FormGroup, Input, Label, Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap'
 
@@ -8,12 +8,14 @@ function Loging({modal,toggle}) {
     email: "",
     password: "",
   });
+  // const [local, setLocal] = useState([]);
+
   let [mycard, setMycard] = useState([]);
   let [index, setIndex] = useState(null);
   const getData = () => {
     if (card.email.length > 0 && card.password.length > 0) {
       setMycard([...mycard, card]);
-      localStorage.setItem("todo", JSON.stringify([...mycard, card]));
+      localStorage.setItem("addd", JSON.stringify([...mycard, card]));
       setCard({
         email: "",
         password: "",
@@ -22,12 +24,12 @@ function Loging({modal,toggle}) {
       alert("fill in value");
     }
   };
-  // useEffect(() => {
-  // let json= localStorage.getItem("todo")
-  // let normal=JSON.parse(json)
-  // console.log(normal);
-  // setMycard(normal || [])
-  // }, []);
+  useEffect(() => {
+  let json= localStorage.getItem("addd")
+  let normal=JSON.parse(json)
+  console.log(normal);
+  setMycard(normal || [])
+  }, []);
   // const deleteHandler = (index) => {
   //   setMycard(mycard.filter((e,i) => index !== i));
   //   localStorage.setItem("todo", JSON.stringify(mycard));

@@ -3,6 +3,7 @@ import { Table } from "reactstrap";
 
 export default function User() {
   const [local, setLocal] = useState(null);
+  console.log("🚀 ~ User ~ local:", local)
 
   useEffect(() => {
     const JsonData = localStorage.getItem("addd");
@@ -10,11 +11,12 @@ export default function User() {
     
     const normalData = JSON.parse(JsonData);
     console.log("---->..>>", normalData);
-    setLocal(normalData || []);
+    setLocal(normalData);
   }, []);
 
   return (
     <>
+    <div  className="d-flex justify-content-center align-items-center " style={{display:"flex",justifyContent:"center",alignItems:"center",minHeight: "100vh",}}>
       <Table>
         <thead>
           <tr>
@@ -39,6 +41,8 @@ export default function User() {
           ))}
         </tbody>
       </Table>
+    </div>
+      
     </>
   );
 }

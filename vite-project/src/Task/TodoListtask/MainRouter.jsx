@@ -10,6 +10,7 @@ import Home from "./Home";
 import RegisterModal from "./RegisterModal";
 import LogingData from "./LogingData";
 import UserData from "./UserData";
+import "./Todo.css"
 
 export default function MainRouter() {
   return (
@@ -19,11 +20,11 @@ export default function MainRouter() {
         <Heder expand="lg"/>
         <div
           style={{
-            width: "100vw",
+            // width: "100vw",
             minHeight: "100vh",
             backgroundColor: "lightgray",
           }}
-          className="d-flex justify-content-center align-items-center "
+         
         >
           <Routes>
             <Route path="/" element={<Home />} />

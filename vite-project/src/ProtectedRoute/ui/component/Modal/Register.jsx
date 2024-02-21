@@ -31,6 +31,7 @@ function Register(args) {
     gender: "",
     userType: "",
   });
+  
 
   const [local, setLocal] = useState([]);
 
@@ -63,7 +64,7 @@ function Register(args) {
         password: "",
         gender: "male",
         hobby: [],
-        userType: "",
+        userType: "user",
       });
     }
   };
@@ -88,6 +89,7 @@ function Register(args) {
         hobby: [],
         userType: "",
       });
+        
     }
   };
 
