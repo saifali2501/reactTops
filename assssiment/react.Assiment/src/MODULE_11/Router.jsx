@@ -10,6 +10,7 @@ export default function Router() {
   return (
     <>
       <BrowserRouter>
+      <NavBar/>
       <div>
         <ul>
           <li>

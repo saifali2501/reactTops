@@ -19,6 +19,12 @@ import NavBar from "./MODULE_11/NavBar";
 import DarkVariantExample from "./MODULE_11/Page";
 import Page3 from "./MODULE_11/Page3";
 import Router from "./MODULE_11/Router";
+import MainRouter from "./MODULE-Reacter-Router/MainRouter";
+
+
+
+
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -41,10 +47,15 @@ function App() {
         {/* <UseStateSty/> */}
         
         
-        <NavBar/>
-        <DarkVariantExample/>
-        <Page3/>
+        {/* <NavBar/> */}
+        {/* <DarkVariantExample/> */}
+        {/* <Page3/> */}
         {/* <Router/> */}
+        
+      <MainRouter/>
+        
+       
+        
 
       </div>
     </>
