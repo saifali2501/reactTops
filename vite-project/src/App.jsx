@@ -93,7 +93,7 @@ export default function main() {
       {/* <UseRedeucerCom/> */}
       {/* <UseReduserWithPayload/> */}
       {/* <ReduserPayload/> */}
-      {/* <Router/> */}
+      <Router/>
       {/* <MainRoute/> */}
       {/* <AppPro/> */}
 
@@ -103,7 +103,7 @@ export default function main() {
       {/* <TodoList/> */}
       {/* <RouterPro/> */}
       {/* <Todo/> */}
-      <MainRouter/>
+      {/* <MainRouter/> */}
       {/* <SipmleApi/> */}
       {/* <Product/> */}
       {/* <CreatProduct/> */}
