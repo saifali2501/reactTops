@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { Input } from "reactstrap";
 import { Search, ShoppingBag, User } from "react-feather";
 import { Link, NavLink } from "react-router-dom";
+import LogingForm from "./LogingForm";
+// import LoginButton from "./LoginButton";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [loginModal, setLoginModal] = useState(false);
+  
+  const toggle = () =>setIsOpen(!isOpen);
+
+  const toggleLoginModal = () => setLoginModal(!loginModal); 
+
   return (
+    
     <div color="">
+      <LogingForm  modal={loginModal} toggle={toggleLoginModal}/>
       <div className="header">
         <div className="logo">
           {/* <h1>Woggles</h1> */}
@@ -23,7 +34,7 @@ export default function Header() {
         <div className="navbar ">
           <ul>
             <li>
-              <NavLink to={"/"}>Categories</NavLink>
+              <NavLink to={"/"}>Categoriesn</NavLink>
             </li>
             <li>
               <NavLink to={"/sungless"}>boAt Personalisation</NavLink>
@@ -37,15 +48,20 @@ export default function Header() {
             <li>
               <NavLink to={"/unisex"}>More</NavLink>
             </li>
+            <li>
+              <NavLink to={"/loging"}>LogingData</NavLink>
+            </li>
           </ul>
         </div>
         <div className="bttn">
           <input type="text" className="inpt" placeholder="Enter Earphone" />
             
           <Search className="icon"/>
-          
+          <User role="button" onClick={toggleLoginModal}/>
           {/* <UserRound size={32} strokeWidth={1.75} /> */}
-          <User size={32} strokeWidth={1.75} />
+          {/* <User size={32} strokeWidth={1.75} /> */}
+          {/* <LoginButton/> */}
+
           <ShoppingBag />
         </div>
       </div>

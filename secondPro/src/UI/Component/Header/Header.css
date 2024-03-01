@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+.mar{
+    display: flex;
+    gap: 20px;
+    margin: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+.marquee{
+    background-color: #D2C5B8 !important;
+}
+/* .header{
+    padding: 0px 20px;
+    background-color: rgb(213, 218, 218);
+} */
+.navbar1{
+    display: flex;
+    background-color: #aca9a7;
+    gap: 40px;
+    justify-content: center;
+    align-items: center !important;
+    padding: 12px 30px;
+}
+.nav-link{
+    color: black !important;
+    font-size: 18px !important;
+}
+.navbar1 .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar1 .logo span a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Oswald, sans-serif;
+    color: black;
+    font-weight: 900;
+}
+.navbar1 .main-nav{
+    display: flex;
+    width: 100%;
+    
+    /* gap: 60px; */
+    justify-content: space-between;
+    align-items: center !important;
+}
+.navbar1 .main-nav .nav ul {
+    display: flex;
+    gap: 30px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+.navbar1 .main-nav .icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.navbar1 .main-nav .icons .login a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,12 +1,12 @@
 .header {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 40px;
+  display: flex !important;
+  width: 100% !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 10px 40px !important;
   /* gap: 10px; */
   color: black;
-  background-color:whitesmoke;
+  background-color:whitesmoke !important;
 }
 .header .logo {
   flex: 0.5;
@@ -54,7 +54,7 @@ li a {
 .icon {
   position: absolute;
   top: 51%;
-  right: 354px;
+  right: 373px;
   transform: translateY(-45%);
   cursor: pointer;
 }

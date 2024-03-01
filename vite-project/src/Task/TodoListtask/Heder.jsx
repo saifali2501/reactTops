@@ -17,9 +17,9 @@ function Header() {
   const [loginModal, setLoginModal] = useState(false);
   const [registerModal, setRegisteModal] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen);
+  const toggle = () =>setIsOpen(!isOpen);
 
-  const toggleLoginModal = () => setLoginModal(!loginModal);
+  const toggleLoginModal = () => setLoginModal(!loginModal); 
 
   const toggleRegisterModal = () => setRegisteModal(!registerModal)
 

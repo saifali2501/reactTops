@@ -30,10 +30,7 @@ function Loging({modal,toggle}) {
   console.log(normal);
   setMycard(normal || [])
   }, []);
-  // const deleteHandler = (index) => {
-  //   setMycard(mycard.filter((e,i) => index !== i));
-  //   localStorage.setItem("todo", JSON.stringify(mycard));
-  // };
+ 
   const updateData = () => {
     if (index || index === 0) {
       mycard.splice(index, 1, card);
@@ -47,31 +44,11 @@ function Loging({modal,toggle}) {
       alert("please select");
     }
   };
-  // const updateHandler = (data, index) => {
-  //   setCard(data);
-  //   setIndex(index);
-  // };
-  // const toggle = () => {
-  //   setModal(!modal);
-  //   if (!modal) {
-  //     setUser({
-  //       email: "",
-  //       password: "",
-  //       gender: "",
-  //       hobby: [],
-  //       userType: "",
-  //     });
-  //   }
-  // };
 
-  // const [modal, setModal] = useState(false);
   
-  const handleToggle = () => {
-    toggle(); // Close the modal
-
-    // Reset the user state to initial values
-    // setUser(initializeData);
-}
+  const handleInputClick = (e) => {
+    e.stopPropagation();
+  };
 
   return (
     <div className='w-100'>
@@ -93,6 +70,7 @@ function Loging({modal,toggle}) {
             placeholder="with a placeholder"
             type="email"
             onChange={(e) => setCard({ ...card, email: e.target.value })}
+            onClick={handleInputClick}
           />
         </FormGroup>
         <FormGroup>

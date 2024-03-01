@@ -50,6 +50,11 @@ import AppRedux from "./14.Redux/ui/count/AppRedux";
 import RegiTypeSelect from "./classTask/RegiTypeSelect";
 import Final from "./2.component/project/Final";
 import AppRedux2 from "./14.Redux/redux2/AppRedux2";
+import PrecticApp from "./Prectice_0.2/PrecticApp";
+import ImpTask from "./Routerss/Task/ImpTask";
+import Imp from "./Routerss/Task/Imp";
+import Imp2Task from "./Routerss/Task/Imp2Task";
+// import ParentComponent from "./Routerss/Task/Imp2Task";
 
 
 
@@ -93,7 +98,7 @@ export default function main() {
       {/* <UseRedeucerCom/> */}
       {/* <UseReduserWithPayload/> */}
       {/* <ReduserPayload/> */}
-      <Router/>
+      {/* <Router/> */}
       {/* <MainRoute/> */}
       {/* <AppPro/> */}
 
@@ -110,6 +115,12 @@ export default function main() {
       {/* <AppRedux/> */}
       {/* <AppRedux2/> */}
       {/* <RegiTypeSelect/> */}
+
+      {/* <PrecticApp/> */}
+      {/* <ImpTask/> */}
+      {/* <Imp/> */}
+      {/* <ParentComponent/> */}
+      <Imp2Task/>
       
     </div>
   );
