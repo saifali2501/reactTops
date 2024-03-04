@@ -10,7 +10,7 @@ export default function MainRoute() {
     <div>
       <BrowserRouter>
       <Routes>
-        <Route path='/user' element={<UserData/>}/>
+        <Route path='/' element={<UserData/>}/>
         <Route path='/name/:name' element={<Name/>}/>
         <Route path='/age/:age' element={<Age/>}/>
 

@@ -41,6 +41,7 @@ export default function Inpute_Rev_2() {
   const updateData = () => {
     if (index || index === 0) {
       myCar.splice(index, 1, car);
+      console.log(" myCar:", myCar)
       setCar([...myCar]);
       setCar({
         email: "",

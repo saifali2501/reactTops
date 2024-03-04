@@ -54,6 +54,11 @@ import PrecticApp from "./Prectice_0.2/PrecticApp";
 import ImpTask from "./Routerss/Task/ImpTask";
 import Imp from "./Routerss/Task/Imp";
 import Imp2Task from "./Routerss/Task/Imp2Task";
+import UseEfectProject from "./Prectice_0.2/UseEfectProject";
+import UseEfectPro from "./4.UseEffect/UseEfectPro";
+import Crud_0Two from "./Prectice_0.2/Crud_0Two";
+import CrudThree from "./Prectice_0.2/CrudThree";
+import RouterRs from "./Prectice_0.2/01_Router/RouterRs";
 // import ParentComponent from "./Routerss/Task/Imp2Task";
 
 
@@ -120,7 +125,18 @@ export default function main() {
       {/* <ImpTask/> */}
       {/* <Imp/> */}
       {/* <ParentComponent/> */}
-      <Imp2Task/>
+      {/* <Imp2Task/> */}
+
+      {/* -----------prectic--------------------- */}
+
+      {/* <UseEfectProject/> */}
+
+      {/* <UseEfectPro/> */}
+
+      {/* <Crud_0Two/> */}
+      {/* <CrudThree/> */}
+      <RouterRs/>
+
       
     </div>
   );

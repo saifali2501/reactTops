@@ -1,10 +1,10 @@
 import React from 'react'
-import Crud from './Crud'
+// import Crud from './Crud_0Two'
 
 export default function PrecticApp() {
   return (
     <div>
-      <Crud/>
+      {/* <Crud/> */}
     </div>
   )
 }
