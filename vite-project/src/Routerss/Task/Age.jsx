@@ -11,7 +11,7 @@ export default function Age() {
       <div>
         <h1>My age is {data?.age}</h1>
 
-        <Button onClick={() => navigate("/user")}>Go Back</Button>
+        <Button onClick={() => navigate("/")}>Go Back</Button>
       </div>
     </div>
   );

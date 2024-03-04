@@ -10,7 +10,7 @@ export default function Name() {
     <div>
       <h1>My name is {data?.name}</h1>
 
-      <Button onClick={()=>navigate("/user")}>Go Back</Button>
+      <Button onClick={()=>navigate("/")}>Go Back</Button>
 
     </div>
   )

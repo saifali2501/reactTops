@@ -50,18 +50,18 @@ import AppRedux from "./14.Redux/ui/count/AppRedux";
 import RegiTypeSelect from "./classTask/RegiTypeSelect";
 import Final from "./2.component/project/Final";
 import AppRedux2 from "./14.Redux/redux2/AppRedux2";
-import PrecticApp from "./Prectice_0.2/PrecticApp";
+
 import ImpTask from "./Routerss/Task/ImpTask";
 import Imp from "./Routerss/Task/Imp";
 import Imp2Task from "./Routerss/Task/Imp2Task";
 import UseEfectProject from "./Prectice_0.2/UseEfectProject";
 import UseEfectPro from "./4.UseEffect/UseEfectPro";
-import Crud_0Two from "./Prectice_0.2/Crud_0Two";
-import CrudThree from "./Prectice_0.2/CrudThree";
-import RouterRs from "./Prectice_0.2/01_Router/RouterRs";
+import Prectic from "./Prectice_0.2/MainApp/Prectic";
+// import Prectic from "./Prectice_0.2/MainApp/Prectic";
+// import Crud_0Two from "./Prectice_0.2/Crud_0Two";
+// import CrudThree from "./Prectice_0.2/CrudThree";
+// import RouterRs from "./Prectice_0.2/01_Router/RouterRs";
 // import ParentComponent from "./Routerss/Task/Imp2Task";
-
-
 
 // import Cc_class from "./04.props/Cc_class";
 // import Final from "./2.component/project/final";
@@ -132,12 +132,7 @@ export default function main() {
       {/* <UseEfectProject/> */}
 
       {/* <UseEfectPro/> */}
-
-      {/* <Crud_0Two/> */}
-      {/* <CrudThree/> */}
-      <RouterRs/>
-
-      
+      <Prectic />
     </div>
   );
 }
