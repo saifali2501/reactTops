@@ -1,0 +1,45 @@
+.d-md-block h3{
+    display: none !important;
+    
+}
+.d-md-block p{
+    display: none !important;
+    
+}
+.carousel-indicators{
+    display: none !important;
+}
+.Body_text{
+    position: absolute !important;
+    right: 0;
+    left: 150px;
+    top: 330px;
+    bottom: 30px !important;
+}
+.Body_text p{
+    background-color: red;
+    color: white;
+    width: fit-content;
+    font-size: 15px;
+    padding: 3px;
+}
+.Body_text h6{
+    color: gray;
+    font-size: 20px;
+}
+.Body_text h2{
+    width: 33%; 
+    font-size: 55px;
+    font-weight: 700;/* Set the desired width (you can adjust this value accordingly) */
+  /* margin: 0 auto; */
+}
+.Body_text .bt{
+    width: 170px !important;
+    height: 50px;
+    background-color: #5b0ffd;
+     border-radius: 30px;
+     margin-top: 20px;
+     font-size: 17px;
+     font-weight: 100 !important;
+    
+}

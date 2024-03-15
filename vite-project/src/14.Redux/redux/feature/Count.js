@@ -12,6 +12,10 @@ const countSlic = createSlice({
     incTen: (state, action) => {
       state.count += 10;
     },
+    incByInput:(state,action)=>{
+       console.log("=====",action);
+       state.count += +action.payload
+    }
   },
   extraReducers: (builder) => {
     builder.addCase("point/pointInc", (state, action) => {
@@ -21,4 +25,4 @@ const countSlic = createSlice({
 });
 
 export default countSlic.reducer;
-export const { incOne, incTen } = countSlic.actions;
+export const { incOne, incTen,incByInput } = countSlic.actions;

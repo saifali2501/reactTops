@@ -33,7 +33,7 @@ export default function ExpolerPage() {
           
 
             <img className='img-fluid' src={e.name} alt="" style={{ width: '100%', height: '100%' , borderTopLeftRadius: "20px", borderTopRightRadius: "20px" }} />
-            <div className='div1' style={{height:'100px', borderBottomRightRadius: "20px", borderBottomLeftRadius: "20px" }}><Button className='btn' style={{marginTop:"40px",marginLeft:"250px", }}>Click</Button></div>
+            <div className='div1' style={{height:'100px', borderBottomRightRadius: "20px", borderBottomLeftRadius: "20px" }}><Button className='btnt' style={{marginTop:"40px",marginLeft:"250px", }}>Click</Button></div>
             
           </div>
         );

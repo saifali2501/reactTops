@@ -1,0 +1,14 @@
+h4{
+    color: black;
+    padding-bottom: 40px;
+    font-size: 25px !important;
+    font-weight: 700 !important;
+}
+.ul_flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ul_flex li a {
+    color: black;
+}

@@ -57,6 +57,7 @@ import Imp2Task from "./Routerss/Task/Imp2Task";
 import UseEfectProject from "./Prectice_0.2/UseEfectProject";
 import UseEfectPro from "./4.UseEffect/UseEfectPro";
 import Prectic from "./Prectice_0.2/MainApp/Prectic";
+import ProducttModal from "./classTask/ProducttModal";
 // import Prectic from "./Prectice_0.2/MainApp/Prectic";
 // import Crud_0Two from "./Prectice_0.2/Crud_0Two";
 // import CrudThree from "./Prectice_0.2/CrudThree";
@@ -79,7 +80,7 @@ export default function main() {
       {/* <FunPro psName={"saifu"} color={"green"}/> */}
       {/* <FunProps/> */}
       {/* <ClassProps data={{name:"saifu",greeting:"good morning"}}/> */}
-      {/* <PropPro1/> */}
+      <PropPro1/>
       {/* <Cc_class/> */}
       {/* <PropChangingValue/> */}
       {/* <ChangeValue  name={"saif"}/> */}
@@ -132,7 +133,8 @@ export default function main() {
       {/* <UseEfectProject/> */}
 
       {/* <UseEfectPro/> */}
-      <Prectic />
+      {/* <Prectic /> */}
+      {/* <ProducttModal/> */}
     </div>
   );
 }
