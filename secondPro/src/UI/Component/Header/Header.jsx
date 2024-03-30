@@ -1,16 +1,26 @@
 import React, { useState } from "react";
 import "./Header.css";
-import { ChevronDown, Heart, Search, ShoppingBag, LogIn, ShoppingCart } from "react-feather";
+import { ChevronDown , Heart, Search, ShoppingBag, LogIn, ShoppingCart } from "react-feather";
+import { CircleUserRound } from "lucide-react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Input } from "reactstrap";
 import LoginForm from "../../Page/pages/Page_1/common/login/LoginForm";
 import RegisterForm from "../../Page/pages/Page_1/common/sinup/RagisterForm";
 import { useSelector } from "react-redux";
+import Canvas from "../../Page/offCanvas/Canvas";
 
 export default function Header() {
   const [loginModal, setLoginModal] = useState(false);
 
   const toggleLoginModal = () => setLoginModal(!loginModal);
+
+    
+    const [isOpen, setIsOpen] = useState(false);
+
+    
+    const toggleOffcanvas = () => {
+      setIsOpen(!isOpen);
+    };
 
  const navigate=useNavigate()
 
@@ -18,18 +28,20 @@ export default function Header() {
   console.log(" hello admin:===========", data?.user?.userType)
 
   const Handler = () =>{
-    toggleLoginModal()
+    // toggleLoginModal()
     // toggle()
-    if(data?.token){
-         navigate("/profile")
-    }else{
-      navigate("/")
-    }
+    // if(data?.token){
+    //      navigate("/profile")
+    // }else{
+    //   navigate("/")
+    // }
   }
 
   return (
     <>
       <LoginForm modal={loginModal} toggle={toggleLoginModal} />
+     
+      
       <div>
         <section className="Topheader">
           <div className="container py-3">
@@ -68,7 +80,7 @@ export default function Header() {
                         <NavLink to={"/dashbord"}>Dashboard</NavLink>
                       </li>
                       <li className="list-inline-item pe-4">
-                        <NavLink to={"/product"}>Product</NavLink>
+                        <NavLink to={"product"}>Product</NavLink>
                       </li>
                       <li className="list-inline-item pe-4">
                         <NavLink to={"/help-center"}>Help Center</NavLink>
@@ -111,16 +123,26 @@ export default function Header() {
               </div>
               <div className="col-4 d-flex justify-content-end align-content-center">
                 <div className="icon d-flex justify-content-center align-items-center gap-3">
-                  <LogIn role="button" onClick={Handler} />
+                  {/* <LogIn   /> */}
                   {/* <CircleUser /> */}
+                  {/* <CircleUser /> */}
+                  {
+                    data?.token?(
+
+                      <CircleUserRound role="button" onClick={()=>navigate("/profile")}/>
+                    ):(
+
+                      <h5 role="button" onClick={toggleLoginModal} className="pt-2">Login</h5>
+                    )
+                  }
                   
-                  <h5 className="pt-2">Login</h5>
+                  
                   {/* <CircleUser /> */}
                   
                   <Heart className="me-4" />
                 </div>
                 <div className="icon2 gap-2 d-flex justify-content-center align-items-center">
-                  <ShoppingCart className="" />
+                  <ShoppingCart role="button" onClick={toggleOffcanvas} className="" />
                   <ShoppingBag />
                 </div>
               </div>
@@ -132,7 +154,7 @@ export default function Header() {
                 <div className="col-12">
                   <ul className="d-flex nav-2 gap-4 align-content-center ">
                     <li>
-                      <NavLink to="/">Shop All</NavLink>
+                      <NavLink to="/shope">Shop All</NavLink>
                     </li>
                     <li>
                       <NavLink to="/">Computers</NavLink>
@@ -159,6 +181,8 @@ export default function Header() {
           </section>
         </header>
       </div>
+      <Canvas isOpen={isOpen} toggleOffcanvas={toggleOffcanvas} />
+      
     </>
   );
 }

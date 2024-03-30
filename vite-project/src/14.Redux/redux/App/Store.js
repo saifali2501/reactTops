@@ -3,6 +3,7 @@ import countSlic from "../feature/Count"
 import amountRedux from "../feature/Amount"
 import PointRedux from "../feature/Point"
 import UserRedux from "../feature/User"
+import myuserSlice from "../feature/myuser"
 
 
 export default configureStore({
@@ -10,7 +11,8 @@ export default configureStore({
         COUNT:countSlic,
         AMOUNT:amountRedux,
         POINT: PointRedux,
-        USER:UserRedux
+        USER:UserRedux,
+        myuserSlice
 
     }
 })

@@ -11,6 +11,8 @@ import Deshbord from "../UI/Page/pages/Page_1/admin/deshbord/Deshbord";
 import Product from "../UI/Page/pages/Page_1/admin/product/Product";
 import Home from "../UI/Page/pages/Page_1/common/Home/Home";
 import ProtectedRouter from "./ProtectedRouter";
+import Shope from "../UI/Page/pages/Page_1/common/Shope_All/Shope";
+
 
 export default function Router() {
   return (
@@ -23,7 +25,7 @@ export default function Router() {
             <Route path="/home" element={<Home/>}/>
             {/* ======common========= */}
             <Route path="profile" element={<ProtectedRouter Component={ <Profile/>}/>}/>
-           
+           <Route path="/shope" element={<Shope/>}/>
             {/* ============admin========= */}
 
             <Route path="/dashbord" element={<ProtectedRouter Component={<Deshbord/>}/>}/>

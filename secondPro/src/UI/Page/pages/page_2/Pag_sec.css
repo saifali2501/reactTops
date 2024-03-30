@@ -1,6 +1,10 @@
 /* section{
     background-color: blue;
 } */
+
+.hkj{
+    background-color: #f2f2f2 !important;
+}
 .img{
     position: relative;
 }

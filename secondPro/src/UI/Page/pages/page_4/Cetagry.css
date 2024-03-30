@@ -1,0 +1,33 @@
+.mobile .mobile_grid{
+    display: grid;
+    
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    row-gap:40px !important;
+}
+.mobile{
+    background-color: #f2f2f2;
+}
+.mobile_image img{
+    transition: transform 0.3 ease-in-out;
+    overflow: hidden;
+    border: 1px solid transparent;
+    height: auto;
+    max-width: 100%;
+    border-radius: 50%;
+
+}
+.mobile_image:hover img{
+    transform: scale(1.1);
+}
+
+.mobile_image {
+    transition: transform 0.3 ease-in-out;
+    overflow: hidden;
+    border: 1px solid transparent;
+    height: auto;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 50%;
+
+}

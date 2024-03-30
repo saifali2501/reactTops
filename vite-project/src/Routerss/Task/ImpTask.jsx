@@ -1,19 +1,14 @@
-
-import React from 'react'
+import React from "react";
 
 export default function ImpTask({ saif }) {
   return (
     <div>
-      
-      <input placeholder='Enter' type="text" value={saif.name}/>
-      <input placeholder='Enter' type="text" value={saif.email}/>
-      <input placeholder='Enter' type="password" value={saif.password}/>
-
-
+      <input placeholder="Enter" type="text" value={saif.name} />
+      <input placeholder="Enter" type="text" value={saif.email} />
+      <input placeholder="Enter" type="password" value={saif.password} />
     </div>
-  )
+  );
 }
-
 
 // import React, { useState } from "react"
 

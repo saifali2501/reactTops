@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import "./Product.css"
 import { intialProduct } from "../../../../../../Untils/IntialState";
 // import Select from "react-select";
 // import img1 from "./Image/bike.jpg";
@@ -82,9 +83,11 @@ export default function Product() {
       <ProductTable
         product={product}
         allProduct={allProduct}
+        setAllProduct={setAllProduct}
         setProduct={setProduct}
         refetchData={refetchData}
         toggle={toggle}
+        refetch={refetch}
         setUpdateMode={setUpdateMode}
         setDetailModal={setDetailModal}
         setSelectedProductDetails={setSelectedProductDetails}

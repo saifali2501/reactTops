@@ -1,0 +1,17 @@
+/* App.css */
+.container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .section {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  

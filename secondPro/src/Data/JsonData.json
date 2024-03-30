@@ -1,0 +1,1882 @@
+[
+    {
+      "brand": "Oppo",
+      "model": "Oppo Find X5 Pro",
+      "description": "The flagship smartphone from Oppo featuring cutting-edge technology, stunning design, and exceptional camera capabilities.",
+      "price": 10999,
+      "discountPercentage": 10,
+      "stock": 15,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/oppo/find_x5_pro_thumbnail.jpg",
+      "images": [
+        "https://example.com/oppo/find_x5_pro_image1.jpg",
+        "https://example.com/oppo/find_x5_pro_image2.jpg",
+        "https://example.com/oppo/find_x5_pro_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Oppo Reno7 Pro 5G",
+      "description": "A premium mid-range smartphone from Oppo featuring 5G connectivity, impressive camera capabilities, and sleek design.",
+      "price": 11999,
+      "discountPercentage": 15,
+      "stock": 12,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/oppo/reno7_pro_5g_thumbnail.jpg",
+      "images": [
+        "https://example.com/oppo/reno7_pro_5g_image1.jpg",
+        "https://example.com/oppo/reno7_pro_5g_image2.jpg",
+        "https://example.com/oppo/reno7_pro_5g_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Oppo A95 5G",
+      "description": "An affordable 5G smartphone from Oppo offering a blend of performance, style, and affordability.",
+      "price": 10999,
+      "discountPercentage": 12,
+      "stock": 20,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/oppo/a95_5g_thumbnail.jpg",
+      "images": [
+        "https://example.com/oppo/a95_5g_image1.jpg",
+        "https://example.com/oppo/a95_5g_image2.jpg",
+        "https://example.com/oppo/a95_5g_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Oppo F21 Pro",
+      "description": "A stylish and feature-packed smartphone from Oppo designed for the young and trendy audience.",
+      "price": 12999,
+      "discountPercentage": 18,
+      "stock": 18,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/oppo/f21_pro_thumbnail.jpg",
+      "images": [
+        "https://example.com/oppo/f21_pro_image1.jpg",
+        "https://example.com/oppo/f21_pro_image2.jpg",
+        "https://example.com/oppo/f21_pro_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Oppo A75",
+      "description": "An entry-level smartphone from Oppo offering essential features and reliable performance at an affordable price.",
+      "price": 10999,
+      "discountPercentage": 14,
+      "stock": 25,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/oppo/a75_thumbnail.jpg",
+      "images": [
+        "https://example.com/oppo/a75_image1.jpg",
+        "https://example.com/oppo/a75_image2.jpg",
+        "https://example.com/oppo/a75_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Oppo K9 Pro",
+      "description": "A mid-range powerhouse from Oppo featuring a powerful processor, stunning display, and versatile camera system.",
+      "price": 11999,
+      "discountPercentage": 13,
+      "stock": 22,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/oppo/k9_pro_thumbnail.jpg",
+      "images": [
+        "https://example.com/oppo/k9_pro_image1.jpg",
+        "https://example.com/oppo/k9_pro_image2.jpg",
+        "https://example.com/oppo/k9_pro_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Oppo A54s",
+      "description": "A budget-friendly smartphone from Oppo offering essential features, reliable performance, and long-lasting battery life.",
+      "price": 10999,
+      "discountPercentage": 16,
+      "stock": 20,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/oppo/a54s_thumbnail.jpg",
+      "images": [
+        "https://example.com/oppo/a54s_image1.jpg",
+        "https://example.com/oppo/a54s_image2.jpg",
+        "https://example.com/oppo/a54s_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Oppo Reno6 Pro",
+      "description": "A sleek and powerful smartphone from Oppo featuring a stunning design, powerful performance, and advanced camera capabilities.",
+      "price": 12999,
+      "discountPercentage": 17,
+      "stock": 18,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/oppo/reno6_pro_thumbnail.jpg",
+      "images": [
+        "https://example.com/oppo/reno6_pro_image1.jpg",
+        "https://example.com/oppo/reno6_pro_image2.jpg",
+        "https://example.com/oppo/reno6_pro_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Oppo A73s",
+      "description": "An affordable smartphone from Oppo offering essential features, reliable performance, and stylish design.",
+      "price": 10999,
+      "discountPercentage": 11,
+      "stock": 23,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/oppo/a73s_thumbnail.jpg",
+      "images": [
+        "https://example.com/oppo/a73s_image1.jpg",
+        "https://example.com/oppo/a73s_image2.jpg",
+        "https://example.com/oppo/a73s_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Oppo F19s",
+      "description": "A stylish and feature-packed smartphone from Oppo designed for the modern lifestyle.",
+      "price": 11999,
+      "discountPercentage": 20,
+      "stock": 20,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/oppo/f19s_thumbnail.jpg",
+      "images": [
+        "https://example.com/oppo/f19s_image1.jpg",
+        "https://example.com/oppo/f19s_image2.jpg",
+        "https://example.com/oppo/f19s_image3.jpg"
+      ]
+    },
+    {
+        "brand": "Oppo",
+        "model": "Oppo Find X5 Pro",
+        "description": "The flagship smartphone from Oppo featuring cutting-edge technology, stunning design, and exceptional camera capabilities.",
+        "price": 10999,
+        "discountPercentage": 10,
+        "stock": 15,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/find_x5_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/find_x5_pro_image1.jpg",
+          "https://example.com/oppo/find_x5_pro_image2.jpg",
+          "https://example.com/oppo/find_x5_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo Reno7 Pro 5G",
+        "description": "A premium mid-range smartphone from Oppo featuring 5G connectivity, impressive camera capabilities, and sleek design.",
+        "price": 11999,
+        "discountPercentage": 15,
+        "stock": 12,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/reno7_pro_5g_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/reno7_pro_5g_image1.jpg",
+          "https://example.com/oppo/reno7_pro_5g_image2.jpg",
+          "https://example.com/oppo/reno7_pro_5g_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A95 5G",
+        "description": "An affordable 5G smartphone from Oppo offering a blend of performance, style, and affordability.",
+        "price": 10999,
+        "discountPercentage": 12,
+        "stock": 20,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a95_5g_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a95_5g_image1.jpg",
+          "https://example.com/oppo/a95_5g_image2.jpg",
+          "https://example.com/oppo/a95_5g_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo F21 Pro",
+        "description": "A stylish and feature-packed smartphone from Oppo designed for the young and trendy audience.",
+        "price": 12999,
+        "discountPercentage": 18,
+        "stock": 18,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/f21_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/f21_pro_image1.jpg",
+          "https://example.com/oppo/f21_pro_image2.jpg",
+          "https://example.com/oppo/f21_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A75",
+        "description": "An entry-level smartphone from Oppo offering essential features and reliable performance at an affordable price.",
+        "price": 10999,
+        "discountPercentage": 14,
+        "stock": 25,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a75_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a75_image1.jpg",
+          "https://example.com/oppo/a75_image2.jpg",
+          "https://example.com/oppo/a75_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo K9 Pro",
+        "description": "A mid-range powerhouse from Oppo featuring a powerful processor, stunning display, and versatile camera system.",
+        "price": 11999,
+        "discountPercentage": 13,
+        "stock": 22,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/k9_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/k9_pro_image1.jpg",
+          "https://example.com/oppo/k9_pro_image2.jpg",
+          "https://example.com/oppo/k9_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A54s",
+        "description": "A budget-friendly smartphone from Oppo offering essential features, reliable performance, and long-lasting battery life.",
+        "price": 10999,
+        "discountPercentage": 16,
+        "stock": 20,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a54s_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a54s_image1.jpg",
+          "https://example.com/oppo/a54s_image2.jpg",
+          "https://example.com/oppo/a54s_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo Reno6 Pro",
+        "description": "A sleek and powerful smartphone from Oppo featuring a stunning design, powerful performance, and advanced camera capabilities.",
+        "price": 12999,
+        "discountPercentage": 17,
+        "stock": 18,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/reno6_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/reno6_pro_image1.jpg",
+          "https://example.com/oppo/reno6_pro_image2.jpg",
+          "https://example.com/oppo/reno6_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A73s",
+        "description": "An affordable smartphone from Oppo offering essential features, reliable performance, and stylish design.",
+        "price": 10999,
+        "discountPercentage": 11,
+        "stock": 23,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a73s_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a73s_image1.jpg",
+          "https://example.com/oppo/a73s_image2.jpg",
+          "https://example.com/oppo/a73s_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo F19s",
+        "description": "A stylish and feature-packed smartphone from Oppo designed for the modern lifestyle.",
+        "price": 11999,
+        "discountPercentage": 20,
+        "stock": 20,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/f19s_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/f19s_image1.jpg",
+          "https://example.com/oppo/f19s_image2.jpg",
+          "https://example.com/oppo/f19s_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo Find X5 Pro",
+        "description": "The flagship smartphone from Oppo featuring cutting-edge technology, stunning design, and exceptional camera capabilities.",
+        "price": 10999,
+        "discountPercentage": 10,
+        "stock": 15,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/find_x5_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/find_x5_pro_image1.jpg",
+          "https://example.com/oppo/find_x5_pro_image2.jpg",
+          "https://example.com/oppo/find_x5_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo Reno7 Pro 5G",
+        "description": "A premium mid-range smartphone from Oppo featuring 5G connectivity, impressive camera capabilities, and sleek design.",
+        "price": 11999,
+        "discountPercentage": 15,
+        "stock": 12,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/reno7_pro_5g_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/reno7_pro_5g_image1.jpg",
+          "https://example.com/oppo/reno7_pro_5g_image2.jpg",
+          "https://example.com/oppo/reno7_pro_5g_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A95 5G",
+        "description": "An affordable 5G smartphone from Oppo offering a blend of performance, style, and affordability.",
+        "price": 10999,
+        "discountPercentage": 12,
+        "stock": 20,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a95_5g_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a95_5g_image1.jpg",
+          "https://example.com/oppo/a95_5g_image2.jpg",
+          "https://example.com/oppo/a95_5g_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo F21 Pro",
+        "description": "A stylish and feature-packed smartphone from Oppo designed for the young and trendy audience.",
+        "price": 12999,
+        "discountPercentage": 18,
+        "stock": 18,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/f21_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/f21_pro_image1.jpg",
+          "https://example.com/oppo/f21_pro_image2.jpg",
+          "https://example.com/oppo/f21_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A75",
+        "description": "An entry-level smartphone from Oppo offering essential features and reliable performance at an affordable price.",
+        "price": 10999,
+        "discountPercentage": 14,
+        "stock": 25,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a75_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a75_image1.jpg",
+          "https://example.com/oppo/a75_image2.jpg",
+          "https://example.com/oppo/a75_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo K9 Pro",
+        "description": "A mid-range powerhouse from Oppo featuring a powerful processor, stunning display, and versatile camera system.",
+        "price": 11999,
+        "discountPercentage": 13,
+        "stock": 22,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/k9_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/k9_pro_image1.jpg",
+          "https://example.com/oppo/k9_pro_image2.jpg",
+          "https://example.com/oppo/k9_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A54s",
+        "description": "A budget-friendly smartphone from Oppo offering essential features, reliable performance, and long-lasting battery life.",
+        "price": 10999,
+        "discountPercentage": 16,
+        "stock": 20,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a54s_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a54s_image1.jpg",
+          "https://example.com/oppo/a54s_image2.jpg",
+          "https://example.com/oppo/a54s_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo Reno6 Pro",
+        "description": "A sleek and powerful smartphone from Oppo featuring a stunning design, powerful performance, and advanced camera capabilities.",
+        "price": 12999,
+        "discountPercentage": 17,
+        "stock": 18,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/reno6_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/reno6_pro_image1.jpg",
+          "https://example.com/oppo/reno6_pro_image2.jpg",
+          "https://example.com/oppo/reno6_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A73s",
+        "description": "An affordable smartphone from Oppo offering essential features, reliable performance, and stylish design.",
+        "price": 10999,
+        "discountPercentage": 11,
+        "stock": 23,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a73s_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a73s_image1.jpg",
+          "https://example.com/oppo/a73s_image2.jpg",
+          "https://example.com/oppo/a73s_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo F19s",
+        "description": "A stylish and feature-packed smartphone from Oppo designed for the modern lifestyle.",
+        "price": 11999,
+        "discountPercentage": 20,
+        "stock": 20,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/f19s_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/f19s_image1.jpg",
+          "https://example.com/oppo/f19s_image2.jpg",
+          "https://example.com/oppo/f19s_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo Find X5 Pro",
+        "description": "The flagship smartphone from Oppo featuring cutting-edge technology, stunning design, and exceptional camera capabilities.",
+        "price": 10999,
+        "discountPercentage": 10,
+        "stock": 15,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/find_x5_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/find_x5_pro_image1.jpg",
+          "https://example.com/oppo/find_x5_pro_image2.jpg",
+          "https://example.com/oppo/find_x5_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo Reno7 Pro 5G",
+        "description": "A premium mid-range smartphone from Oppo featuring 5G connectivity, impressive camera capabilities, and sleek design.",
+        "price": 11999,
+        "discountPercentage": 15,
+        "stock": 12,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/reno7_pro_5g_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/reno7_pro_5g_image1.jpg",
+          "https://example.com/oppo/reno7_pro_5g_image2.jpg",
+          "https://example.com/oppo/reno7_pro_5g_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A95 5G",
+        "description": "An affordable 5G smartphone from Oppo offering a blend of performance, style, and affordability.",
+        "price": 10999,
+        "discountPercentage": 12,
+        "stock": 20,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a95_5g_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a95_5g_image1.jpg",
+          "https://example.com/oppo/a95_5g_image2.jpg",
+          "https://example.com/oppo/a95_5g_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo F21 Pro",
+        "description": "A stylish and feature-packed smartphone from Oppo designed for the young and trendy audience.",
+        "price": 12999,
+        "discountPercentage": 18,
+        "stock": 18,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/f21_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/f21_pro_image1.jpg",
+          "https://example.com/oppo/f21_pro_image2.jpg",
+          "https://example.com/oppo/f21_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A75",
+        "description": "An entry-level smartphone from Oppo offering essential features and reliable performance at an affordable price.",
+        "price": 10999,
+        "discountPercentage": 14,
+        "stock": 25,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a75_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a75_image1.jpg",
+          "https://example.com/oppo/a75_image2.jpg",
+          "https://example.com/oppo/a75_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo K9 Pro",
+        "description": "A mid-range powerhouse from Oppo featuring a powerful processor, stunning display, and versatile camera system.",
+        "price": 11999,
+        "discountPercentage": 13,
+        "stock": 22,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/k9_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/k9_pro_image1.jpg",
+          "https://example.com/oppo/k9_pro_image2.jpg",
+          "https://example.com/oppo/k9_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A54s",
+        "description": "A budget-friendly smartphone from Oppo offering essential features, reliable performance, and long-lasting battery life.",
+        "price": 10999,
+        "discountPercentage": 16,
+        "stock": 20,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a54s_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a54s_image1.jpg",
+          "https://example.com/oppo/a54s_image2.jpg",
+          "https://example.com/oppo/a54s_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo Reno6 Pro",
+        "description": "A sleek and powerful smartphone from Oppo featuring a stunning design, powerful performance, and advanced camera capabilities.",
+        "price": 12999,
+        "discountPercentage": 17,
+        "stock": 18,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/reno6_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/reno6_pro_image1.jpg",
+          "https://example.com/oppo/reno6_pro_image2.jpg",
+          "https://example.com/oppo/reno6_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A73s",
+        "description": "An affordable smartphone from Oppo offering essential features, reliable performance, and stylish design.",
+        "price": 10999,
+        "discountPercentage": 11,
+        "stock": 23,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a73s_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a73s_image1.jpg",
+          "https://example.com/oppo/a73s_image2.jpg",
+          "https://example.com/oppo/a73s_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo F19s",
+        "description": "A stylish and feature-packed smartphone from Oppo designed for the modern lifestyle.",
+        "price": 11999,
+        "discountPercentage": 20,
+        "stock": 20,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/f19s_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/f19s_image1.jpg",
+          "https://example.com/oppo/f19s_image2.jpg",
+          "https://example.com/oppo/f19s_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo Find X5 Pro",
+        "description": "The flagship smartphone from Oppo featuring cutting-edge technology, stunning design, and exceptional camera capabilities.",
+        "price": 10999,
+        "discountPercentage": 10,
+        "stock": 15,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/find_x5_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/find_x5_pro_image1.jpg",
+          "https://example.com/oppo/find_x5_pro_image2.jpg",
+          "https://example.com/oppo/find_x5_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo Reno7 Pro 5G",
+        "description": "A premium mid-range smartphone from Oppo featuring 5G connectivity, impressive camera capabilities, and sleek design.",
+        "price": 11999,
+        "discountPercentage": 15,
+        "stock": 12,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/reno7_pro_5g_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/reno7_pro_5g_image1.jpg",
+          "https://example.com/oppo/reno7_pro_5g_image2.jpg",
+          "https://example.com/oppo/reno7_pro_5g_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A95 5G",
+        "description": "An affordable 5G smartphone from Oppo offering a blend of performance, style, and affordability.",
+        "price": 10999,
+        "discountPercentage": 12,
+        "stock": 20,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a95_5g_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a95_5g_image1.jpg",
+          "https://example.com/oppo/a95_5g_image2.jpg",
+          "https://example.com/oppo/a95_5g_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo F21 Pro",
+        "description": "A stylish and feature-packed smartphone from Oppo designed for the young and trendy audience.",
+        "price": 12999,
+        "discountPercentage": 18,
+        "stock": 18,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/f21_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/f21_pro_image1.jpg",
+          "https://example.com/oppo/f21_pro_image2.jpg",
+          "https://example.com/oppo/f21_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A75",
+        "description": "An entry-level smartphone from Oppo offering essential features and reliable performance at an affordable price.",
+        "price": 10999,
+        "discountPercentage": 14,
+        "stock": 25,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a75_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a75_image1.jpg",
+          "https://example.com/oppo/a75_image2.jpg",
+          "https://example.com/oppo/a75_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo K9 Pro",
+        "description": "A mid-range powerhouse from Oppo featuring a powerful processor, stunning display, and versatile camera system.",
+        "price": 11999,
+        "discountPercentage": 13,
+        "stock": 22,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/k9_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/k9_pro_image1.jpg",
+          "https://example.com/oppo/k9_pro_image2.jpg",
+          "https://example.com/oppo/k9_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A54s",
+        "description": "A budget-friendly smartphone from Oppo offering essential features, reliable performance, and long-lasting battery life.",
+        "price": 10999,
+        "discountPercentage": 16,
+        "stock": 20,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a54s_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a54s_image1.jpg",
+          "https://example.com/oppo/a54s_image2.jpg",
+          "https://example.com/oppo/a54s_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo Reno6 Pro",
+        "description": "A sleek and powerful smartphone from Oppo featuring a stunning design, powerful performance, and advanced camera capabilities.",
+        "price": 12999,
+        "discountPercentage": 17,
+        "stock": 18,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/reno6_pro_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/reno6_pro_image1.jpg",
+          "https://example.com/oppo/reno6_pro_image2.jpg",
+          "https://example.com/oppo/reno6_pro_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo A73s",
+        "description": "An affordable smartphone from Oppo offering essential features, reliable performance, and stylish design.",
+        "price": 10999,
+        "discountPercentage": 11,
+        "stock": 23,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/a73s_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/a73s_image1.jpg",
+          "https://example.com/oppo/a73s_image2.jpg",
+          "https://example.com/oppo/a73s_image3.jpg"
+        ]
+      },
+      {
+        "brand": "Oppo",
+        "model": "Oppo F19s",
+        "description": "A stylish and feature-packed smartphone from Oppo designed for the modern lifestyle.",
+        "price": 11999,
+        "discountPercentage": 20,
+        "stock": 20,
+        "category": ["smartphones", "5g"],
+        "thumbnail": "https://example.com/oppo/f19s_thumbnail.jpg",
+        "images": [
+          "https://example.com/oppo/f19s_image1.jpg",
+          "https://example.com/oppo/f19s_image2.jpg",
+          "https://example.com/oppo/f19s_image3.jpg"
+        ]
+      }
+  ,
+    {
+      "brand": "Samsung",
+      "model": "Galaxy X Pro Luxury Edition",
+      "description": "A luxurious smartphone with diamond-studded design, premium leather finish, and cutting-edge technology.",
+      "price": 18999,
+      "discountPercentage": 15,
+      "stock": 8,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_x_pro_luxury_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_x_pro_luxury_image1.jpg",
+        "https://example.com/samsung/galaxy_x_pro_luxury_image2.jpg",
+        "https://example.com/samsung/galaxy_x_pro_luxury_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Z Fold S Supreme",
+      "description": "An ultra-premium foldable smartphone crafted with gold-plated accents, sapphire crystal display, and exclusive concierge services.",
+      "price": 24999,
+      "discountPercentage": 10,
+      "stock": 3,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_z_fold_s_supreme_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_z_fold_s_supreme_image1.jpg",
+        "https://example.com/samsung/galaxy_z_fold_s_supreme_image2.jpg",
+        "https://example.com/samsung/galaxy_z_fold_s_supreme_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Diamond Edition",
+      "description": "A limited edition smartphone adorned with genuine diamonds, offering unparalleled luxury and exclusivity.",
+      "price": 29999,
+      "discountPercentage": 12,
+      "stock": 2,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_diamond_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_diamond_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_diamond_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_diamond_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Luxury S21 Plus",
+      "description": "A luxury edition of the Galaxy S21 Plus featuring 24K gold plating, handcrafted leather back, and premium packaging.",
+      "price": 17999,
+      "discountPercentage": 15,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_luxury_s21_plus_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_luxury_s21_plus_image1.jpg",
+        "https://example.com/samsung/galaxy_luxury_s21_plus_image2.jpg",
+        "https://example.com/samsung/galaxy_luxury_s21_plus_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Platinum Edition",
+      "description": "A platinum-plated smartphone with a sleek design, advanced features, and exclusive concierge services.",
+      "price": 16999,
+      "discountPercentage": 18,
+      "stock": 4,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_platinum_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_platinum_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_platinum_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_platinum_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Ultimate Elite",
+      "description": "The pinnacle of luxury smartphones, featuring exquisite craftsmanship, premium materials, and exclusive VIP privileges.",
+      "price": 21999,
+      "discountPercentage": 12,
+      "stock": 7,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_ultimate_elite_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_ultimate_elite_image1.jpg",
+        "https://example.com/samsung/galaxy_ultimate_elite_image2.jpg",
+        "https://example.com/samsung/galaxy_ultimate_elite_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Prestige Plus",
+      "description": "An exclusive edition smartphone crafted for discerning individuals, featuring premium materials and unparalleled performance.",
+      "price": 13999,
+      "discountPercentage": 14,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_prestige_plus_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_prestige_plus_image1.jpg",
+        "https://example.com/samsung/galaxy_prestige_plus_image2.jpg",
+        "https://example.com/samsung/galaxy_prestige_plus_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Crown Edition",
+      "description": "A regal smartphone crafted with exquisite detail, featuring a crown emblem, premium materials, and advanced technology.",
+      "price": 15999,
+      "discountPercentage": 16,
+      "stock": 3,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_crown_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_crown_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_crown_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_crown_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Majestic Elite",
+      "description": "An elite smartphone designed for those who demand the very best, featuring premium materials, advanced features, and exquisite craftsmanship.",
+      "price": 17999,
+      "discountPercentage": 11,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_majestic_elite_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_majestic_elite_image1.jpg",
+        "https://example.com/samsung/galaxy_majestic_elite_image2.jpg",
+        "https://example.com/samsung/galaxy_majestic_elite_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Signature Edition",
+      "description": "A signature edition smartphone with bespoke design, featuring premium materials, exclusive privileges, and personalized services.",
+      "price": 19999,
+      "discountPercentage": 13,
+      "stock": 4,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_signature_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_signature_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_signature_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_signature_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Opulent Edition",
+      "description": "An opulent edition smartphone designed for the most discerning individuals, featuring lavish materials, exclusive privileges, and unrivaled performance.",
+      "price": 21999,
+      "discountPercentage": 17,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_opulent_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_opulent_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_opulent_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_opulent_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Elegance Plus",
+      "description": "An elegant smartphone with a sophisticated design, featuring premium materials, advanced features, and exquisite craftsmanship.",
+      "price": 16999,
+      "discountPercentage": 14,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_elegance_plus_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_elegance_plus_image1.jpg",
+        "https://example.com/samsung/galaxy_elegance_plus_image2.jpg",
+        "https://example.com/samsung/galaxy_elegance_plus_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Royale Edition",
+      "description": "A royal edition smartphone with majestic design elements, featuring premium materials, advanced features, and exclusive privileges.",
+      "price": 18999,
+      "discountPercentage": 16,
+      "stock": 4,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_royale_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_royale_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_royale_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_royale_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Elite Signature",
+      "description": "A signature edition smartphone crafted with meticulous attention to detail, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 17999,
+      "discountPercentage": 12,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_elite_signature_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_elite_signature_image1.jpg",
+        "https://example.com/samsung/galaxy_elite_signature_image2.jpg",
+        "https://example.com/samsung/galaxy_elite_signature_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Prestige Edition",
+      "description": "A prestigious edition smartphone designed for the most discerning individuals, featuring premium materials, advanced technology, and exclusive privileges.",
+      "price": 16999,
+      "discountPercentage": 13,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_prestige_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_prestige_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_prestige_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_prestige_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Deluxe Edition",
+      "description": "A deluxe edition smartphone with premium design elements, featuring advanced technology, premium materials, and exclusive services.",
+      "price": 15999,
+      "discountPercentage": 11,
+      "stock": 7,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_deluxe_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_deluxe_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_deluxe_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_deluxe_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Premium Plus",
+      "description": "A premium plus edition smartphone with exquisite design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 18999,
+      "discountPercentage": 18,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_premium_plus_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_premium_plus_image1.jpg",
+        "https://example.com/samsung/galaxy_premium_plus_image2.jpg",
+        "https://example.com/samsung/galaxy_premium_plus_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Elite Pro",
+      "description": "An elite pro edition smartphone with premium design elements, featuring advanced technology, premium materials, and exclusive services.",
+      "price": 17999,
+      "discountPercentage": 17,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_elite_pro_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_elite_pro_image1.jpg",
+        "https://example.com/samsung/galaxy_elite_pro_image2.jpg",
+        "https://example.com/samsung/galaxy_elite_pro_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Ultimate Edition",
+      "description": "An ultimate edition smartphone with unparalleled design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 19999,
+      "discountPercentage": 15,
+      "stock": 7,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_ultimate_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_ultimate_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_ultimate_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_ultimate_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Prestige Pro",
+      "description": "A prestige pro edition smartphone with premium design elements, featuring advanced technology, premium materials, and exclusive services.",
+      "price": 16999,
+      "discountPercentage": 16,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_prestige_pro_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_prestige_pro_image1.jpg",
+        "https://example.com/samsung/galaxy_prestige_pro_image2.jpg",
+        "https://example.com/samsung/galaxy_prestige_pro_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Exclusive Edition",
+      "description": "An exclusive edition smartphone with exclusive design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 18999,
+      "discountPercentage": 14,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_exclusive_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_exclusive_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_exclusive_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_exclusive_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Royal Edition",
+      "description": "A royal edition smartphone with royal design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 17999,
+      "discountPercentage": 13,
+      "stock": 7,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_royal_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_royal_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_royal_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_royal_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Supreme Edition",
+      "description": "A supreme edition smartphone with supreme design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 16999,
+      "discountPercentage": 12,
+      "stock": 8,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_supreme_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_supreme_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_supreme_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_supreme_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy VIP Edition",
+      "description": "A VIP edition smartphone with VIP design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 15999,
+      "discountPercentage": 11,
+      "stock": 9,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_vip_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_vip_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_vip_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_vip_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Luxury Edition",
+      "description": "A luxury edition smartphone with luxury design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 14999,
+      "discountPercentage": 10,
+      "stock": 10,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_luxury_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_luxury_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_luxury_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_luxury_edition_image3.jpg"
+      ]
+    }
+  ,
+    {
+      "brand": "Samsung",
+      "model": "Galaxy X Pro Luxury Edition",
+      "description": "A luxurious smartphone with diamond-studded design, premium leather finish, and cutting-edge technology.",
+      "price": 18999,
+      "discountPercentage": 15,
+      "stock": 8,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_x_pro_luxury_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_x_pro_luxury_image1.jpg",
+        "https://example.com/samsung/galaxy_x_pro_luxury_image2.jpg",
+        "https://example.com/samsung/galaxy_x_pro_luxury_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Z Fold S Supreme",
+      "description": "An ultra-premium foldable smartphone crafted with gold-plated accents, sapphire crystal display, and exclusive concierge services.",
+      "price": 24999,
+      "discountPercentage": 10,
+      "stock": 3,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_z_fold_s_supreme_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_z_fold_s_supreme_image1.jpg",
+        "https://example.com/samsung/galaxy_z_fold_s_supreme_image2.jpg",
+        "https://example.com/samsung/galaxy_z_fold_s_supreme_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Diamond Edition",
+      "description": "A limited edition smartphone adorned with genuine diamonds, offering unparalleled luxury and exclusivity.",
+      "price": 29999,
+      "discountPercentage": 12,
+      "stock": 2,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_diamond_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_diamond_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_diamond_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_diamond_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Luxury S21 Plus",
+      "description": "A luxury edition of the Galaxy S21 Plus featuring 24K gold plating, handcrafted leather back, and premium packaging.",
+      "price": 17999,
+      "discountPercentage": 15,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_luxury_s21_plus_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_luxury_s21_plus_image1.jpg",
+        "https://example.com/samsung/galaxy_luxury_s21_plus_image2.jpg",
+        "https://example.com/samsung/galaxy_luxury_s21_plus_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Platinum Edition",
+      "description": "A platinum-plated smartphone with a sleek design, advanced features, and exclusive concierge services.",
+      "price": 16999,
+      "discountPercentage": 18,
+      "stock": 4,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_platinum_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_platinum_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_platinum_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_platinum_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Ultimate Elite",
+      "description": "The pinnacle of luxury smartphones, featuring exquisite craftsmanship, premium materials, and exclusive VIP privileges.",
+      "price": 21999,
+      "discountPercentage": 12,
+      "stock": 7,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_ultimate_elite_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_ultimate_elite_image1.jpg",
+        "https://example.com/samsung/galaxy_ultimate_elite_image2.jpg",
+        "https://example.com/samsung/galaxy_ultimate_elite_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Prestige Plus",
+      "description": "An exclusive edition smartphone crafted for discerning individuals, featuring premium materials and unparalleled performance.",
+      "price": 13999,
+      "discountPercentage": 14,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_prestige_plus_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_prestige_plus_image1.jpg",
+        "https://example.com/samsung/galaxy_prestige_plus_image2.jpg",
+        "https://example.com/samsung/galaxy_prestige_plus_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Crown Edition",
+      "description": "A regal smartphone crafted with exquisite detail, featuring a crown emblem, premium materials, and advanced technology.",
+      "price": 15999,
+      "discountPercentage": 16,
+      "stock": 3,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_crown_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_crown_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_crown_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_crown_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Majestic Elite",
+      "description": "An elite smartphone designed for those who demand the very best, featuring premium materials, advanced features, and exquisite craftsmanship.",
+      "price": 17999,
+      "discountPercentage": 11,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_majestic_elite_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_majestic_elite_image1.jpg",
+        "https://example.com/samsung/galaxy_majestic_elite_image2.jpg",
+        "https://example.com/samsung/galaxy_majestic_elite_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Signature Edition",
+      "description": "A signature edition smartphone with bespoke design, featuring premium materials, exclusive privileges, and personalized services.",
+      "price": 19999,
+      "discountPercentage": 13,
+      "stock": 4,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_signature_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_signature_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_signature_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_signature_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Opulent Edition",
+      "description": "An opulent edition smartphone designed for the most discerning individuals, featuring lavish materials, exclusive privileges, and unrivaled performance.",
+      "price": 21999,
+      "discountPercentage": 17,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_opulent_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_opulent_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_opulent_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_opulent_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Elegance Plus",
+      "description": "An elegant smartphone with a sophisticated design, featuring premium materials, advanced features, and exquisite craftsmanship.",
+      "price": 16999,
+      "discountPercentage": 14,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_elegance_plus_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_elegance_plus_image1.jpg",
+        "https://example.com/samsung/galaxy_elegance_plus_image2.jpg",
+        "https://example.com/samsung/galaxy_elegance_plus_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Royale Edition",
+      "description": "A royal edition smartphone with majestic design elements, featuring premium materials, advanced features, and exclusive privileges.",
+      "price": 18999,
+      "discountPercentage": 16,
+      "stock": 4,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_royale_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_royale_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_royale_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_royale_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Elite Signature",
+      "description": "A signature edition smartphone crafted with meticulous attention to detail, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 17999,
+      "discountPercentage": 12,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_elite_signature_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_elite_signature_image1.jpg",
+        "https://example.com/samsung/galaxy_elite_signature_image2.jpg",
+        "https://example.com/samsung/galaxy_elite_signature_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Prestige Edition",
+      "description": "A prestigious edition smartphone designed for the most discerning individuals, featuring premium materials, advanced technology, and exclusive privileges.",
+      "price": 16999,
+      "discountPercentage": 13,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_prestige_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_prestige_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_prestige_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_prestige_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Deluxe Edition",
+      "description": "A deluxe edition smartphone with premium design elements, featuring advanced technology, premium materials, and exclusive services.",
+      "price": 15999,
+      "discountPercentage": 11,
+      "stock": 7,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_deluxe_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_deluxe_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_deluxe_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_deluxe_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Premium Plus",
+      "description": "A premium plus edition smartphone with exquisite design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 18999,
+      "discountPercentage": 18,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_premium_plus_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_premium_plus_image1.jpg",
+        "https://example.com/samsung/galaxy_premium_plus_image2.jpg",
+        "https://example.com/samsung/galaxy_premium_plus_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Elite Pro",
+      "description": "An elite pro edition smartphone with premium design elements, featuring advanced technology, premium materials, and exclusive services.",
+      "price": 17999,
+      "discountPercentage": 17,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_elite_pro_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_elite_pro_image1.jpg",
+        "https://example.com/samsung/galaxy_elite_pro_image2.jpg",
+        "https://example.com/samsung/galaxy_elite_pro_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Ultimate Edition",
+      "description": "An ultimate edition smartphone with unparalleled design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 19999,
+      "discountPercentage": 15,
+      "stock": 7,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_ultimate_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_ultimate_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_ultimate_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_ultimate_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Prestige Pro",
+      "description": "A prestige pro edition smartphone with premium design elements, featuring advanced technology, premium materials, and exclusive services.",
+      "price": 16999,
+      "discountPercentage": 16,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_prestige_pro_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_prestige_pro_image1.jpg",
+        "https://example.com/samsung/galaxy_prestige_pro_image2.jpg",
+        "https://example.com/samsung/galaxy_prestige_pro_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Exclusive Edition",
+      "description": "An exclusive edition smartphone with exclusive design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 18999,
+      "discountPercentage": 14,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_exclusive_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_exclusive_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_exclusive_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_exclusive_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Royal Edition",
+      "description": "A royal edition smartphone with royal design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 17999,
+      "discountPercentage": 13,
+      "stock": 7,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_royal_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_royal_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_royal_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_royal_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Supreme Edition",
+      "description": "A supreme edition smartphone with supreme design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 16999,
+      "discountPercentage": 12,
+      "stock": 8,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_supreme_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_supreme_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_supreme_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_supreme_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy VIP Edition",
+      "description": "A VIP edition smartphone with VIP design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 15999,
+      "discountPercentage": 11,
+      "stock": 9,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_vip_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_vip_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_vip_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_vip_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Luxury Edition",
+      "description": "A luxury edition smartphone with luxury design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 14999,
+      "discountPercentage": 10,
+      "stock": 10,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_luxury_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_luxury_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_luxury_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_luxury_edition_image3.jpg"
+      ]
+    }
+ ,
+    {
+      "brand": "Samsung",
+      "model": "Galaxy X Pro Luxury Edition",
+      "description": "A luxurious smartphone with diamond-studded design, premium leather finish, and cutting-edge technology.",
+      "price": 18999,
+      "discountPercentage": 15,
+      "stock": 8,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_x_pro_luxury_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_x_pro_luxury_image1.jpg",
+        "https://example.com/samsung/galaxy_x_pro_luxury_image2.jpg",
+        "https://example.com/samsung/galaxy_x_pro_luxury_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Z Fold S Supreme",
+      "description": "An ultra-premium foldable smartphone crafted with gold-plated accents, sapphire crystal display, and exclusive concierge services.",
+      "price": 24999,
+      "discountPercentage": 10,
+      "stock": 3,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_z_fold_s_supreme_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_z_fold_s_supreme_image1.jpg",
+        "https://example.com/samsung/galaxy_z_fold_s_supreme_image2.jpg",
+        "https://example.com/samsung/galaxy_z_fold_s_supreme_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Diamond Edition",
+      "description": "A limited edition smartphone adorned with genuine diamonds, offering unparalleled luxury and exclusivity.",
+      "price": 29999,
+      "discountPercentage": 12,
+      "stock": 2,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_diamond_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_diamond_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_diamond_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_diamond_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Luxury S21 Plus",
+      "description": "A luxury edition of the Galaxy S21 Plus featuring 24K gold plating, handcrafted leather back, and premium packaging.",
+      "price": 17999,
+      "discountPercentage": 15,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_luxury_s21_plus_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_luxury_s21_plus_image1.jpg",
+        "https://example.com/samsung/galaxy_luxury_s21_plus_image2.jpg",
+        "https://example.com/samsung/galaxy_luxury_s21_plus_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Platinum Edition",
+      "description": "A platinum-plated smartphone with a sleek design, advanced features, and exclusive concierge services.",
+      "price": 16999,
+      "discountPercentage": 18,
+      "stock": 4,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_platinum_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_platinum_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_platinum_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_platinum_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Ultimate Elite",
+      "description": "The pinnacle of luxury smartphones, featuring exquisite craftsmanship, premium materials, and exclusive VIP privileges.",
+      "price": 21999,
+      "discountPercentage": 12,
+      "stock": 7,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_ultimate_elite_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_ultimate_elite_image1.jpg",
+        "https://example.com/samsung/galaxy_ultimate_elite_image2.jpg",
+        "https://example.com/samsung/galaxy_ultimate_elite_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Prestige Plus",
+      "description": "An exclusive edition smartphone crafted for discerning individuals, featuring premium materials and unparalleled performance.",
+      "price": 13999,
+      "discountPercentage": 14,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_prestige_plus_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_prestige_plus_image1.jpg",
+        "https://example.com/samsung/galaxy_prestige_plus_image2.jpg",
+        "https://example.com/samsung/galaxy_prestige_plus_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Crown Edition",
+      "description": "A regal smartphone crafted with exquisite detail, featuring a crown emblem, premium materials, and advanced technology.",
+      "price": 15999,
+      "discountPercentage": 16,
+      "stock": 3,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_crown_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_crown_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_crown_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_crown_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Majestic Elite",
+      "description": "An elite smartphone designed for those who demand the very best, featuring premium materials, advanced features, and exquisite craftsmanship.",
+      "price": 17999,
+      "discountPercentage": 11,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_majestic_elite_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_majestic_elite_image1.jpg",
+        "https://example.com/samsung/galaxy_majestic_elite_image2.jpg",
+        "https://example.com/samsung/galaxy_majestic_elite_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Signature Edition",
+      "description": "A signature edition smartphone with bespoke design, featuring premium materials, exclusive privileges, and personalized services.",
+      "price": 19999,
+      "discountPercentage": 13,
+      "stock": 4,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_signature_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_signature_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_signature_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_signature_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Opulent Edition",
+      "description": "An opulent edition smartphone designed for the most discerning individuals, featuring lavish materials, exclusive privileges, and unrivaled performance.",
+      "price": 21999,
+      "discountPercentage": 17,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_opulent_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_opulent_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_opulent_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_opulent_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Elegance Plus",
+      "description": "An elegant smartphone with a sophisticated design, featuring premium materials, advanced features, and exquisite craftsmanship.",
+      "price": 16999,
+      "discountPercentage": 14,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_elegance_plus_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_elegance_plus_image1.jpg",
+        "https://example.com/samsung/galaxy_elegance_plus_image2.jpg",
+        "https://example.com/samsung/galaxy_elegance_plus_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Royale Edition",
+      "description": "A royal edition smartphone with majestic design elements, featuring premium materials, advanced features, and exclusive privileges.",
+      "price": 18999,
+      "discountPercentage": 16,
+      "stock": 4,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_royale_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_royale_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_royale_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_royale_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Elite Signature",
+      "description": "A signature edition smartphone crafted with meticulous attention to detail, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 17999,
+      "discountPercentage": 12,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_elite_signature_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_elite_signature_image1.jpg",
+        "https://example.com/samsung/galaxy_elite_signature_image2.jpg",
+        "https://example.com/samsung/galaxy_elite_signature_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Prestige Edition",
+      "description": "A prestigious edition smartphone designed for the most discerning individuals, featuring premium materials, advanced technology, and exclusive privileges.",
+      "price": 16999,
+      "discountPercentage": 13,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_prestige_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_prestige_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_prestige_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_prestige_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Deluxe Edition",
+      "description": "A deluxe edition smartphone with premium design elements, featuring advanced technology, premium materials, and exclusive services.",
+      "price": 15999,
+      "discountPercentage": 11,
+      "stock": 7,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_deluxe_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_deluxe_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_deluxe_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_deluxe_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Premium Plus",
+      "description": "A premium plus edition smartphone with exquisite design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 18999,
+      "discountPercentage": 18,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_premium_plus_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_premium_plus_image1.jpg",
+        "https://example.com/samsung/galaxy_premium_plus_image2.jpg",
+        "https://example.com/samsung/galaxy_premium_plus_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Elite Pro",
+      "description": "An elite pro edition smartphone with premium design elements, featuring advanced technology, premium materials, and exclusive services.",
+      "price": 17999,
+      "discountPercentage": 17,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_elite_pro_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_elite_pro_image1.jpg",
+        "https://example.com/samsung/galaxy_elite_pro_image2.jpg",
+        "https://example.com/samsung/galaxy_elite_pro_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Ultimate Edition",
+      "description": "An ultimate edition smartphone with unparalleled design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 19999,
+      "discountPercentage": 15,
+      "stock": 7,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_ultimate_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_ultimate_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_ultimate_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_ultimate_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Prestige Pro",
+      "description": "A prestige pro edition smartphone with premium design elements, featuring advanced technology, premium materials, and exclusive services.",
+      "price": 16999,
+      "discountPercentage": 16,
+      "stock": 5,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_prestige_pro_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_prestige_pro_image1.jpg",
+        "https://example.com/samsung/galaxy_prestige_pro_image2.jpg",
+        "https://example.com/samsung/galaxy_prestige_pro_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Exclusive Edition",
+      "description": "An exclusive edition smartphone with exclusive design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 18999,
+      "discountPercentage": 14,
+      "stock": 6,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_exclusive_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_exclusive_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_exclusive_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_exclusive_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Royal Edition",
+      "description": "A royal edition smartphone with royal design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 17999,
+      "discountPercentage": 13,
+      "stock": 7,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_royal_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_royal_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_royal_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_royal_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Supreme Edition",
+      "description": "A supreme edition smartphone with supreme design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 16999,
+      "discountPercentage": 12,
+      "stock": 8,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_supreme_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_supreme_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_supreme_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_supreme_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy VIP Edition",
+      "description": "A VIP edition smartphone with VIP design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 15999,
+      "discountPercentage": 11,
+      "stock": 9,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_vip_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_vip_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_vip_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_vip_edition_image3.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Luxury Edition",
+      "description": "A luxury edition smartphone with luxury design elements, featuring premium materials, advanced technology, and exclusive services.",
+      "price": 14999,
+      "discountPercentage": 10,
+      "stock": 10,
+      "category": ["smartphones", "5g"],
+      "thumbnail": "https://example.com/samsung/galaxy_luxury_edition_thumbnail.jpg",
+      "images": [
+        "https://example.com/samsung/galaxy_luxury_edition_image1.jpg",
+        "https://example.com/samsung/galaxy_luxury_edition_image2.jpg",
+        "https://example.com/samsung/galaxy_luxury_edition_image3.jpg"
+      ]
+    }
+  ]
+  
+  

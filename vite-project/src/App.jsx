@@ -32,7 +32,7 @@ import UseRedeucerCom from "./03.Hook/UseRedeucerCom";
 import UseReduserWithPayload from "./03.Hook/UseReduserWithPayload";
 import ReduserPayload from "./03.Hook/ReduserPayload";
 import Router from "./Routerss/Router";
-import MainRoute from "./Routerss/Task/MainRoute";
+// import MainRoute from "./Routerss/Task/MainRoute";
 import AppPro from "./ProtectedRoute/AppPro";
 
 import APiTask from "./APi/APiTask";
@@ -41,7 +41,7 @@ import TodoTask from "./Task/TodoList";
 import RouterPr from "./Protected-2/RouterPro";
 import RouterPro from "./Protected-2/RouterPro";
 import Todo from "./Task/Todo";
-import MainRouter from "./Task/TodoListtask/MainRouter";
+// import MainRouter from "./Task/TodoListtask/MainRouter";
 import TodoList from "./Task/TodoList";
 import SipmleApi from "./APi/SipmleApi";
 import Product from "./APi/Product";
@@ -58,6 +58,12 @@ import UseEfectProject from "./Prectice_0.2/UseEfectProject";
 import UseEfectPro from "./4.UseEffect/UseEfectPro";
 import Prectic from "./Prectice_0.2/MainApp/Prectic";
 import ProducttModal from "./classTask/ProducttModal";
+import ReviewApp from "./Prectice_0.2/ReviewApp";
+import Canvas from "./Prectice_0.2/Canvas";
+import StarApp from "./Prectice_0.2/StarApp";
+import ReviApp from "./ReviewTask/ReviApp";
+import SecReviApp from "./ReviewTask/SecReviApp.jsx/SecReviApp";
+// import SecReviApp from "./ReviewTask/SecReviTask/SecReviApp";
 // import Prectic from "./Prectice_0.2/MainApp/Prectic";
 // import Crud_0Two from "./Prectice_0.2/Crud_0Two";
 // import CrudThree from "./Prectice_0.2/CrudThree";
@@ -80,7 +86,7 @@ export default function main() {
       {/* <FunPro psName={"saifu"} color={"green"}/> */}
       {/* <FunProps/> */}
       {/* <ClassProps data={{name:"saifu",greeting:"good morning"}}/> */}
-      <PropPro1/>
+      {/* <PropPro1/> */}
       {/* <Cc_class/> */}
       {/* <PropChangingValue/> */}
       {/* <ChangeValue  name={"saif"}/> */}
@@ -135,6 +141,13 @@ export default function main() {
       {/* <UseEfectPro/> */}
       {/* <Prectic /> */}
       {/* <ProducttModal/> */}
+      {/* <Canvas/> */}
+
+      {/* <ReviewApp/> */}
+      {/* <ReviApp/> */}
+      {/* <StarApp/> */}
+      {/* <SecReviApp/> */}
+      <SecReviApp/>
     </div>
   );
 }

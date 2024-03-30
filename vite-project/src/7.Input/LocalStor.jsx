@@ -23,7 +23,7 @@ export default function LocalStor() {
   return (
     <>
       <h1 style={{ color: "blue", textAlign: "center" }}>TODO</h1>
-      <div className="w-25 d-flex gap-3 m-auto">
+      <div className="w-25 d-flex  gap-3 m-auto">
         <Input
           value={user}
           id="exampleEmail"

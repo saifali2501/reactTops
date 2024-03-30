@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import Select from "react-select";
+
 // import {
 //   colorOptions,
 //   categoryOptions,
@@ -58,11 +59,11 @@ export default function ProductForm({
       url: "http://localhost:9999/product/getAll",
     })
       ?.then((res) => {
-        console.log(res?.data);
+        console.log(res);
         setAllProduct(res?.data?.data);
       })
       ?.catch((err) => {
-        toast.error(err);
+        alert("saiifjf",err)
       });
   }, [refetch]);
 
@@ -133,7 +134,7 @@ export default function ProductForm({
     <div>
       <div>
         {/* <ProductPreview modal={modal} toggle={() => setModal(!modal)} /> */}
-        <Button color="danger" onClick={toggle}>
+        <Button color="danger" className="hero" onClick={toggle}>
           Click Me
         </Button>
         <Modal isOpen={modal}>

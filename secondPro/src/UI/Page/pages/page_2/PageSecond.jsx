@@ -8,7 +8,7 @@ import { Button, NavLink } from "react-bootstrap";
 export default function PageSecond() {
   return (
     <>
-      <section style={{backgroundColor:"gray"}} className="hkj">
+      <section  className="hkj">
         <div className="container py-5">
           <div className="row ">
             <div className="col-6">

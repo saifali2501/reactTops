@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import Select from "react-select";
 import img1 from "./image/bike.jpeg"
 import img2 from "./image/car.jpeg"
-import img3 from "./image/iphone.jpeg"
 import img4 from "./image/laptop.jpeg"
 import {
   Button,
@@ -49,7 +48,7 @@ let obj2 = {
 let data = [
   { value: "car", label: "Car", img: img1 },
   { value: "bike", label: "Bike", img: img2 },
-  { value: "phone", label: "Phone", img:  img3},
+  // { value: "phone", label: "Phone", img:  img3},
   { value: "laptop", label: "Laptop", img: img4 },
 ];
 

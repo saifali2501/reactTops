@@ -1,0 +1,54 @@
+.main-div{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.lode{
+    width: 100%;
+    height: 670px;
+    display: flex;
+    
+}
+.main-div .lode img{
+    width: 60%;
+   
+}
+.main-div .lode .text .toggle_btn{
+    background-color: #432d58 !important;
+}
+.main-div .lode .text{
+    background-color: #ebe3e3bc;
+   
+    width: 40%;
+    padding: 20px;
+}
+.main-div .lode .text h3{
+    font-size: 30px !important;
+    font-weight: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main-div .lode .text h3 span{
+    font-size: 30px !important;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif   ;
+}
+.main-div .lode .text p{
+    font-size:20px ;
+    padding-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+/* Filled star */
+.star-filled {
+    color: gold; /* Change color as needed */
+  }
+  
+  /* Empty star */
+  .star-empty {
+    color: #ccc; /* Change color as needed */
+  }
+  
+  /* Cursor pointer for clickable stars */
+  .star-filled, .star-empty {
+    cursor: pointer;
+  }
