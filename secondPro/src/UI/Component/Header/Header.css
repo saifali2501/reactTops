@@ -43,6 +43,15 @@ ul {
 
 .Topheader {
     background-color: hsl(0, 0%, 4%);
+    position: fixed;
+    width: 100%;
+    /* position: fixed;
+    left: 0;
+    right: 0;
+    top: 0; */
+    z-index: 11;
+    /* bottom: 0;   */
+    /* height: 100px; */
 }
 
 .Topheader ul li {
@@ -98,6 +107,9 @@ ul {
     color: #ccc;
     vertical-align: middle
 
+}
+header{
+    padding-top: 60px;
 }
 /* ================= media  query ====================== */
 

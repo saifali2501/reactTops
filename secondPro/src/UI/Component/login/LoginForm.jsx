@@ -3,9 +3,10 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, Label, Input 
 // import RagisterForm from '../sinup/RagisterForm';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
-import { login } from '../../../../../../Redux/feature/auth/authSlice';
-import RagisterForm from '../sinup/RagisterForm';
+import { login } from '../../../Redux/feature/auth/authSlice';
+// import RagisterForm from '../sinup/RagisterForm';
 import { useNavigate } from 'react-router-dom';
+import RagisterForm from '../../Page/common/sinup/RagisterForm';
 
 export default function LoginForm({ toggle, modal }) {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,33 +1,40 @@
 import React, { useState } from "react";
 import "./Header.css";
-import { ChevronDown , Heart, Search, ShoppingBag, LogIn, ShoppingCart } from "react-feather";
+import {
+  ChevronDown,
+  Heart,
+  Search,
+  ShoppingBag,
+  LogIn,
+  ShoppingCart,
+} from "react-feather";
 import { CircleUserRound } from "lucide-react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Input } from "reactstrap";
-import LoginForm from "../../Page/pages/Page_1/common/login/LoginForm";
-import RegisterForm from "../../Page/pages/Page_1/common/sinup/RagisterForm";
+// import LoginForm from "../../Page/pages/Page_1/common/login/LoginForm";
+// import RegisterForm from "../../Page/pages/Page_1/common/sinup/RagisterForm";
 import { useSelector } from "react-redux";
-import Canvas from "../../Page/offCanvas/Canvas";
+// import Canvas from "../../Page/offCanvas/Canvas";
+import LoginForm from "../login/LoginForm";
+import Canvas from "../offCanvas/Canvas";
 
 export default function Header() {
   const [loginModal, setLoginModal] = useState(false);
 
   const toggleLoginModal = () => setLoginModal(!loginModal);
 
-    
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    
-    const toggleOffcanvas = () => {
-      setIsOpen(!isOpen);
-    };
+  const toggleOffcanvas = () => {
+    setIsOpen(!isOpen);
+  };
 
- const navigate=useNavigate()
+  const navigate = useNavigate();
 
-  const data = useSelector((state)=>state.authSlice);
-  console.log(" hello admin:===========", data?.user?.userType)
+  const data = useSelector((state) => state.authSlice);
+  console.log(" hello admin:===========", data?.user?.userType);
 
-  const Handler = () =>{
+  const Handler = () => {
     // toggleLoginModal()
     // toggle()
     // if(data?.token){
@@ -35,13 +42,20 @@ export default function Header() {
     // }else{
     //   navigate("/")
     // }
-  }
+  };
+
+  const AllShoper = [
+    { label: "Shope", mainCategory: "" },
+    { label: "Laptop", mainCategory: "Laptop" },
+    { label: "Tablets", mainCategory: "Tablets" },
+    { label: "Mobiles", mainCategory: "Mobiles" },
+    { label: "LED TV", mainCategory: "LED TV" },
+  ];
 
   return (
     <>
       <LoginForm modal={loginModal} toggle={toggleLoginModal} />
-     
-      
+
       <div>
         <section className="Topheader">
           <div className="container py-3">
@@ -57,8 +71,8 @@ export default function Header() {
               </div>
               <div className="col-8">
                 <ul className="list-inline d-flex justify-content-end gap-3">
-                  {console.log("=====",data?.user?.userType )}
-                  {console.log(data?.user?.userType,"hello user")}
+                  {console.log("=====", data?.user?.userType)}
+                  {console.log(data?.user?.userType, "hello user")}
                   {data?.user?.userType !== "admin" ? (
                     <div>
                       <li className="list-inline-item pe-4">
@@ -126,23 +140,31 @@ export default function Header() {
                   {/* <LogIn   /> */}
                   {/* <CircleUser /> */}
                   {/* <CircleUser /> */}
-                  {
-                    data?.token?(
+                  {data?.token ? (
+                    <CircleUserRound
+                      role="button"
+                      onClick={() => navigate("/profile")}
+                    />
+                  ) : (
+                    <h5
+                      role="button"
+                      onClick={toggleLoginModal}
+                      className="pt-2"
+                    >
+                      Login
+                    </h5>
+                  )}
 
-                      <CircleUserRound role="button" onClick={()=>navigate("/profile")}/>
-                    ):(
-
-                      <h5 role="button" onClick={toggleLoginModal} className="pt-2">Login</h5>
-                    )
-                  }
-                  
-                  
                   {/* <CircleUser /> */}
-                  
+
                   <Heart className="me-4" />
                 </div>
                 <div className="icon2 gap-2 d-flex justify-content-center align-items-center">
-                  <ShoppingCart role="button" onClick={toggleOffcanvas} className="" />
+                  <ShoppingCart
+                    role="button"
+                    onClick={toggleOffcanvas}
+                    className=""
+                  />
                   <ShoppingBag />
                 </div>
               </div>
@@ -153,27 +175,28 @@ export default function Header() {
               <div className="row">
                 <div className="col-12">
                   <ul className="d-flex nav-2 gap-4 align-content-center ">
-                    <li>
-                      <NavLink to="/shope">Shop All</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/">Computers</NavLink>
+                    {AllShoper.map((e, i) => {
+                      return (
+                        <li key={i}>
+                          <NavLink to={"/shope"} state={{mainCategory: e?.mainCategory }}>{e.label}</NavLink>
+                        </li>
+                      );
+                    })}
+
+                    {/* <li>
+                      <NavLink to="/compueter">Computers</NavLink>
                     </li>
                     <li>
                       <NavLink to="/">Tablets</NavLink>
                     </li>
-                    <li>
-                      <NavLink to="/">Drones & Cameras</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/">Audio</NavLink>
-                    </li>
+                    
+                   
                     <li>
                       <NavLink to="/">Mobile</NavLink>
                     </li>
                     <li>
                       <NavLink to="/">T.V & Home Cinema</NavLink>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -182,7 +205,6 @@ export default function Header() {
         </header>
       </div>
       <Canvas isOpen={isOpen} toggleOffcanvas={toggleOffcanvas} />
-      
     </>
   );
 }

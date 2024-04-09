@@ -179,13 +179,13 @@ export default function ProductTable({
                       alt=""
                     />
                   </td>
-                  <td>{e?.title}</td>
+                  <td>{e?.brand}</td>
                   <td>{e?.price}</td>
                   <td>{e?.discountPercentage}</td>
                   <td>{e?.discountedPrice}</td>
                   <td>
                     <div style={{ display: "flex", gap: "10px" }}>
-                      {e?.color.map((color, index) => {
+                      {e?.color?.map((color, index) => {
                         return (
                           <div
                             style={{
@@ -214,7 +214,7 @@ export default function ProductTable({
                         <div key={i}>
                           <div
                             className={`${
-                              e?.size.includes(size)
+                              e?.size?.includes(size)
                                 ? "text-dark fw-bold"
                                 : "text-muted"
                             }`}

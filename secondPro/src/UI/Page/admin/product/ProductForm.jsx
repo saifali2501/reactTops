@@ -18,7 +18,7 @@ import {
   ModalFooter,
   ModalHeader,
 } from "reactstrap";
-import { category, data } from "../../../../../../Untils/constants";
+import { category, data } from "../../../../utils/constants";
 
 export default function ProductForm({
   modal,

@@ -70,13 +70,7 @@ export default function BestSeler() {
               return (
                 <div key={i}>
                   <NavLink className="">
-                    {/*                         
-                        <div >
-                        
-                        
-                        <img src={e?.name} alt="" className='img-fluid' style={{ margin:"auto", height: "200px", width: "150px", border: "1px solid #00000014", }} />
-                        <div>{e?.brandName}</div>
-                      </div> */}
+                 
 
                     <Card
                       style={{
@@ -92,7 +86,7 @@ export default function BestSeler() {
                         <CardText style={{color:"#5b0ffd",fontSize:"19px"}}>{e.price}</CardText>
                       </CardBody>
                     </Card>
-                    {/* <div>{e?.brandName}</div> */}
+                    
                   </NavLink>
                 </div>
               );

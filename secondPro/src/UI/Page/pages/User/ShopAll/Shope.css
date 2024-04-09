@@ -1,0 +1,12 @@
+.shope{
+    background-color: #f2f2f2;
+    /* background-color: red !important; */
+}
+.card{
+    border-radius: unset !important;
+    border: unset !important;
+    margin-bottom: 15px;
+}
+.price{
+    color: blueviolet;
+}

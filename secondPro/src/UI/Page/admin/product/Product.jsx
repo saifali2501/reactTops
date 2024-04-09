@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./Product.css"
-import { intialProduct } from "../../../../../../Untils/IntialState";
+import { intialProduct } from "../../../../utils/IntialState";
 // import Select from "react-select";
 // import img1 from "./Image/bike.jpg";
 // import img2 from "./Image/car.jpg";

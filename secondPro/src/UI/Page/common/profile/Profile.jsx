@@ -1,7 +1,7 @@
 import { Button } from "reactstrap";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { logOut } from "../../../../../../Redux/feature/auth/authSlice";
+import { logOut } from "../../../../Redux/feature/auth/authSlice";
 import { useNavigate } from "react-router-dom";
 
 export default function Profile() {

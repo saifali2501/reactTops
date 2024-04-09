@@ -8,9 +8,13 @@ import {
   CarouselCaption,
 } from "reactstrap";
 
-import Img1 from "../../../Images/BodyImage/LapTop.webp";
-import Img2 from "../../../Images/BodyImage/Mobile.webp";
-import Img3 from "../../../Images/BodyImage/Watch.webp";
+// import Img1 from "../../..//Images/BodyImage/LapTop.webp";
+import Img1 from "../../../../../assets/Images/BodyImage/LapTop.webp"
+import Img2 from "../../../../../assets/Images/BodyImage/Mobile.webp"
+import Img3 from "../../../../../assets/Images/BodyImage/Watch.webp"
+
+// import Img2 from "../../../Images/BodyImage/Mobile.webp";
+// import Img3 from "../../../Images/BodyImage/Watch.webp";
 import { Button } from "react-bootstrap";
 
 const items = [

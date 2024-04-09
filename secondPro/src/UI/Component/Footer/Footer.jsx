@@ -3,12 +3,17 @@ import "./Footer.css";
 import { NavLink } from "react-bootstrap";
 import { Facebook, Instagram, Linkedin, Twitter } from "react-feather";
 import { Link } from "react-router-dom";
-import Imge1 from "../../Images/brand-mastercard@3x.png";
-import Imge2 from "../../Images/brand-chinaunionpay@3x.png";
-import Imge3 from "../../Images/brand.png";
-import Imge4 from "../../Images/Diners.png";
-import Imge5 from "../../Images/brand-jcb@3x.png";
-import Imge6 from "../../Images/Discover.png";
+import Imge1 from "../../../assets/Images/brand-mastercard@3x.png";
+import Imge2 from "../../../assets/Images/brand-chinaunionpay@3x.png";
+import Imge3 from "../../../assets/Images/brand.png";
+import Imge4 from "../../../assets/Images/Diners.png";
+import Imge5 from "../../../assets/Images/brand-jcb@3x.png";
+import Imge6 from "../../../assets/Images/Discover.png";
+
+// import Imge3 from "../../Images/brand.png";
+// import Imge4 from "../../Images/Diners.png";
+// import Imge5 from "../../Images/";
+// import Imge6 from "../../Images/";
 
 
 

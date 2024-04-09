@@ -1,8 +1,11 @@
 import React from "react";
 
 import "./Pag_sec.css";
-import Imge1 from "../../../Images/Page_2/mobile.webp";
-import Imge2 from "../../../Images/Page_2/HeadPhone.webp";
+// import Imge1 from "../../../Images/Page_2/mobile.webp";
+// import Imge2 from "../../../Images/Page_2/HeadPhone.webp";
+import Imge1 from "../../../../assets/Images/Page_2/mobile.webp"
+import Imge2 from "../../../../assets/Images/Page_2/HeadPhone.webp"
+
 import { Button, NavLink } from "react-bootstrap";
 
 export default function PageSecond() {

@@ -14,7 +14,7 @@ import {
   Label,
   Input,
 } from "reactstrap";
-import { login } from "../../../../../../Redux/feature/auth/authSlice";
+import { login } from "../../../../Redux/feature/auth/authSlice";
 
 export default function RagisterForm({ toggle, modal }) {
   const initialUser = {
