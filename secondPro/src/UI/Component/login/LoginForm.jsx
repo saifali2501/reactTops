@@ -30,7 +30,6 @@ const dispatch=useDispatch()
         data:user
     })
     .then((res)=>{
-      console.log("=====res_data", res?.data)
       dispatch(login(res.data))
       alert("user login suc")
       toggle()
@@ -41,7 +40,7 @@ const dispatch=useDispatch()
       }
     })
     .catch((err)=>{
-      console.log("========",err);
+      // console.log("========",err);
       alert("somthing wrong")
     })
   }

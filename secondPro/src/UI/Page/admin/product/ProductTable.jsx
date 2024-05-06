@@ -30,9 +30,7 @@ export default function ProductTable({
   let [selectedLimit, setSelectedLimit] = useState(10);
 
   const handleLimitChange = (e) => {
-    console.log("hello===>", e);
     const newLimit = parseInt(e?.target?.value);
-    console.log(" newLimit:", newLimit);
     setSelectedLimit(newLimit);
     setpagination({ ...pagination, limit: newLimit });
   };
@@ -47,15 +45,13 @@ export default function ProductTable({
       },
     })
       .then((res) => {
-        console.log(res, "---------->");
-        console.log(res.data.data, "=====================>");
         setAllProduct(res.data.data);
         setpagination({ ...pagination, totalproduct: res.data.count });
       })
       .catch((err) => console.log(err.message));
   }, [refetch]);
   const deletHandler = (productId) => {
-    console.log("🚀 ~ deleteItem ~ id:", productId);
+    // console.log("🚀 ~ deleteItem ~ id:", productId);
     axios({
       method: "delete",
       url: `http://localhost:9999/product/delete/${productId}`, // Corrected the URL by appending the productId
@@ -70,7 +66,7 @@ export default function ProductTable({
   };
 
   const update = (data) => {
-    console.log("-=-=-=-=>", data);
+    // console.log("-=-=-=-=>", data);
     toggle();
     setProduct(data);
     setUpdateMode(true);
@@ -96,14 +92,14 @@ export default function ProductTable({
     setDetailModal(true);
   };
   const handlePageClick = (e) => {
-    console.log(" e:", e);
+    // console.log(" e:", e);
 
     setpagination({ ...pagination, page: e?.selected + 1 });
     refetchData();
   };
 
   const searchHandler = (e) => {
-    console.log("🚀 ~ searchHandler ~ e:", e);
+    // console.log("🚀 ~ searchHandler ~ e:", e);
 
     // console.log("hello======>",e);
     setSearch(e?.target?.value);

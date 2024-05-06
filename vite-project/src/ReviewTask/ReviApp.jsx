@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Review from './ReviewList'
-import ReviewCard from './ReviewCard'
+// import ReviewCard from './ReviewCard'
 import ReviewList from './ReviewList'
 
 export default function ReviApp() {

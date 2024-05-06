@@ -15,7 +15,6 @@ export default function Computer() {
     discountPercentage: {},
   });
   useEffect(() => {
-    console.log("============>");
     axios({
       method: "get",
       url: "http://localhost:9999/product/getAll",
@@ -23,7 +22,6 @@ export default function Computer() {
      
       
     }).then((res) => {
-      console.log("======>", res.data.data);
       setData(res.data.data);
     });
   }, [filter]);

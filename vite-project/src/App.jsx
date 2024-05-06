@@ -83,7 +83,7 @@ export default function main() {
       {/* <UseStateClass /> */}
       {/* <UseStateClass/> */}
       {/* <UseclassPro/> */}
-      {/* <FunPro psName={"saifu"} color={"green"}/> */}
+      {/* <FunPro Name={"saifu"} color={"green"}/> */}
       {/* <FunProps/> */}
       {/* <ClassProps data={{name:"saifu",greeting:"good morning"}}/> */}
       {/* <PropPro1/> */}
@@ -104,7 +104,7 @@ export default function main() {
       {/* <Inpute_Rev_2/> */}
       {/* <Input_Rev_3/> */}
       {/* <LocalStor/> */}
-      {/* <Card/> */}
+      <Card/>
       {/* <Crad_2/> */}
       {/* <UseContext/> */}
       {/* <UseRedeucerCom/> */}
@@ -147,7 +147,7 @@ export default function main() {
       {/* <ReviApp/> */}
       {/* <StarApp/> */}
       {/* <SecReviApp/> */}
-      <SecReviApp/>
+      {/* <SecReviApp/> */}
     </div>
   );
 }

@@ -19,6 +19,7 @@ import {
   ModalHeader,
 } from "reactstrap";
 import { category, data } from "../../../../utils/constants";
+import { useSelector } from "react-redux";
 
 export default function ProductForm({
   modal,
@@ -31,19 +32,26 @@ export default function ProductForm({
   refetchData,
   refetch,
 }) {
+
+  const mydata = useSelector((state)=>state?.authSlice?.token)
+  // console.log("======>:mydata", mydata)
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log("-----------  product----------->", product);
+    // console.log("-----------  product----------->", product);
     axios({
       method: "post",
       url: "http://localhost:9999/product/create",
       data: product,
+      headers: {
+        authorization: `Beare ${mydata}`,
+        "Content-Type": "application/json"
+    }
     })
       .then((res) => {
         alert("data added");
         setProduct(intialProduct);
         toggle();
-        console.log("------>");
+        // console.log("------>");
         refetchData();
         setAllProduct(res?.data?.data);
       })
@@ -59,7 +67,6 @@ export default function ProductForm({
       url: "http://localhost:9999/product/getAll",
     })
       ?.then((res) => {
-        console.log(res);
         setAllProduct(res?.data?.data);
       })
       ?.catch((err) => {
@@ -77,7 +84,7 @@ export default function ProductForm({
   const checkHandler = (e) => {
     if (product.size.includes(e)) {
       let filterData = product?.size.filter((ele) => ele !== e);
-      console.log("------->", filterData);
+      // console.log("------->", filterData);
       setProduct({ ...product, size: filterData });
     } else {
       setProduct({ ...product, size: [...product?.size, e] });

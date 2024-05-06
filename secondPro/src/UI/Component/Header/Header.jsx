@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import {
   ChevronDown,
@@ -13,10 +13,12 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { Input } from "reactstrap";
 // import LoginForm from "../../Page/pages/Page_1/common/login/LoginForm";
 // import RegisterForm from "../../Page/pages/Page_1/common/sinup/RagisterForm";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 // import Canvas from "../../Page/offCanvas/Canvas";
 import LoginForm from "../login/LoginForm";
-import Canvas from "../offCanvas/Canvas";
+// import Canvas from "../offCanvas/Canvas";
+import { fetchCart } from "../../../Redux/feature/Product/Cart";
+import Cart from "../offCanvas/Cart";
 
 export default function Header() {
   const [loginModal, setLoginModal] = useState(false);
@@ -30,20 +32,18 @@ export default function Header() {
   };
 
   const navigate = useNavigate();
-
+  const dispatch = useDispatch();
   const data = useSelector((state) => state.authSlice);
-  console.log(" hello admin:===========", data?.user?.userType);
+  console.log(" ===========hello admin:===========", data?.user?.userType);
 
-  const Handler = () => {
-    // toggleLoginModal()
-    // toggle()
-    // if(data?.token){
-    //      navigate("/profile")
-    // }else{
-    //   navigate("/")
-    // }
-  };
+  const { error, cart, pending, refresh } = useSelector(
+    (store) => store.cartSlice
+  );
 
+  useEffect(() => {
+    // console.log("----->")
+    dispatch(fetchCart());
+  }, [refresh]);
   const AllShoper = [
     { label: "Shope", mainCategory: "" },
     { label: "Laptop", mainCategory: "Laptop" },
@@ -71,8 +71,8 @@ export default function Header() {
               </div>
               <div className="col-8">
                 <ul className="list-inline d-flex justify-content-end gap-3">
-                  {console.log("=====", data?.user?.userType)}
-                  {console.log(data?.user?.userType, "hello user")}
+                  {/* {console.log("=====", data?.user?.userType)}
+                  {console.log(data?.user?.userType, "hello user")} */}
                   {data?.user?.userType !== "admin" ? (
                     <div>
                       <li className="list-inline-item pe-4">
@@ -159,13 +159,34 @@ export default function Header() {
 
                   <Heart className="me-4" />
                 </div>
-                <div className="icon2 gap-2 d-flex justify-content-center align-items-center">
-                  <ShoppingCart
-                    role="button"
-                    onClick={toggleOffcanvas}
-                    className=""
-                  />
-                  <ShoppingBag />
+
+                <div className="icon2 gap-1 d-flex justify-content-center align-items-center">
+                  {data?.token && data?.user?.userType !== "admin" && (
+                    <>
+                      <ShoppingCart
+                        role="button"
+                        onClick={toggleOffcanvas}
+                        className=""
+                      />
+                      <p
+                        role="button"
+                        onClick={toggleOffcanvas}
+                        style={{
+                          backgroundColor: "black",
+                          color: "white",
+                          marginTop: "17px",
+                          height: "22px",
+                          width: "22px",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          borderRadius: "50%",
+                        }}
+                      >
+                        {cart?.length}
+                      </p>
+                    </>
+                  )}
                 </div>
               </div>
             </div>
@@ -178,7 +199,12 @@ export default function Header() {
                     {AllShoper.map((e, i) => {
                       return (
                         <li key={i}>
-                          <NavLink to={"/shope"} state={{mainCategory: e?.mainCategory }}>{e.label}</NavLink>
+                          <NavLink
+                            to={"/shope"}
+                            state={{ mainCategory: e?.mainCategory }}
+                          >
+                            {e.label}
+                          </NavLink>
                         </li>
                       );
                     })}
@@ -204,7 +230,7 @@ export default function Header() {
           </section>
         </header>
       </div>
-      <Canvas isOpen={isOpen} toggleOffcanvas={toggleOffcanvas} />
+      <Cart isOpen={isOpen} toggleOffcanvas={toggleOffcanvas} />
     </>
   );
 }

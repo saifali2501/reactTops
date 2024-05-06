@@ -50,6 +50,10 @@ export default function Card() {
     setCard(data);
     setIndex(index);
   };
+
+  const AllDeletHandler= () =>{
+    setMycard([])
+  }
   return (
     <div>
       {/* <h1>{card.email}</h1> */}
@@ -108,6 +112,8 @@ export default function Card() {
               </tr>
             );
           })}
+
+          <Button onClick={()=>AllDeletHandler()}>DeleteAll</Button>
         </tbody>
       </Table>
     </div>

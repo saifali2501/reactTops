@@ -116,7 +116,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Button, Card, CardBody, CardSubtitle, CardText, CardTitle, Form, FormGroup, Input, Label, Modal, ModalBody, ModalHeader } from "reactstrap";
-import ReviewCard from "./ReviewCard";
+// import ReviewCard from "./ReviewCard";
 
 export default function ReviewForm({ addReview, setAddReview,toggle,modal }) {
 

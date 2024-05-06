@@ -8,7 +8,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  // </React.StrictMode>, 
 )
+
+
+// common -> home , profile , about , contact , computer/ipad/... , single page 
+// admin -> product , user , order , dashbord
+// user -> cart , order , wishlist

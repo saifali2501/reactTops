@@ -115,191 +115,150 @@
 //     </div>
 //   );
 // }
-
 import axios from "axios";
-import React, { useState } from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
 import { Button } from "reactstrap";
+import { fetchCart } from "../../../../../Redux/feature/Product/Cart";
 
 export default function ProductDetails() {
-  // const [cart,setCart] = useState(null)
-  const location = useLocation();
-  console.log("my===== location:", location);
-  console.log(" location:====", location.state);
-  const {
-    thumbnail,
-    title,
-    images,
-    description,
-    price,
-    brand,
-    discountPercentage,
-  } = location.state || {};
-
-  // State to hold the currently selected image
-  const [selectedImage, setSelectedImage] = useState(
-    thumbnail || (images.length > 0 ? images[0] : null)
-  );
-
-  const data = useSelector((state)=>state.authSlice);
-  console.log("hello my data====>", data)
-  // Check if location state exists and contains required properties
-  if (
-    !title ||
-    !images ||
-    !description ||
-    !price ||
-    !brand ||
-    !discountPercentage
-  ) {
-    return <div>No product details found</div>;
-  }
+  const [Detail, setDetail] = useState({});
+  const paramsData = useParams();
+  // console.log("🚀 ~ ProductDetails ~ paramsData:", paramsData)S
+  const [selectedImage, setSelectedImage] = useState(null); // Initialize selectedImage as null
+  const data = useSelector((state) => state.authSlice.token);
+  const dispatch = useDispatch();
 
   const CartHandler = (id) => {
-    console.log("========>", id);
     axios({
       method: "post",
       url: `http://localhost:9999/cart/create/${id}`,
       headers: {
-        Authorization: "token",
+        Authorization: `Break ${data}`,
         "Content-Type": "application/json",
       },
     })
-      ?.then((res) => {
-        console.log(res?.data);
-        setDetail(res?.data?.data);
+      .then((res) => {
+        // console.log("🚀 ~ .then ~ res:========>", res);
+        dispatch(fetchCart());
       })
-      ?.catch((err) => {
-        console.log(err);
-        // toast.error("Failed to load product details")
-        alert("Faild");
+      .catch((err) => {
+        alert("Failed to add to cart");
       });
   };
 
+  useEffect(() => {
+    axios({
+      method: "get",
+      url: `http://localhost:9999/product/getProductById/${paramsData?.id}`,
+    })
+      .then((res) => {
+        setDetail(res?.data?.data);
+        // Set selected image initially
+        if (res?.data?.data?.images?.length > 0) {
+          setSelectedImage(res?.data?.data?.images[0]);
+        }
+      })
+      .catch((err) => {
+        alert("Failed to load product details");
+      });
+  }, [paramsData.id]);
+
+  // if (!Detail || Object.keys(Detail).length === 0) {
+  //   return <div>Loading...</div>;
+  // }
+
   return (
-    <>
-      <section className="">
-        <div className="container py-5">
-          <div className="main_product d-flex  justify-content-center gap-2">
+    <section>
+      <div className="container py-5">
+        <div className="main_product d-flex justify-content-center gap-2">
+          <div
+            style={{ flex: "2", marginLeft: "30px" }}
+            className="image_review"
+          >
             <div
-              style={{ flex: "2", marginLeft: "30px" }}
-              className="image_review "
+              style={{
+                height: "auto",
+                width: "80%",
+                display: "flex",
+                gap: "30px",
+                justifyContent: "center",
+              }}
+              className="imge1"
             >
-              <div
-                style={{
-                  height: "auto",
-                  width: "80%",
-                  display: "flex",
-                  gap: "30px",
-                  justifyContent: "center",
-                }}
-                className="imge1 "
-              >
-                {/* Render images as thumbnails */}
-                <div style={{ display: "flex" }} className="">
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      flex: "1",
-                    }}
-                    className="owl-carousel owl-theme gap-1"
-                  >
-                    {images.map((image, index) => (
-                      <img
-                        key={index}
-                        style={{
-                          height: "100px",
-                          width: "100%",
-                          objectFit: "cover",
-                        }}
-                        className="border cursor-pointer"
-                        src={image}
-                        alt={`${title} - Image ${index + 1}`}
-                        onClick={() => setSelectedImage(image)}
-                      />
-                    ))}
-                  </div>
-                </div>
+              <div style={{ display: "flex" }} className="">
                 <div
-                  style={{ flex: "1", border: "2px solid black" }}
-                  className="img"
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    flex: "1",
+                  }}
+                  className="gap-1"
                 >
-                  {selectedImage && (
+                  {Detail?.images?.map((image, index) => (
                     <img
+                      key={index}
                       style={{
-                        height: "auto",
-                        width: "88%",
-                        padding: "20px",
+                        height: "100px",
                         objectFit: "cover",
-                        marginLeft: "41px",
                       }}
-                      className=""
-                      src={selectedImage}
-                      alt={`${title} - Selected Image`}
+                      className="border cursor-pointer"
+                      src={image}
+                      alt={`${Detail.title} - Image ${index + 1}`}
+                      onClick={() => setSelectedImage(image)}
                     />
-                  )}
+                  ))}
                 </div>
               </div>
-
-              {/* <div
-                style={{ height: "auto", width: "80%", display: "flex",gap:"30px",justifyContent:"center" }}
-                className="imge1 "
+              <div
+                style={{ flex: "1", border: "2px solid black" }}
+                className="img"
               >
-               
-                <div
-                  style={{  display: "flex" }}
-                  className=" "
-                >
-                  <div
+                {selectedImage && (
+                  <img
                     style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      flex: "1",
+                      height: "auto",
+                      width: "88%",
+                      padding: "20px",
+                      objectFit: "cover",
+                      marginLeft: "41px",
                     }}
-                    className="owl-carousel owl-theme  gap-1"
-                  >
-                    {images.map((image, index) => (
-                      <img
-                        key={index}
-                        style={{ height: "100px", width: "100%" }}
-                        className="border cursor-pointer"
-                        src={image}
-                        alt={`${title} - Image ${index + 1}`}
-                        onClick={() => setSelectedImage(image)}
-                      />
-                    ))}
-                  </div>
-                </div>
-                <div style={{ flex: "1" }} className="img">
-            
-                  {selectedImage && (
-                    <img
-                      style={{ height: "500px", width: "100%" }}
-                      className=""
-                      src={selectedImage}
-                      alt={`${title} - Selected Image`}
-                    />
-                  )}
-                </div>
-              </div> */}
-            </div>
-
-            {/* Display other product details */}
-            <div style={{ flex: "1" }} className="text_review">
-              <h1>{brand}</h1>
-              <p>{title}</p>
-              <p>{description}</p>
-              <p>{price}</p>
-              <p>{discountPercentage}</p>
-              <Button onClick={() => CartHandler(location?.state?._id)}>
-                Add Cart
-              </Button>
+                    className=""
+                    src={selectedImage}
+                    alt={`${Detail.title} - Selected Image`}
+                  />
+                )}
+              </div>
             </div>
           </div>
+
+          <div style={{ flex: "1" }} className="text_review">
+            <h1
+              style={{
+                fontWeight: "700",
+                fontSize: "45px",
+                paddingBottom: "20px",
+              }}
+            >
+              {Detail?.brand}
+            </h1>
+            <p style={{ fontSize: "27px", color:"gray"}}>
+              {Detail?.title}
+            </p>
+            <p style={{ fontSize: "22px", color:"gray" }}>
+              {Detail?.description}
+            </p>
+            <p style={{ fontSize: "22px",  color:"gray" }}>
+              ${Detail?.price}
+            </p>
+            <p style={{ fontSize: "22px", color:"gray" }}>
+              {Detail?.discountPercentage}%
+            </p>
+            <Button style={{backgroundColor:"#5b0ffd",width:"180px",height:"50px"}} onClick={() => CartHandler(paramsData.id)}>Add Cart</Button>
+          </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

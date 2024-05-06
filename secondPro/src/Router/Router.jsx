@@ -19,8 +19,8 @@ import Deshbord from "../UI/Page/admin/deshbord/Deshbord";
 import Product from "../UI/Page/admin/product/Product";
 import Home from "../UI/Page/common/Home/Home";
 import ProdactDetails from "../UI/Page/pages/User/ShopAll/ProdactDetails";
+import About from "../UI/Page/common/About/About";
 // import SinglePage from "../UI/Page/pages/User/ShopAll/ProdactDetails";
-
 
 export default function Router() {
   return (
@@ -30,20 +30,31 @@ export default function Router() {
           <Header />
           <Routes>
             {/* <Route path="/" element={<MainPage />} /> */}
-            <Route path="/" element={<Home/>}/>
+            <Route path="/" element={<Home />} />
             {/* ======common========= */}
-            <Route path="profile" element={<ProtectedRouter Component={ <Profile/>}/>}/>
-          
-                        { <Route path="/ProdctDetail/:id" element={<ProdactDetails/>}/> }
-
+            <Route
+              path="profile"
+              element={<ProtectedRouter Component={<Profile />} />}
+            />
+               <Route
+              path="about"
+              element={<About/>}
+            />
+            {<Route path="/ProdctDetail/:id" element={<ProdactDetails />} />}
 
             {/* ==============user========== */}
-           <Route path="/shope" element={<Shope/>}/>
-           <Route path="/compueter" element={<Computer/>}/>
+            <Route path="/shope" element={<Shope />} />
+            <Route path="/compueter" element={<Computer />} />
             {/* ============admin========= */}
 
-            <Route path="/dashbord" element={<ProtectedRouter Component={<Deshbord/>}/>}/>
-            <Route path="/product" element={<ProtectedRouter Component={<Product/>}/>}/>
+            <Route
+              path="/dashbord"
+              element={<ProtectedRouter Component={<Deshbord />} />}
+            />
+            <Route
+              path="/product"
+              element={<ProtectedRouter Component={<Product />} />}
+            />
           </Routes>
           <Footer />
         </Provider>
