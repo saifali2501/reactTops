@@ -61,6 +61,8 @@ export default function Body(args) {
 
   const slides = items.map((item) => {
     return (
+
+      
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
@@ -83,7 +85,17 @@ export default function Body(args) {
 
   return (
     <>
-      <Carousel
+    <section>
+      <div className="Body">
+      <div className="Body_text">
+        <p>Best Prices</p>
+        <h2>Incredible Prices on All Your Favorite Items</h2>
+        <h6 className="txt">Get more for less on selected brands</h6>
+        <Button className="bt">Shop Now</Button>
+        
+        </div>
+
+        <Carousel
         activeIndex={activeIndex}
         next={next}
         previous={previous}
@@ -106,14 +118,18 @@ export default function Body(args) {
           onClickHandler={next}
         />
       </Carousel>
-
-      <div className="Body_text">
-        <p>Best Prices</p>
-        <h2>Incredible Prices on All Your Favorite Items</h2>
-        <h6 className="txt">Get more for less on selected brands</h6>
-        <Button className="bt">Shop Now</Button>
-
       </div>
+  
+   
+      
+     
+  
+    </section>
+
+
+     
+      
+    
     </>
   );
 }

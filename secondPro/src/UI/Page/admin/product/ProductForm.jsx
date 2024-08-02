@@ -34,7 +34,7 @@ export default function ProductForm({
 }) {
 
   const mydata = useSelector((state)=>state?.authSlice?.token)
-  // console.log("======>:mydata", mydata)
+  console.log("======>:mydata===================================>", mydata)
   const submitHandler = (e) => {
     e.preventDefault();
     // console.log("-----------  product----------->", product);

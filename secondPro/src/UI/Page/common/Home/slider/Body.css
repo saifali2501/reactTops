@@ -1,4 +1,4 @@
-.d-md-block h3{
+/* .d-md-block h3{
     display: none !important;
     
 }
@@ -30,8 +30,7 @@
 .Body_text h2{
     width: 33%; 
     font-size: 55px;
-    font-weight: 700;/* Set the desired width (you can adjust this value accordingly) */
-  /* margin: 0 auto; */
+    font-weight: 700;
 }
 .Body_text .bt{
     width: 170px !important;
@@ -42,4 +41,126 @@
      font-size: 17px;
      font-weight: 100 !important;
     
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .d-md-block h3,
+  .d-md-block p,
+  .carousel-indicators {
+    display: none !important;
+  }
+  
+  .Body_text {
+    position: absolute;
+    right: 0;
+    left: 150px;
+    top: 330px;
+    bottom: 30px;
+    /* text-align: center !important; */
+  }
+  
+  .Body_text p {
+    background-color: red;
+    color: white;
+    width: fit-content;
+    font-size: 15px;
+    padding: 3px;
+  }
+  
+  .Body_text h6 {
+    color: gray;
+    font-size: 20px;
+  }
+  
+  .Body_text h2 {
+    width: 33% !important;
+    font-size: 55px;
+    font-weight: 700;
+  }
+  
+  .Body_text .bt {
+    width: 170px;
+    height: 50px;
+    background-color: #5b0ffd;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 100;
+  }
+
+  .Body_text {
+    position: absolute !important;
+    right: 0 !important;
+    left: 150px !important;
+    top: 330px !important;
+    bottom: 30px !important;
+    z-index: 1 !important;
+  }
+  .carousel-item img {
+    height: 100%; /* or a specific height like 300px */
+    object-fit: cover;
+  }
+
+@media (max-width: 576px){
+    .container {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+      }
+      .Body{
+        background-color: #f2f2f2;
+        padding: 10px !important;
+      }
+      .Body_text h2 {
+        width: 33% !important;
+        font-size: 55px !important;
+        font-weight: 700;
+      }
+      .Body_text {
+        /* position: unset !important;
+        margin-top: 20px !important;
+        display: block !important; */
+
+        
+            position: relative !important;
+            margin-top: 20px !important;
+            margin-bottom: 20px !important;
+            display: block !important;
+            text-align: center !important;
+            
+            /* padding: 30px !important; */
+          
+      }
+      .carousel-item img {
+        height: 250 px !important; 
+      }
+      .Body_text {
+        /* position: absolute !important; */
+        right: 0 !important;
+        left: 0px !important;
+        top: 0px !important;
+        bottom: 30px !important;
+        z-index: 1 !important;
+        /* padding-left: 30px !important; */
+      }
+    .Body_text p{
+        /* text-align: center !important; */
+        margin: auto !important;
+    }
+    .Body_text h2{
+        /* text-align: center !important; */
+        margin: auto !important;
+        width: 100% !important;
+    }
+     img{
+
+    }
+      .carousel {
+        /* position: static; */
+        /* margin-top: 0 !important;     */
+      }
 }

@@ -53,6 +53,7 @@ export default function Card() {
 
   const AllDeletHandler= () =>{
     setMycard([])
+    localStorage.removeItem("todo");
   }
   return (
     <div>

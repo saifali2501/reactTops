@@ -12,6 +12,7 @@ import ProductPreview from "./ProductPreview";
 import ProductForm from "./ProductForm";
 import ProductTable from "./ProductTable";
 import { Button } from "reactstrap";
+import MyModal from "./MyModal";
 
 export default function Product() {
   let [product, setProduct] = useState();
@@ -65,6 +66,7 @@ export default function Product() {
           <Button color="danger" onClick={toggle}>
             Add Product
           </Button>
+          <MyModal/>
         </div>
       </div>
 

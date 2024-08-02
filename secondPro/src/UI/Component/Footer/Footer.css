@@ -1,4 +1,4 @@
-h4{
+/* h4{
     color: black;
     padding-bottom: 40px;
     font-size: 25px !important;
@@ -11,4 +11,96 @@ h4{
 }
 .ul_flex li a {
     color: black;
+} */
+
+h4 {
+    color: black;
+    padding-bottom: 40px;
+    font-size: 25px !important;
+    font-weight: 700 !important;
+}
+
+.ul_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ul_flex li a {
+    color: black;
+}
+
+.my_footer {
+    background-color: #f2f2f2;
+    padding: 2.5rem; /* Default padding */
+}
+
+.my_footer .container {
+    padding: 30px;
+}
+
+.my_footer .icons ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.my_footer .icons ul li {
+    display: inline;
+}
+
+.my_footer .copy {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.my_footer .copy img {
+    height: 40px;
+}
+
+@media (max-width: 576px) {
+    .my_footer {
+        padding: 0;
+      }
+      
+      .my_footer .container {
+        padding: 20px;
+      }
+      .my_footer .main{
+        padding: 10px;
+      }
+      .my_footer .main .icons{
+        display: flex;
+        justify-content: center;
+        
+      }
+      .copy .my_brand {
+        padding: 0;
+      }
+      .my_brand {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 1rem;
+        
+      }
+    
+      .my_brand .item {
+        justify-self: center;
+      }
+     .my_footer .main {
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center;
+      text-align: center;
+      }
+     .my_footer .main h4 {
+        color: black;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 25px !important;
+        font-weight: 700 !important;
+    }
+      
+    
 }

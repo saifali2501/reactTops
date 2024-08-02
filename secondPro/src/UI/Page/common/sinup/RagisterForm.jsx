@@ -185,9 +185,9 @@ export default function RagisterForm({ toggle, modal }) {
               <Input
                 id="exampleEmail"
                 name="address"
-                value={address.city}
                 placeholder="with a placeholder"
                 type="address"
+                value={address.city}
                 onChange={(e) => setAddress({ ...address, city: e.target.value })}
               />
             </FormGroup>
@@ -197,9 +197,9 @@ export default function RagisterForm({ toggle, modal }) {
               <Input
                 id="exampleEmail"
                 name="address"
-                value={address.state}
                 placeholder="with a placeholder"
                 type="address"
+                value={address.state}
                 onChange={(e) => setAddress({ ...address, state: e.target.value })}
               />
             </FormGroup>

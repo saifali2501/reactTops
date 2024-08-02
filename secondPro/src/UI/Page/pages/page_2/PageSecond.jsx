@@ -3,18 +3,18 @@ import React from "react";
 import "./Pag_sec.css";
 // import Imge1 from "../../../Images/Page_2/mobile.webp";
 // import Imge2 from "../../../Images/Page_2/HeadPhone.webp";
-import Imge1 from "../../../../assets/Images/Page_2/mobile.webp"
-import Imge2 from "../../../../assets/Images/Page_2/HeadPhone.webp"
+import Imge1 from "../../../../assets/Images/Page_2/mobile.webp";
+import Imge2 from "../../../../assets/Images/Page_2/HeadPhone.webp";
 
 import { Button, NavLink } from "react-bootstrap";
 
 export default function PageSecond() {
   return (
     <>
-      <section  className="hkj">
-        <div className="container py-5">
-          <div className="row ">
-            <div className="col-6">
+      <section className="hkj">
+        <div className="container hkj_container py-5">
+          <div className="row">
+            <div className="col-sm-6 col-12 mb-3 mb-sm-0">
               <div className="imge1">
                 <div className="img">
                   <img className="w-100 h-100" src={Imge1} alt="" />
@@ -37,17 +37,17 @@ export default function PageSecond() {
                     >
                       Up to 30% off
                     </h1>
-                    <p>Selected Smartphone Brands </p>
-                    
-                  <Button style={{height:"151%"}}  className="btk w-25 "><NavLink>Shop</NavLink></Button>
+                    <p>Selected Smartphone Brands</p>
+                    <Button className="btk w-25" style={{ height: "151%" }}>
+                      <NavLink>Shop</NavLink>
+                    </Button>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-sm-6  col-12">
               <div className="img">
                 <img className="w-100 h-100" src={Imge2} alt="" />
-                {/* <img  src={Imge2} alt="" /> */}
                 <div
                   className="text1"
                   style={{
@@ -65,10 +65,12 @@ export default function PageSecond() {
                       fontSize: "45px",
                     }}
                   >
-                    Take Your Sound Anywheres
+                    Take Your Sound Anywhere
                   </h1>
                   <p>Top Headphone Brands</p>
-                  <Button  className="btk2 w-25 h-100"><NavLink>Shop Now</NavLink></Button>
+                  <Button className="btk2 w-25 h-100">
+                    <NavLink>Shop Now</NavLink>
+                  </Button>
                 </div>
               </div>
             </div>

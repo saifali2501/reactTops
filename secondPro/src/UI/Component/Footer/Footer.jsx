@@ -42,9 +42,11 @@ export default function Footer() {
 
   return (
     <div>
-      <footer>
+      <footer className="">
         <div className="container py-4">
-          <div className="main d-flex justify-content-between">
+          <div className="my_footer">
+
+          <div className="main d-flex justify-content-between ">
             <div className="grid-1">
               <h4>Store Location</h4>
               <ul className="ul_flex">
@@ -62,7 +64,7 @@ export default function Footer() {
                 </li>
               </ul>
               <div className="icons">
-                <ul className="d-flex gap-2 py-2">
+                <ul className="d-flex  gap-2 py-2">
                   <li>
                     <Facebook />
                   </li>
@@ -147,18 +149,15 @@ export default function Footer() {
               We accept the following paying methods
             </p>
           </div>
-          <div className="d-flex justify-content-center align-items-center gap-5 py-5">
-            {
-                brand.map((e,i)=>{
-                    return(
-                        <div key={i}>
-                            <img src={e.name} alt="" />
-                        </div>
-                    )
-                })
-            }
-          </div>
+          <div className="d-flex justify-content-center align-items-center gap-5 py-5 flex-wrap my_brand">
+    {brand.map((e, i) => (
+      <div key={i} className="item">
+        <img src={e.name} alt="" />
+      </div>
+    ))}
+  </div>
         </div>
+                </div>
       </footer>
     </div>
   );

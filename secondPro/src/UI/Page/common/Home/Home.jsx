@@ -17,8 +17,9 @@ export default function Home() {
     <div className="d">
       <Body />
       <PageSecond />
-      <Cetagary />
       <BestSeler />
+      <Cetagary />
+      
       {/* <Shope/> */}
       {/* <HeaderTwo/> */}
       {/* <Home/> */}

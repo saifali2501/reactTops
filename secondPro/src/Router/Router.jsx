@@ -5,7 +5,7 @@ import Footer from "../UI/Component/Footer/Footer";
 // import MainPage from "../UI/Page/mainPage/MainPage";
 // import Store from "../Redux/App/Store";
 import { Provider } from "react-redux";
-import Store from "../Redux/App/Store";
+
 // import Profile from "../UI/Page/pages/Page_1/common/profile/Profile";
 // import Deshbord from "../UI/Page/pages/Page_1/admin/deshbord/Deshbord";
 // import Product from "../UI/Page/pages/Page_1/admin/product/Product";
@@ -20,13 +20,14 @@ import Product from "../UI/Page/admin/product/Product";
 import Home from "../UI/Page/common/Home/Home";
 import ProdactDetails from "../UI/Page/pages/User/ShopAll/ProdactDetails";
 import About from "../UI/Page/common/About/About";
+import store from "../Redux/App/store";
 // import SinglePage from "../UI/Page/pages/User/ShopAll/ProdactDetails";
 
 export default function Router() {
   return (
     <div>
       <BrowserRouter>
-        <Provider store={Store}>
+        <Provider store={store}>
           <Header />
           <Routes>
             {/* <Route path="/" element={<MainPage />} /> */}

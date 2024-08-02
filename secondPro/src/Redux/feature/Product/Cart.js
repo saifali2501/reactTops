@@ -11,7 +11,9 @@ export const fetchCart = createAsyncThunk("fetchCart", () => {
       "Content-Type": "application/json",
     },
   })?.then((res) => {
+    console.log("=======================>",res?.data);
     return res?.data;
+
     // dispatch(add(res?.data?.data));
     // setCart(res?.data?.data);
   });

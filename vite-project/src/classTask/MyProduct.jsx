@@ -16,7 +16,7 @@ const intialProduct = {
   size: [],
 };
 
-export default function Product() {
+export default function MyProduct() {
   const [modal, setModal] = useState(false);
 
   const toggle = () => {

@@ -58,8 +58,10 @@ export default function BestSeler() {
 
   return (
     <>
-      <section className="main_brand p-5">
-        <div style={{ backgroundColor: "white " }} className="container p-5 ">
+      <section className="main_brand ">
+        <div className="container  ">
+          <div style={{ backgroundColor: "white " }}  className="Bard p-5">
+
           {/* <div className="row "> */}
           <h1 className="text-center  mb-4  " style={{ fontWeight: "400" }}>
             Select Your Brand
@@ -76,7 +78,7 @@ export default function BestSeler() {
                       style={{
                         width: "18rem",
                       }}
-                    >
+                      >
                       <img alt="Sample" src={e?.name} className="img-fluid" />
                       <CardBody className="cardbd ">
                       
@@ -95,6 +97,7 @@ export default function BestSeler() {
           <Button className="view_all ">
             <NavLink>View All</NavLink>
           </Button>
+            </div>
         </div>
         {/* </div> */}
       </section>

@@ -32,7 +32,7 @@ import UseRedeucerCom from "./03.Hook/UseRedeucerCom";
 import UseReduserWithPayload from "./03.Hook/UseReduserWithPayload";
 import ReduserPayload from "./03.Hook/ReduserPayload";
 import Router from "./Routerss/Router";
-// import MainRoute from "./Routerss/Task/MainRoute";
+import MainRoute from "./Routerss/Task/MainRoute";
 import AppPro from "./ProtectedRoute/AppPro";
 
 import APiTask from "./APi/APiTask";
@@ -57,12 +57,21 @@ import Imp2Task from "./Routerss/Task/Imp2Task";
 import UseEfectProject from "./Prectice_0.2/UseEfectProject";
 import UseEfectPro from "./4.UseEffect/UseEfectPro";
 import Prectic from "./Prectice_0.2/MainApp/Prectic";
-import ProducttModal from "./classTask/ProducttModal";
 import ReviewApp from "./Prectice_0.2/ReviewApp";
 import Canvas from "./Prectice_0.2/Canvas";
 import StarApp from "./Prectice_0.2/StarApp";
 import ReviApp from "./ReviewTask/ReviApp";
 import SecReviApp from "./ReviewTask/SecReviApp.jsx/SecReviApp";
+import ApiCird from "./APi/ApiCurd";
+import ApiCurd from "./APi/ApiCurd";
+import InputeColor from "./03.Hook/InputeColor";
+// import My_Header from "../My_Header";
+import My_Navbar from "./2.component/Functional/My_Navbar";
+import MyProduct from "./classTask/MyProduct";
+import RegisterModel from "./CopanyTask/RegisterModel";
+import CrudThree from "./Prectice_0.2/CrudThree";
+import InputValueHighlight from "./Prectice_0.2/InpteValueHighlight";
+import MyModal from "./Prectice_0.2/Modal";
 // import SecReviApp from "./ReviewTask/SecReviTask/SecReviApp";
 // import Prectic from "./Prectice_0.2/MainApp/Prectic";
 // import Crud_0Two from "./Prectice_0.2/Crud_0Two";
@@ -104,7 +113,7 @@ export default function main() {
       {/* <Inpute_Rev_2/> */}
       {/* <Input_Rev_3/> */}
       {/* <LocalStor/> */}
-      <Card/>
+      {/* <Card/> */}
       {/* <Crad_2/> */}
       {/* <UseContext/> */}
       {/* <UseRedeucerCom/> */}
@@ -123,14 +132,17 @@ export default function main() {
       {/* <MainRouter/> */}
       {/* <SipmleApi/> */}
       {/* <Product/> */}
+      {/* <ApiCurd/> */}
+      {/* <InputeColor/> */}
       {/* <CreatProduct/> */}
       {/* <AppRedux/> */}
+      {/* <My_Header/> */}
       {/* <AppRedux2/> */}
       {/* <RegiTypeSelect/> */}
 
       {/* <PrecticApp/> */}
       {/* <ImpTask/> */}
-      {/* <Imp/> */}
+      <Imp/>
       {/* <ParentComponent/> */}
       {/* <Imp2Task/> */}
 
@@ -140,14 +152,19 @@ export default function main() {
 
       {/* <UseEfectPro/> */}
       {/* <Prectic /> */}
-      {/* <ProducttModal/> */}
       {/* <Canvas/> */}
-
       {/* <ReviewApp/> */}
       {/* <ReviApp/> */}
       {/* <StarApp/> */}
       {/* <SecReviApp/> */}
       {/* <SecReviApp/> */}
+      {/* <My_Navbar/> */}
+      {/* <Product/> */}
+      {/* <MyProduct/> */}
+      {/* <RegisterModel/> */}
+      {/* <CrudThree/> */}
+      {/* <InputValueHighlight/> */}
+      {/* <MyModal/> */}
     </div>
   );
 }

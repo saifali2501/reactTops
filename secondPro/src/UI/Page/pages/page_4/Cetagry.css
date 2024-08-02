@@ -1,4 +1,4 @@
-.mobile .mobile_grid{
+/* .mobile .mobile_grid{
     display: grid;
     
     grid-template-columns: repeat(5, 1fr);
@@ -7,6 +7,7 @@
 }
 .mobile{
     background-color: #f2f2f2;
+    height: 765px !important;
 }
 .mobile_image img{
     transition: transform 0.3 ease-in-out;
@@ -30,4 +31,101 @@
     padding: 20px;
     border-radius: 50%;
 
+}
+@media (max-width: 576px) {
+    .mobile{
+        height: 0 !important;
+    }
+    .container {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .mobile .container {
+        padding: 0 !important;
+    }
+    .mobile .mobile_grid {
+        grid-template-columns: 1fr;
+        height: 100vh;
+        width: 100vw;
+        row-gap: 0 !important;
+    }
+   
+    .mobile_image {
+        height: 100%;
+        width: 100%;
+        padding: 40px;
+        border-radius: 0;
+    }
+    .mobile_image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+} */
+
+.mobile {
+    background-color: #f2f2f2;
+    padding: 2.5rem;
+}
+
+.mobile .mobile_grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    row-gap: 40px;
+}
+
+.mobile_image img {
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    border: 1px solid transparent;
+    height: auto;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.mobile_image:hover img {
+    transform: scale(1.1);
+}
+
+.mobile_image {
+    
+    height: auto;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+    .mobile {
+        padding: 0 !important;
+    }
+
+    .mobile .container {
+        padding: 0 !important;
+    }
+
+    .mobile .mobile_grid {
+        grid-template-columns: 1fr;
+        row-gap: 0 !important;
+    }
+
+    .mobile_image {
+        transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    border: 1px solid transparent;
+        height: 100%;
+        width: 100%;
+        padding: 40px;
+        border-radius: 0;
+    }
+
+    .mobile_image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }

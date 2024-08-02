@@ -27,6 +27,9 @@ export default function Shope() {
 
   const [filter, setFilter] = useState({});
   const location = useLocation();
+  console.log("🚀 ~ Shope ~ location:=========>+=++==+++++++++++++", location)
+const mainCategory = location?.state?.mainCategory;
+  console.log("🚀 ~ Shope ~ mainCategory:=========>>>>>>>>>", mainCategory)
   useEffect(() => {
     axios({
       method: "get",

@@ -19,8 +19,8 @@ export default function Count() {
       <Amountupdate/>
       <PointDisplay/>
       <PountUpdate/> */}
-      {/* <Crud/> */}
-      <User/>
+      <Crud/>
+      {/* <User/> */}
       {/* <CrudDisplay/> */}
       {/* <Amount/> */}
     </div>
