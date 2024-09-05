@@ -12,11 +12,11 @@
     pointer-events: none;
     white-space: pre-wrap;
     word-wrap: break-word;
-    color: transparent; /* Make sure the text inside is transparent initially */
+    color: transparent; 
 }
 
 .input-overlay .highlight {
-    color: red; /* Highlight color for @ and # */
+    color: red; 
 }
 
 .input-field {
@@ -25,5 +25,5 @@
     color: black; /* Normal input text color */
     z-index: 1;
     width: 100%;
-    caret-color: black; /* Ensure the caret is visible */
+    caret-color: black;
 }

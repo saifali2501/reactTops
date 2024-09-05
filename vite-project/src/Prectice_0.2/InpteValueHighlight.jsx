@@ -2,9 +2,22 @@ import React, { useState } from 'react';
 
 export default function InputValueHighlight() {
   const [value, setValue] = useState("");
+  const [filteredNames, setFilteredNames] = useState([]);
+
+  const namesList = [
+    "Alice", "Bob", "Charlie", "David", "Eve",
+    "Frank", "Grace", "Hannah", "Isaac", "Jack"
+  ];
 
   const handleChange = (e) => {
-    setValue(e.target.value);
+    const inputValue = e.target.value;
+    setValue(inputValue);
+    
+    // Filter names based on the input value
+    const filtered = namesList.filter(name =>
+      name.toLowerCase().includes(inputValue.toLowerCase())
+    );
+    setFilteredNames(filtered);
   };
 
   const renderTextWithHighlights = (text) => {
@@ -18,7 +31,7 @@ export default function InputValueHighlight() {
   };
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden' }}>
+    <div style={{ position: 'relative', margin: "90px 200px", width: '100%', height: '100%', overflow: 'hidden' }}>
       <div 
         style={{ 
           position: 'absolute', 
@@ -29,7 +42,10 @@ export default function InputValueHighlight() {
           color: 'black', 
           pointerEvents: 'none',
           whiteSpace: 'pre-wrap',
-          overflow: 'hidden'
+          overflow: 'hidden',
+          padding: '20px', 
+          fontFamily: 'inherit',
+          fontSize: 'inherit',
         }}
       >
         {renderTextWithHighlights(value)}
@@ -38,22 +54,41 @@ export default function InputValueHighlight() {
         type="text"
         value={value}
         onChange={handleChange}
+        placeholder="Type here..."
         style={{ 
           position: 'relative', 
           background: 'transparent', 
           color: 'transparent',
           caretColor: 'black',
-          width: '100%',
+          width: '50%',
           height: '100%',
-          border: '',
-          padding: '10px',
+          padding: '20px',
+          fontFamily: 'inherit',
+          fontSize: 'inherit',
           resize: 'none',
-          overflow: 'hidden'
+          overflow: 'hidden',
+          zIndex: 1,
+          outline: 'none', // This removes the focus outline
         }}
       />
+      {value && (
+        <div style={{ position: 'absolute', top: '100%', left: 0, width: '50%', background: '#fff', border: '1px solid #ccc', maxHeight: '200px', overflowY: 'auto' }}>
+          {filteredNames.length > 0 ? (
+            filteredNames.map((name, index) => (
+              <div key={index} style={{ padding: '10px', cursor: 'pointer' }}>
+                {name}
+              </div>
+            ))
+          ) : (
+            <div style={{ padding: '10px' }}>No results found</div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
+
+
 
 // import React, { useState } from 'react';
 

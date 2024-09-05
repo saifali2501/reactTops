@@ -20,6 +20,7 @@ import DarkVariantExample from "./MODULE_11/Page";
 import Page3 from "./MODULE_11/Page3";
 import Router from "./MODULE_11/Router";
 import MainRouter from "./MODULE-Reacter-Router/MainRouter";
+import CreateTable from "./MODULE-REACT-REDUX/CreateTable/CreateTable";
 
 
 
@@ -51,6 +52,7 @@ function App() {
         {/* <DarkVariantExample/> */}
         {/* <Page3/> */}
         {/* <Router/> */}
+        <CreateTable/>
         
       <MainRouter/>
         

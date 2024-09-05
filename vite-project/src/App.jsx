@@ -72,6 +72,7 @@ import RegisterModel from "./CopanyTask/RegisterModel";
 import CrudThree from "./Prectice_0.2/CrudThree";
 import InputValueHighlight from "./Prectice_0.2/InpteValueHighlight";
 import MyModal from "./Prectice_0.2/Modal";
+import Location from "./Prectice_0.2/Location";
 // import SecReviApp from "./ReviewTask/SecReviTask/SecReviApp";
 // import Prectic from "./Prectice_0.2/MainApp/Prectic";
 // import Crud_0Two from "./Prectice_0.2/Crud_0Two";
@@ -115,6 +116,7 @@ export default function main() {
       {/* <LocalStor/> */}
       {/* <Card/> */}
       {/* <Crad_2/> */}
+      {/* <Card/> */}
       {/* <UseContext/> */}
       {/* <UseRedeucerCom/> */}
       {/* <UseReduserWithPayload/> */}
@@ -142,7 +144,7 @@ export default function main() {
 
       {/* <PrecticApp/> */}
       {/* <ImpTask/> */}
-      <Imp/>
+      {/* <Imp/> */}
       {/* <ParentComponent/> */}
       {/* <Imp2Task/> */}
 
@@ -163,7 +165,8 @@ export default function main() {
       {/* <MyProduct/> */}
       {/* <RegisterModel/> */}
       {/* <CrudThree/> */}
-      {/* <InputValueHighlight/> */}
+      <InputValueHighlight/>
+      {/* <Location/> */}
       {/* <MyModal/> */}
     </div>
   );
