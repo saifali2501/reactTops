@@ -1,0 +1,14 @@
+
+					  -----------------Module-13 React Applying Redux Assignment------------------
+
+ 1. What is Redux?
+ Ans: Redux helps you manage "global" state - state that is needed across many parts of your application. 
+ 
+ 2. What is Redux Thunk used for?
+ Ans: Motivation. Redux Thunk middleware allows you to write action creators that return a function instead of an action. The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. The inner function receives the store methods dispatch and getState as parameters.
+
+ 3. What is Pure Component? When to use Pure Component over Component?
+ Ans: Extending React Class Components with Pure Components ensures the higher performance of the Component and ultimately makes your application faster, While in the case of Regular Component, it will always re-render either value of State and Props changes or not
+
+ 4. What is the second argument that can optionally be passed tosetState and what is its purpose?
+ Ans: The second parameter to setState() is an optional callback function that will be executed once setState is completed and the component is re-rendered. Generally we recommend using componentDidUpdate() for such logic instead.
